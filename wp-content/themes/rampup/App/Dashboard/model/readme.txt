@@ -1,0 +1,3 @@
+dashboard
+
+wordpressの管理画面に関わる実装

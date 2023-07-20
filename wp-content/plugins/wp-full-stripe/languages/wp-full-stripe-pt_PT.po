@@ -1,0 +1,1434 @@
+# Copyright (C) 2022 Mammothology
+# This file is distributed under the same license as the WP Full Stripe package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Full Stripe 6.1.0\n"
+"Report-Msgid-Bugs-To: https://paymentsplugin.com/support/\n"
+"POT-Creation-Date: 2022-03-21 15:57:03+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2022-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: includes/wp/class-wp-list-table.php:143
+msgid "List View"
+msgstr "Vista em lista"
+
+#: includes/wp/class-wp-list-table.php:144
+msgid "Excerpt View"
+msgstr "Vista em extrato"
+
+#: includes/wp/class-wp-list-table.php:304
+msgid "No items found."
+msgstr "Nenhum artigo encontrado."
+
+#: includes/wp/class-wp-list-table.php:426
+msgid "Select bulk action"
+msgstr "Selecione a ação em massa"
+
+#: includes/wp/class-wp-list-table.php:428
+msgid "Bulk Actions"
+msgstr "Ações em massa"
+
+#: includes/wp/class-wp-list-table.php:438
+msgid "Apply"
+msgstr "Aplicar"
+
+#: includes/wp/class-wp-list-table.php:486
+#: includes/wp/class-wp-list-table.php:1264
+msgid "Show more details"
+msgstr "Mostrar mais detalhes"
+
+#: includes/wp/class-wp-list-table.php:548
+msgid "Filter by date"
+msgstr "Filtrar por data"
+
+#: includes/wp/class-wp-list-table.php:550
+msgid "All dates"
+msgstr "Todas as datas"
+
+#: includes/wp/class-wp-list-table.php:563
+#. translators: 1: month name, 2: 4-digit year
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: includes/wp/class-wp-list-table.php:613
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s comentário"
+msgstr[1] "%s comentários"
+
+#: includes/wp/class-wp-list-table.php:614
+msgid "%s approved comment"
+msgid_plural "%s approved comments"
+msgstr[0] "%s comentário aprovado"
+msgstr[1] "%s comentários aprovados"
+
+#: includes/wp/class-wp-list-table.php:615
+msgid "%s pending comment"
+msgid_plural "%s pending comments"
+msgstr[0] "%s comentário pendente"
+msgstr[1] "%s comentários pendentes"
+
+#: includes/wp/class-wp-list-table.php:620
+#: includes/wp/class-wp-list-table.php:632
+#: includes/wp/class-wp-list-table.php:645
+msgid "No comments"
+msgstr "Nenhum comentário"
+
+#: includes/wp/class-wp-list-table.php:632
+msgid "No approved comments"
+msgstr "Nenhum comentário aprovado"
+
+#: includes/wp/class-wp-list-table.php:645
+msgid "No pending comments"
+msgstr "Nenhum comentário pendente"
+
+#: includes/wp/class-wp-list-table.php:719
+#: includes/wp/class-wp-list-table.php:1288
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s artigo"
+msgstr[1] "%s artigos"
+
+#: includes/wp/class-wp-list-table.php:755
+msgid "First page"
+msgstr "Primeira página"
+
+#: includes/wp/class-wp-list-table.php:765
+msgid "Previous page"
+msgstr "Página anterior"
+
+#: includes/wp/class-wp-list-table.php:772
+#: includes/wp/class-wp-list-table.php:775
+msgid "Current Page"
+msgstr "Página atual"
+
+#: includes/wp/class-wp-list-table.php:788
+msgid "Next page"
+msgstr "Página seguinte"
+
+#: includes/wp/class-wp-list-table.php:798
+msgid "Last page"
+msgstr "Última página"
+
+#: includes/wp/class-wp-list-table.php:1018
+msgid "Select All"
+msgstr "Selecionar tudo"
+
+#: includes/wpfs-checkout-charge-handler.php:60
+msgid "Daily donation (%s)"
+msgstr "Doação diária (%s)"
+
+#: includes/wpfs-checkout-charge-handler.php:64
+msgid "Weekly donation (%s)"
+msgstr "Doação semanal (%s)"
+
+#: includes/wpfs-checkout-charge-handler.php:68
+msgid "Monthly donation (%s)"
+msgstr "Doação mensal (%s)"
+
+#: includes/wpfs-checkout-charge-handler.php:72
+msgid "Annual donation (%s)"
+msgstr "Doação anual (%s)"
+
+#: includes/wpfs-checkout-charge-handler.php:565
+#: includes/wpfs-checkout-charge-handler.php:628
+#: includes/wpfs-checkout-charge-handler.php:786
+#: includes/wpfs-checkout-charge-handler.php:1187
+#: includes/wpfs-customer.php:481 includes/wpfs-customer.php:929
+#: includes/wpfs-customer.php:1266 includes/wpfs-customer.php:1619
+#: includes/wpfs-customer.php:1660 includes/wpfs-customer.php:1685
+#. translators: Banner title of successful transaction
+msgid "Success"
+msgstr "Sucesso"
+
+#: includes/wpfs-checkout-charge-handler.php:568
+#. translators: Banner message of saving card successfully
+msgid "Card saved successfully!"
+msgstr "Cartão guardado com sucesso!"
+
+#: includes/wpfs-checkout-charge-handler.php:573 includes/wpfs-customer.php:489
+#: includes/wpfs-customer.php:937 includes/wpfs-customer.php:944
+#: includes/wpfs-customer.php:1274 includes/wpfs-customer.php:1627
+#: includes/wpfs-customer.php:1668
+#. translators: Banner title of failed transaction
+msgid "Failed"
+msgstr "Falha"
+
+#: includes/wpfs-checkout-charge-handler.php:631
+#: includes/wpfs-checkout-charge-handler.php:1190
+#: includes/wpfs-customer.php:1269 includes/wpfs-customer.php:1622
+#: includes/wpfs-customer.php:1663 includes/wpfs-customer.php:1688
+#. translators: Banner message of successful payment
+msgid "Payment Successful!"
+msgstr "Pagamento efetuado com sucesso!"
+
+#: includes/wpfs-checkout-charge-handler.php:788 includes/wpfs-customer.php:931
+#. translators: Banner message of successful payment
+msgid "Donation Successful!"
+msgstr "Doação efetuada com sucesso!"
+
+#: includes/wpfs-checkout-submission-service.php:222
+#: includes/wpfs-payments.php:302
+#. translators: It's a line item for the initial payment of a subscription
+msgid "One-time setup fee (plan: %s)"
+msgstr "Taxa de ativação única (plano: %s)"
+
+#: includes/wpfs-checkout-submission-service.php:1094
+#. translators: Banner title of cancelled transaction
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#: includes/wpfs-checkout-submission-service.php:1097
+#. translators: Banner message of cancelled transaction
+msgid "The customer has cancelled the payment."
+msgstr "O cliente cancelou o pagamento."
+
+#: includes/wpfs-customer-portal-service.php:430
+msgid "You haven't made any payments yet"
+msgstr "Ainda não efetuou quaisquer pagamentos"
+
+#: includes/wpfs-customer-portal-service.php:1053
+msgid "Are you sure you'd like to cancel the selected subscriptions?"
+msgstr "Tem a certeza de que pretende cancelar as subscrições selecionadas?"
+
+#: includes/wpfs-customer-portal-service.php:1054
+msgid "Are you sure you'd like to cancel this subscription?"
+msgstr "Tem a certeza de que pretende cancelar esta subscrição?"
+
+#: includes/wpfs-customer-portal-service.php:1055
+msgid "Are you sure you'd like to activate this subscription again?"
+msgstr "Tem a certeza de que pretende ativar novamente esta subscrição?"
+
+#: includes/wpfs-customer-portal-service.php:1056
+#: includes/wpfs-customer-portal-service.php:1820
+msgid "Select at least one subscription!"
+msgstr "Selecione pelo menos uma subscrição!"
+
+#: includes/wpfs-customer-portal-service.php:1059
+#: templates/customer-portal/wpfs-customer-portal.php:65
+#. translators: Default button text for cancelling subscriptions - disabled
+#. state
+#. translators: Button label for cancelling a subscription
+msgid "Cancel subscription"
+msgstr "Cancelar subscrição"
+
+#: includes/wpfs-customer-portal-service.php:1062
+#. translators: Button text for cancelling one subscription
+msgid "Cancel 1 subscription"
+msgstr "Cancelar 1 subscrição"
+
+#: includes/wpfs-customer-portal-service.php:1065
+#. translators: Button text for cancelling several subscriptions at once
+msgid "Cancel %d subscriptions"
+msgstr "Cancelar %d subscrições"
+
+#: includes/wpfs-customer-portal-service.php:1285
+#: includes/wpfs-customer-portal-service.php:1331
+msgid "The entered email address is invalid."
+msgstr "O endereço de e-mail inserido é inválido."
+
+#: includes/wpfs-customer-portal-service.php:1295
+#: includes/wpfs-customer-portal-service.php:1305
+#: includes/wpfs-customer-portal-service.php:1312
+#: includes/wpfs-form-validators.php:406
+#. translators: Captcha validation error message displayed when the form is
+#. submitted without completing the captcha challenge
+msgid "Please prove that you are not a robot. "
+msgstr "Prove que não é um robô. "
+
+#: includes/wpfs-customer-portal-service.php:1489
+#. translators: Login form validation error when no security code is entered
+msgid "Enter a security code"
+msgstr "Insira um código de segurança"
+
+#: includes/wpfs-customer-portal-service.php:1514
+#. translators: Login form validation error when an invalid security code is
+#. entered
+msgid "Enter a valid security code"
+msgstr "Insira um código de segurança válido"
+
+#: includes/wpfs-customer-portal-service.php:1539
+#: includes/wpfs-customer-portal-service.php:1574
+#. translators: Customer portal error when no Stripe customer was selected
+#. translators: Login form validation error when an invalid security code is
+#. entered
+msgid "Select an account"
+msgstr "Selecione uma conta"
+
+#: includes/wpfs-customer-portal-service.php:1609
+#. translators: Cannot transition the Customer portal to selecting an account
+#. because it's in a wrong state
+msgid "Cannot transition to selecting an account from the current state"
+msgstr "Não é possível a transição para a seleção de uma conta a partir do estado atual"
+
+#: includes/wpfs-customer-portal-service.php:1666
+#: includes/wpfs-customer.php:453
+#. translators: Banner message of a pending card saving transaction requiring a
+#. second factor authentication (SCA/PSD2)
+msgid "Saving this card requires additional action before completion!"
+msgstr "Guardar este cartão requer uma ação adicional antes de ser concluído!"
+
+#: includes/wpfs-customer-portal-service.php:1673
+msgid "The default credit card has been updated successfully!"
+msgstr "O cartão de crédito predefinido foi atualizado com sucesso!"
+
+#: includes/wpfs-customer-portal-service.php:1817
+msgid "The subscriptions have been cancelled"
+msgstr "As subscrições foram canceladas"
+
+#: includes/wpfs-customer-portal-service.php:1951
+msgid "The subscription has been updated successfully"
+msgstr "A subscrição foi atualizada com sucesso"
+
+#: includes/wpfs-customer-portal-service.php:2130
+#. translators: p1: plan/product name p2: plan/product formatted price and
+#. interval label
+msgid ""
+"Your subscription plan will be changed to %1$s. The new subscription fee "
+"will be %2$s."
+msgstr "O seu plano de subscrição será alterado para %1$s. A nova taxa de subscrição será de %2$s."
+
+#: includes/wpfs-customer-portal-service.php:2143
+#. translators: p1: plan/product name p2: plan/product formatted price and
+#. interval label
+msgid ""
+"Your subscription plan will be changed to %1$s. The new subscription fee "
+"will be @QUANTITY@x %2$s."
+msgstr "O seu plano de subscrição será alterado para %1$s. A nova taxa de subscrição será de @QUANTITY@x %2$s."
+
+#: includes/wpfs-customer-portal-service.php:2659
+#. translators: Displayed in the subscription list when a subscription is
+#. composed of more than one subscription plan
+msgid "Multiple plans"
+msgstr "Múltiplos planos"
+
+#: includes/wpfs-customer-portal-service.php:2700
+#. translators: The 'Trialing' subscription status
+msgid "Trialing"
+msgstr "Teste"
+
+#: includes/wpfs-customer-portal-service.php:2703
+#. translators: The 'Active' subscription status
+msgid "Active"
+msgstr "Ativa"
+
+#: includes/wpfs-customer-portal-service.php:2706
+#. translators: The 'Past due' subscription status
+msgid "Past due"
+msgstr "Vencida"
+
+#: includes/wpfs-customer-portal-service.php:2709
+#. translators: The 'Canceled' subscription status
+msgid "Canceled"
+msgstr "Cancelado"
+
+#: includes/wpfs-customer-portal-service.php:2712
+#. translators: The 'Unpaid' subscription status
+msgid "Unpaid"
+msgstr "Não pago"
+
+#: includes/wpfs-customer-portal-service.php:2787
+#. translators: p1: plan/product formatted price and interval label
+msgid "The new subscription fee will be %1$s."
+msgstr "A nova taxa de subscrição será de %1$s."
+
+#: includes/wpfs-customer-portal-service.php:2798
+#. translators: p1: plan/product name
+msgid "The new subscription fee will be @QUANTITY@x %1$s."
+msgstr "A nova taxa de subscrição será de @QUANTITY@x %1$s."
+
+#: includes/wpfs-customer.php:234 includes/wpfs-customer.php:273
+#: includes/wpfs-customer.php:303 includes/wpfs-customer.php:332
+#: includes/wpfs-customer.php:362 includes/wpfs-customer.php:1335
+#: includes/wpfs-customer.php:1365 includes/wpfs-customer.php:1745
+#: includes/wpfs-customer.php:1775 includes/wpfs-customer.php:1822
+#: includes/wpfs-customer.php:1852 includes/wpfs-customer.php:1917
+#: includes/wpfs-customer.php:1947 includes/wpfs-main.php:1034
+#: templates/forms/wpfs-form.php:205
+#. translators: Banner title of an error returned from an extension point by a
+#. developer
+#. translators: Banner title of internal error
+#. translators: Banner title of an error returned from an extension point by a
+#. developer
+#. translators: Banner title of internal error
+#. translators: Banner title of an error returned from an extension point by a
+#. developer
+#. translators: Banner title of an error returned from an extension point by a
+#. developer
+#. translators: Banner title of internal error
+#. translators: Banner title of an error returned from an extension point by a
+#. developer
+#. translators: Banner title of internal error
+#. translators: Banner title of an error returned from an extension point by a
+#. developer
+#. translators: Banner title of internal error
+#. translators: Banner title of internal error
+#. translators: Banner title of internal error
+msgid "Internal Error"
+msgstr "Erro interno"
+
+#: includes/wpfs-customer.php:286 includes/wpfs-customer.php:345
+#: includes/wpfs-customer.php:1348 includes/wpfs-customer.php:1758
+#: includes/wpfs-customer.php:1835 includes/wpfs-customer.php:1930
+#. translators: Banner title of error returned by Stripe
+msgid "Stripe Error"
+msgstr "Erro Stripe"
+
+#: includes/wpfs-customer.php:450 includes/wpfs-customer.php:909
+#: includes/wpfs-customer.php:1243 includes/wpfs-customer.php:1603
+#: includes/wpfs-customer.php:1645
+#. translators: Banner title of pending transaction requiring a second factor
+#. authentication (SCA/PSD2)
+msgid "Action required"
+msgstr "Ação necessária"
+
+#: includes/wpfs-customer.php:484
+#. translators: Banner message of saving card successfully
+msgid "Saving Card Successful!"
+msgstr "Cartão guardado com sucesso!"
+
+#: includes/wpfs-customer.php:911
+#. translators: Banner message of a one-time payment requiring a second factor
+#. authentication (SCA/PSD2)
+msgid "The donation needs additional action before completion!"
+msgstr "A doação necessita de ação adicional antes de ser concluída!"
+
+#: includes/wpfs-customer.php:1246 includes/wpfs-customer.php:1606
+#: includes/wpfs-customer.php:1648
+#. translators: Banner message of a one-time payment requiring a second factor
+#. authentication (SCA/PSD2)
+msgid "The payment needs additional action before completion!"
+msgstr "O pagamento necessita de ação adicional antes de ser concluído!"
+
+#: includes/wpfs-customer.php:2011 includes/wpfs-customer.php:2024
+#: includes/wpfs-customer.php:2047
+#. translators: Banner title for messages related to applying a coupon
+msgid "Coupon redemption"
+msgstr "Resgate do cupão"
+
+#: includes/wpfs-customer.php:2014
+#. translators: Banner message of expired coupon
+msgid "Please enter a coupon code"
+msgstr "Insira um código de cupão"
+
+#: includes/wpfs-customer.php:2027
+#. translators: Banner message of expired coupon
+msgid "This coupon has expired"
+msgstr "Este cupão expirou"
+
+#: includes/wpfs-customer.php:2050
+#. translators: Banner message of successfully applying a coupon
+msgid "The coupon has been applied successfully"
+msgstr "O cupão foi aplicado com sucesso"
+
+#: includes/wpfs-customer.php:2104
+msgid "There was an error calculating product pricing: "
+msgstr "Ocorreu um erro no cálculo do preço do produto. "
+
+#: includes/wpfs-form-models.php:1879
+msgid "Donation"
+msgstr "Doação"
+
+#: includes/wpfs-form-validators.php:14
+msgid "Please enter the cardholder's name"
+msgstr "Insira o nome do titular do cartão"
+
+#: includes/wpfs-form-validators.php:20
+msgid "Please enter a valid email address"
+msgstr "Insira um endereço de email válido"
+
+#: includes/wpfs-form-validators.php:27
+msgid "Please enter a billing name"
+msgstr "Insira um nome de faturação"
+
+#: includes/wpfs-form-validators.php:33
+msgid "Please enter a billing address"
+msgstr "Insira um endereço de faturação"
+
+#: includes/wpfs-form-validators.php:39 includes/wpfs-form-validators.php:102
+msgid "Please enter a city"
+msgstr "Insira uma cidade"
+
+#: includes/wpfs-form-validators.php:45 includes/wpfs-form-validators.php:65
+#: includes/wpfs-form-validators.php:108 includes/wpfs-form-validators.php:128
+msgid "Please select a country"
+msgstr "Insira um país"
+
+#: includes/wpfs-form-validators.php:54 includes/wpfs-form-validators.php:117
+msgid "Please select a state"
+msgstr "Insira uma localidade"
+
+#: includes/wpfs-form-validators.php:80 includes/wpfs-form-validators.php:143
+msgid "Please enter a zip/postal code"
+msgstr "Insira um código postal"
+
+#: includes/wpfs-form-validators.php:90
+msgid "Please enter a shipping name"
+msgstr "Insira um nome de destinatário"
+
+#: includes/wpfs-form-validators.php:96
+msgid "Please enter a shipping address"
+msgstr "Insira um endereço de envio"
+
+#: includes/wpfs-form-validators.php:325 includes/wpfs-form-validators.php:337
+#: includes/wpfs-main.php:1039
+#. translators: Error message for required fields when empty. p1: custom input
+#. field label
+msgid "Please enter a value for '%s'"
+msgstr "Insira um valor para «%s»"
+
+#: includes/wpfs-form-validators.php:349 includes/wpfs-form-validators.php:360
+#. translators: Form field validation error for custom fields
+msgid "The value for '%s' is too long"
+msgstr "O valor para «%s» é demasiado comprido"
+
+#: includes/wpfs-form-validators.php:497 includes/wpfs-form-validators.php:626
+#. translators: Form field validation error message when custom amount is empty
+msgid "Please enter an amount"
+msgstr "Insira um montante"
+
+#: includes/wpfs-form-validators.php:502 includes/wpfs-form-validators.php:631
+#. translators: Form field validation error message when custom amount is not a
+#. number
+msgid "Please enter a valid amount, use only digits and a decimal separator"
+msgstr "Insira um montante válido e utilize apenas dígitos e um separador decimal"
+
+#: includes/wpfs-form-validators.php:507
+#. translators: Form field validation error message when custom amount is less
+#. than the minimum payment amount
+msgid "The minimum payment amount is %s"
+msgstr "O montante mínimo de pagamento é de %s."
+
+#: includes/wpfs-form-validators.php:545
+msgid "Please enter your business's tax id"
+msgstr "Insira o NIPC da sua empresa"
+
+#: includes/wpfs-form-validators.php:554
+msgid "Please enter your business's name"
+msgstr "Insira o nome da sua empresa"
+
+#: includes/wpfs-form-validators.php:568
+msgid "Please select the country your business's seat is in"
+msgstr "Selecione o país da sua empresa"
+
+#: includes/wpfs-form-validators.php:579
+msgid "Please select the state your business's seat is in"
+msgstr "Selecione a localidade da sua empresa"
+
+#: includes/wpfs-form-validators.php:637
+#. translators: Form field validation error message when custom amount is lower
+#. than the minimum donation amount
+msgid "The minimum donation amount is %s."
+msgstr "O montante mínimo de doação é de %s."
+
+#: includes/wpfs-form-validators.php:654
+#. translators: Form field validation error message when no donation frequency
+#. is selected
+msgid "Please select a donation frequency"
+msgstr "Selecione a frequência da doação"
+
+#: includes/wpfs-form-validators.php:715
+msgid "Invalid plan selected, check your plans and Stripe API mode."
+msgstr "Plano selecionado inválido. Consulte os seus planos e o modo Stripe API."
+
+#: includes/wpfs-form-views.php:41
+#. translators: Form field label for card holder's name
+msgid "Cardholder’s name"
+msgstr "Nome do titular do cartão"
+
+#: includes/wpfs-form-views.php:44
+#. translators: Form field label for email address
+msgid "E-mail address"
+msgstr "Endereço de e-mail"
+
+#: includes/wpfs-form-views.php:47
+#. translators: Form field label for credit card data
+msgid "Card info"
+msgstr "Dados do cartão"
+
+#: includes/wpfs-form-views.php:919
+#. translators: Form field placeholder for coupon code
+msgid "Enter coupon code"
+msgstr "Insira o código do cupão"
+
+#: includes/wpfs-form-views.php:921
+#. translators: Form field label for coupon code
+msgid "Coupon"
+msgstr "Cupão"
+
+#: includes/wpfs-form-views.php:928
+#. translators: Tooltip label for the coupon code field
+msgid ""
+"Apply a coupon or promotional code for a discount to your subscription or "
+"payment"
+msgstr "Aplique um cupão ou código promocional para um desconto na sua subscrição ou pagamento"
+
+#: includes/wpfs-form-views.php:1113
+#. translators: Option label for the default option of the country selector
+#. dropdown
+msgid "Select country"
+msgstr "Selecione o país"
+
+#: includes/wpfs-form-views.php:1154
+#. translators: Option label for the default option of the country selector
+#. dropdown
+msgid "Select state"
+msgstr "Selecione a localidade"
+
+#: includes/wpfs-form-views.php:1190
+#. translators: Label for a checkbox which controls whether billing and
+#. shipping address can be entered separately
+msgid "Same billing and shipping address"
+msgstr "Endereço de envio e de faturação iguais"
+
+#: includes/wpfs-form-views.php:1194
+#. translators: Form field label for billing address
+msgid "Billing address"
+msgstr "Endereço de faturação"
+
+#: includes/wpfs-form-views.php:1197
+#. translators: Form field label for shipping address
+msgid "Shipping address"
+msgstr "Endereço de envio"
+
+#: includes/wpfs-form-views.php:1206
+#. translators: Form field label for the billing name
+msgid "Billing name"
+msgstr "Nome de faturação"
+
+#: includes/wpfs-form-views.php:1209
+#. translators: Form field label for the billing address
+msgid "Billing address street"
+msgstr "Rua do endereço de faturação"
+
+#: includes/wpfs-form-views.php:1212
+#. translators: Form field label for the billing address line 2
+msgid "Billing address line 2"
+msgstr "Endereço de faturação (linha 2)"
+
+#: includes/wpfs-form-views.php:1215 includes/wpfs-form-views.php:1248
+#. translators: Form field label for the postal code of the billing address
+#. translators: Form field label for the postal code of the shipping address
+msgid "Postal code"
+msgstr "Código postal"
+
+#: includes/wpfs-form-views.php:1218 includes/wpfs-form-views.php:1220
+#: includes/wpfs-form-views.php:1251 includes/wpfs-form-views.php:1253
+#: includes/wpfs-form-views.php:1935
+#. translators: Form field label for the state of the billing address
+#. translators: Form field label for the state of the shipping address
+msgid "State"
+msgstr "Localidade"
+
+#: includes/wpfs-form-views.php:1224 includes/wpfs-form-views.php:1257
+#. translators: Form field label for the city of the billing address
+#. translators: Form field label for the city of the shipping address
+msgid "City"
+msgstr "Cidade"
+
+#: includes/wpfs-form-views.php:1227 includes/wpfs-form-views.php:1260
+#: includes/wpfs-form-views.php:1931
+#. translators: Form field label for the country of the billing address
+#. translators: Form field label for the country of the shipping address
+msgid "Country"
+msgstr "País"
+
+#: includes/wpfs-form-views.php:1239
+#. translators: Form field label for the shipping name
+msgid "Shipping name"
+msgstr "Nome de destinatário"
+
+#: includes/wpfs-form-views.php:1242
+#. translators: Form field label for the shipping address
+msgid "Shipping address street"
+msgstr "Rua do endereço de envio"
+
+#: includes/wpfs-form-views.php:1245
+#. translators: Form field label for the shipping address line 2
+msgid "Shipping address line 2"
+msgstr "Endereço de envio (linha 2)"
+
+#: includes/wpfs-form-views.php:1646
+#. translators: Form field label for the plan selector
+msgid "Choose subscription plan"
+msgstr "Escolha o plano de subscrição"
+
+#: includes/wpfs-form-views.php:1649
+#: templates/customer-portal/wpfs-customer-portal.php:181
+#. translators: Form field label for subscription quantity
+#. translators: Field label for changing subscription quantity
+msgid "Subscription quantity"
+msgstr "Quantidade de subscrições"
+
+#: includes/wpfs-form-views.php:1882
+msgid "Tax"
+msgstr "Imposto"
+
+#: includes/wpfs-form-views.php:1941
+msgid "I'm buying as a business"
+msgstr "Estou a adquirir como empresa"
+
+#: includes/wpfs-form-views.php:1944
+msgid "Business name"
+msgstr "Nome da empresa"
+
+#: includes/wpfs-form-views.php:1946
+msgid "Tax ID"
+msgstr "NIF"
+
+#: includes/wpfs-form-views.php:2079 includes/wpfs-form-views.php:2138
+#: includes/wpfs-form-views.php:2580
+#. translators: Form field label for the payment amount that can be entered
+#. manually (think paying invoices)
+#. translators: Form field label for the donation amount that can be entered
+#. manually
+msgid "Amount"
+msgstr "Montante"
+
+#: includes/wpfs-form-views.php:2092
+#. translators: Form field label for selecting a one-time payment amount
+msgid "Product"
+msgstr "Produto"
+
+#: includes/wpfs-form-views.php:2147 includes/wpfs-form-views.php:2592
+#. translators: Button label for entering a payment amount manually (think
+#. donation form)
+msgid "Other"
+msgstr "Outro"
+
+#: includes/wpfs-form-views.php:2492
+#. translators: Form field label for selecting a one-time donation amount
+msgid "Donation frequency"
+msgstr "Frequência da doação"
+
+#: includes/wpfs-form-views.php:2499 includes/wpfs-localization.php:120
+#. translators: Label for the one-time donation frequency.
+msgid "One-time"
+msgstr "Única"
+
+#: includes/wpfs-form-views.php:2508 includes/wpfs-localization.php:126
+#. translators: Label for the daily donation frequency.
+msgid "Daily"
+msgstr "Diária"
+
+#: includes/wpfs-form-views.php:2514 includes/wpfs-localization.php:132
+#. translators: Label for the weekly donation frequency.
+msgid "Weekly"
+msgstr "Semanal"
+
+#: includes/wpfs-form-views.php:2520 includes/wpfs-localization.php:138
+#. translators: Label for the monthly donation frequency.
+msgid "Monthly"
+msgstr "Mensal"
+
+#: includes/wpfs-form-views.php:2526 includes/wpfs-localization.php:144
+#. translators: Label for the annual donation frequency.
+msgid "Annual"
+msgstr "Anual"
+
+#: includes/wpfs-form-views.php:2551
+#. translators: Form field label for selecting a one-time donation amount
+msgid "Donation amount"
+msgstr "Montante da doação"
+
+#: includes/wpfs-localization.php:29
+msgid "year"
+msgid_plural "%d years"
+msgstr[0] "ano"
+msgstr[1] "%d anos"
+
+#: includes/wpfs-localization.php:31
+msgid "month"
+msgid_plural "%d months"
+msgstr[0] "mês"
+msgstr[1] "%d meses"
+
+#: includes/wpfs-localization.php:33
+msgid "week"
+msgid_plural "%d weeks"
+msgstr[0] "semana"
+msgstr[1] "%d semanas"
+
+#: includes/wpfs-localization.php:35
+msgid "day"
+msgid_plural "%d days"
+msgstr[0] "dia"
+msgstr[1] "%d dias"
+
+#: includes/wpfs-localization.php:56
+#. translators: Recurring pricing descriptor. p1: formatted recurring amount
+#. with currency symbol p2: interval count
+msgid "%1$s / day"
+msgid_plural "%1$s / %2$d days"
+msgstr[0] "%1$s/dia"
+msgstr[1] "%1$s/%2$d dias"
+
+#: includes/wpfs-localization.php:68
+#. translators: Recurring pricing descriptor. p1: formatted recurring amount
+#. with currency symbol p2: interval count
+msgid "%1$s / week"
+msgid_plural "%1$s / %2$d weeks"
+msgstr[0] "%1$s/semana"
+msgstr[1] "%1$s/%2$d semanas"
+
+#: includes/wpfs-localization.php:80
+#. translators: Recurring pricing descriptor. p1: formatted recurring amount
+#. with currency symbol p2: interval count
+msgid "%1$s / month"
+msgid_plural "%1$s / %2$d months"
+msgstr[0] "%1$s/mês"
+msgstr[1] "%1$s/%2$d meses"
+
+#: includes/wpfs-localization.php:92
+#. translators: Recurring pricing descriptor. p1: formatted recurring amount
+#. with currency symbol p2: interval count
+msgid "%1$s / year"
+msgid_plural "%1$s / %2$d years"
+msgstr[0] "%1$s/ano"
+msgstr[1] "%1$s/%2$d anos"
+
+#: includes/wpfs-main.php:759
+#. translators: Link label displayed on the Plugins page in WP admin
+msgid "Settings"
+msgstr "Definições"
+
+#: includes/wpfs-main.php:1031
+#. translators: Banner message of internal error when no error message is
+#. returned by the application
+msgid "An internal error occurred."
+msgstr "Ocorreu um erro interno."
+
+#: includes/wpfs-main.php:1042
+#. translators: Field validation error message when payment amount is empty or
+#. invalid
+msgid "Payment amount is invalid"
+msgstr "O montante de pagamento é inválido"
+
+#: includes/wpfs-main.php:1045
+#. translators: Banner message when the payment amount cannot be determined
+#. (the form has been tampered with)
+msgid "Cannot determine payment amount"
+msgstr "Não foi possível determinar o montante de pagamento"
+
+#: includes/wpfs-main.php:1048
+#. translators: Banner title when the payment amount cannot be determined (the
+#. form has been tampered with)
+msgid "Invalid payment amount"
+msgstr "Montante de pagamento inválido"
+
+#: includes/wpfs-main.php:1068
+msgid "Subscription will be charged every day."
+msgstr "A subscrição será cobrada todos os dias."
+
+#: includes/wpfs-main.php:1069
+msgid "Subscription will be charged every week."
+msgstr "A subscrição será cobrada todas as semanas."
+
+#: includes/wpfs-main.php:1070
+msgid "Subscription will be charged every month."
+msgstr "A subscrição será cobrada todos os meses."
+
+#: includes/wpfs-main.php:1071
+msgid "Subscription will be charged every year."
+msgstr "A subscrição será cobrada todos os anos."
+
+#: includes/wpfs-main.php:1072
+msgid "Subscription will be charged every %d days."
+msgstr "A subscrição será cobrada a cada %d dias."
+
+#: includes/wpfs-main.php:1073
+msgid "Subscription will be charged every %d weeks."
+msgstr "A subscrição será cobrada a cada %d semanas."
+
+#: includes/wpfs-main.php:1074
+msgid "Subscription will be charged every %d months."
+msgstr "A subscrição será cobrada a cada %d meses."
+
+#: includes/wpfs-main.php:1075
+msgid "Subscription will be charged every %d years."
+msgstr "A subscrição será cobrada a cada %d anos."
+
+#: includes/wpfs-main.php:1076
+msgid "Subscription will be charged every day, for %d occasions."
+msgstr "A subscrição será cobrada todos os dias, por %d ocasiões."
+
+#: includes/wpfs-main.php:1077
+msgid "Subscription will be charged every week, for %d occasions."
+msgstr "A subscrição será cobrada todas as semanas, por %d ocasiões."
+
+#: includes/wpfs-main.php:1078
+msgid "Subscription will be charged every month, for %d occasions."
+msgstr "A subscrição será cobrada todos os meses, por %d ocasiões."
+
+#: includes/wpfs-main.php:1079
+msgid "Subscription will be charged every year, for %d occasions."
+msgstr "A subscrição será cobrada todos os anos, por %d ocasiões."
+
+#: includes/wpfs-main.php:1080
+msgid "Subscription will be charged every %1$d days, for %2$d occasions."
+msgstr "A subscrição será cobrada a cada %1$d dias, por %2$d ocasiões."
+
+#: includes/wpfs-main.php:1081
+msgid "Subscription will be charged every %1$d weeks, for %2$d occasions."
+msgstr "A subscrição será cobrada a cada %1$d semanas, por %2$d ocasiões."
+
+#: includes/wpfs-main.php:1082
+msgid "Subscription will be charged every %1$d months, for %2$d occasions."
+msgstr "A subscrição será cobrada a cada %1$d meses, por %2$d ocasiões."
+
+#: includes/wpfs-main.php:1083
+msgid "Subscription will be charged every %1$d years, for %2$d occasions."
+msgstr "A subscrição será cobrada a cada %1$d anos, por %2$d ocasiões."
+
+#: includes/wpfs-main.php:1086
+msgid "My product"
+msgstr "O meu produto"
+
+#: includes/wpfs-main.php:1087 includes/wpfs-pricing.php:445
+msgid "Other amount"
+msgstr "Outro montante"
+
+#: includes/wpfs-payments.php:206
+#. translators: Validation error message for a card number without a CVC code
+msgid "Please enter a CVC code"
+msgstr "Insira um código CVC"
+
+#: includes/wpfs-payments.php:405
+#. translators: message for Stripe error code 'invalid_number'
+msgid "Your card number is invalid."
+msgstr "O número do seu cartão é inválido."
+
+#: includes/wpfs-payments.php:408
+#. translators: message for Stripe error code 'invalid_expiry_month'
+msgid "Your card's expiration month is invalid."
+msgstr "O mês de expiração do seu cartão é inválido."
+
+#: includes/wpfs-payments.php:411
+#. translators: message for Stripe error code 'invalid_expiry_year'
+msgid "Your card's expiration year is invalid."
+msgstr "O ano de expiração do seu cartão é inválido."
+
+#: includes/wpfs-payments.php:414
+#. translators: message for Stripe error code 'invalid_cvc'
+msgid "Your card's security code is invalid."
+msgstr "O código de segurança do seu cartão é inválido."
+
+#: includes/wpfs-payments.php:417
+#. translators: message for Stripe error code 'incorrect_number'
+msgid "Your card number is incorrect."
+msgstr "O número do seu cartão está incorreto."
+
+#: includes/wpfs-payments.php:420
+#. translators: message for Stripe error code 'expired_card'
+msgid "Your card has expired."
+msgstr "O seu cartão expirou."
+
+#: includes/wpfs-payments.php:423
+#. translators: message for Stripe error code 'incorrect_cvc'
+msgid "Your card's security code is incorrect."
+msgstr "O código de segurança do seu cartão está incorreto."
+
+#: includes/wpfs-payments.php:426
+#. translators: message for Stripe error code 'incorrect_zip'
+msgid "Your card's zip code failed validation."
+msgstr "A validação do código postal do seu cartão falhou."
+
+#: includes/wpfs-payments.php:429
+#. translators: message for Stripe error code 'card_declined'
+msgid "Your card was declined."
+msgstr "O seu cartão foi rejeitado."
+
+#: includes/wpfs-payments.php:432
+#. translators: message for Stripe error code 'missing'
+msgid "There is no card on a customer that is being charged."
+msgstr "Não existe nenhum cartão de cliente que se encontre a ser cobrado."
+
+#: includes/wpfs-payments.php:435
+#. translators: message for Stripe error code 'processing_error'
+msgid "An error occurred while processing your card."
+msgstr "Ocorreu um erro durante o processamento do seu cartão."
+
+#: includes/wpfs-payments.php:438
+#. translators: Stripe error message 'Missing payment information'
+msgid "Missing payment information"
+msgstr "Informação de pagamento em falta"
+
+#: includes/wpfs-payments.php:441
+#. translators: Stripe error message 'Could not find payment information'
+msgid "Could not find payment information"
+msgstr "Não foi possível encontrar a informação de pagamento"
+
+#: includes/wpfs-payments.php:1344
+#. translators: Error message displayed when subscriber tries to set a quantity
+#. for a subscription which is beyond allowed value
+msgid "Subscription quantity '%d' is not allowed for this subscription!"
+msgstr "A quantidade de subscrições «%d» não é permitida para esta subscrição!"
+
+#: includes/wpfs-payments.php:1355
+#. translators: Error message displayed when subscriber tries to set a quantity
+#. for a subscription where quantity other than one is not allowed.
+msgid "Quantity update is not allowed for this subscription!"
+msgstr "Não é permitida a atualização das quantidades para esta subscrição!"
+
+#: includes/wpfs-payments.php:1362
+#. translators: Error message displayed when a subscription is not found. p1:
+#. Subscription identifier
+msgid "Subscription '%s' not found!"
+msgstr "Subscrição «%s» não encontrada!"
+
+#: includes/wpfs-pricing.php:492 includes/wpfs-pricing.php:793
+msgid "Discount"
+msgstr "Desconto"
+
+#: includes/wpfs-pricing.php:669 includes/wpfs-pricing.php:763
+msgid "Setup fee"
+msgstr "Taxa de ativação"
+
+#: includes/wpfs-utils.php:577
+#. translators: Default transaction description for one-time payments
+msgid "Payment on form %FORM_NAME%"
+msgstr "Pagamento no formulário %FORM_NAME%"
+
+#: includes/wpfs-utils.php:583
+#. translators: Default transaction description for saved cards
+msgid "Card saved on form %FORM_NAME%"
+msgstr "Cartão guardado no formulário %FORM_NAME%"
+
+#: includes/wpfs-utils.php:589
+#. translators: Default transaction description for donations
+msgid "Donation on form %FORM_NAME%"
+msgstr "Doação no formulário %FORM_NAME%"
+
+#: includes/wpfs-utils.php:597
+#. translators: Default label for the Terms of Use checkbox
+msgid "I accept the <a href='%s' target='_blank'>Terms of Use</a>"
+msgstr "Eu aceito os <a href='%s' target='_blank'>Termos de Utilização</a>"
+
+#: includes/wpfs-utils.php:603
+#. translators: Field validation error message when the Terms of use checkbox
+#. is not checked
+msgid "Please accept the Terms of Use"
+msgstr "Aceite os Termos de Utilização"
+
+#: includes/wpfs-utils.php:609
+#. translators: Banner message of expired coupon
+msgid "This coupon has expired."
+msgstr "Este cupão expirou."
+
+#: includes/wpfs-utils.php:615
+#. translators: Banner message of expired coupon
+msgid "This coupon has an invalid currency."
+msgstr "Este cupão tem uma moeda inválida."
+
+#: includes/wpfs-utils.php:621 includes/wpfs-utils.php:633
+#. translators: Default payment button label on inline one-time payment forms
+#. translators: Default payment button label on checkout one-time payment forms
+msgid "Make payment"
+msgstr "Efetuar pagamento"
+
+#: includes/wpfs-utils.php:627
+#. translators: Default payment button label on inline save card forms
+msgid "Save card"
+msgstr "Guardar cartão"
+
+#: includes/wpfs-utils.php:639 includes/wpfs-utils.php:645
+#. translators: Default subscription button label on inline subscription forms
+#. translators: Default subscription button label on checkout subscription
+#. forms
+msgid "Subscribe"
+msgstr "Subscrever"
+
+#: includes/wpfs-utils.php:651 includes/wpfs-utils.php:657
+#. translators: Default donation button label on inline donation forms
+msgid "Donate"
+msgstr "Doar"
+
+#: includes/wpfs-utils.php:662
+#. translators: Placeholder product name for newly created one-time payment
+#. forms
+msgid "My Product"
+msgstr "O meu produto"
+
+#: includes/wpfs-utils.php:667
+#. translators: Placeholder product name for newly created donation forms
+msgid "My Donation"
+msgstr "A minha doação"
+
+#: includes/wpfs-utils.php:995
+#. translators: Banner title of a hidden field's validation error
+msgid "Field validation error"
+msgstr "Erro de validação do campo"
+
+#: includes/wpfs-utils.php:1001
+#. translators: Banner title of a validation error which is not field specific
+msgid "Form error"
+msgstr "Erro de formulário"
+
+#: templates/customer-portal/wpfs-customer-portal.php:8
+#: templates/customer-portal/wpfs-enter-email-address.php:10
+#: templates/customer-portal/wpfs-enter-security-code.php:10
+#. translators: Page title of the Customer Portal page
+msgid "Manage your account"
+msgstr "Gerir a sua conta"
+
+#: templates/customer-portal/wpfs-customer-portal.php:15
+#. translators: p1: Subscriber's email address p2: Stripe customer id
+msgid ""
+"You can manage the payment method and subscriptions associated with <strong "
+"title=\"%2$s\">%1$s</strong>."
+msgstr "Pode gerir o método de pagamento e subscrições associadas com <strong title=\"%2$s\">%1$s</strong>."
+
+#: templates/customer-portal/wpfs-customer-portal.php:17
+#: templates/customer-portal/wpfs-select-account.php:38
+#. translators: Link text for select account link
+msgid "Select account"
+msgstr "Selecione a conta"
+
+#: templates/customer-portal/wpfs-customer-portal.php:20
+#. translators: We must display 'or' when there are two possible actions
+msgid "or"
+msgstr "ou"
+
+#: templates/customer-portal/wpfs-customer-portal.php:23
+#: templates/customer-portal/wpfs-select-account.php:13
+#. translators: Link text for log out link
+msgid "Log out"
+msgstr "Terminar sessão"
+
+#: templates/customer-portal/wpfs-customer-portal.php:30
+#. translators: Label for the Update card section
+msgid "Credit/debit card"
+msgstr "Cartão de débito/crédito"
+
+#: templates/customer-portal/wpfs-customer-portal.php:35
+#. translators: Message stating that the Stripe customer doesn't have card set
+#. as payment method.
+msgid "You don't have a default card."
+msgstr "Não tem um cartão predefinido."
+
+#: templates/customer-portal/wpfs-customer-portal.php:43
+#. translators: Column header of the card expiry date
+msgid "Expires"
+msgstr "Expira em"
+
+#: templates/customer-portal/wpfs-customer-portal.php:49
+#: templates/customer-portal/wpfs-customer-portal.php:57
+#. translators: Button label for updating the card stored in Stripe
+msgid "Update card"
+msgstr "Atualizar cartão"
+
+#: templates/customer-portal/wpfs-customer-portal.php:58
+#. translators: Button label for discarding card update
+msgid "Discard"
+msgstr "Descartar"
+
+#: templates/customer-portal/wpfs-customer-portal.php:61
+#. translators: Label for the Subscriptions section
+msgid "Subscriptions"
+msgstr "Subscrições"
+
+#: templates/customer-portal/wpfs-customer-portal.php:68
+#. translators: Label for the Invoices section
+msgid "Invoices"
+msgstr "Faturas"
+
+#: templates/customer-portal/wpfs-customer-portal.php:83
+#. translators: Button label for downloading an invoice
+msgid "Download"
+msgstr "Descarregar"
+
+#: templates/customer-portal/wpfs-customer-portal.php:88
+#: templates/customer-portal/wpfs-customer-portal.php:94
+#. translators: Button label for showing all invoices, not just the latest
+#. ones.
+msgid "Show all invoices"
+msgstr "Mostrar todas as faturas"
+
+#: templates/customer-portal/wpfs-customer-portal.php:98
+#: templates/customer-portal/wpfs-customer-portal.php:104
+#. translators: Button label for showing the latest invoices.
+msgid "Show only latest invoices"
+msgstr "Mostrar apenas as últimas faturas"
+
+#: templates/customer-portal/wpfs-customer-portal.php:119
+#: templates/customer-portal/wpfs-customer-portal.php:152
+#. translators: Label for the creation date of subscription
+msgid "Created on"
+msgstr "Criado em"
+
+#: templates/customer-portal/wpfs-customer-portal.php:123
+#. translators: Label for the cancellation date of subscription
+msgid "Cancels on"
+msgstr "Cancela em"
+
+#: templates/customer-portal/wpfs-customer-portal.php:131
+#. translators: Button label for activating subscription again
+msgid "Don't cancel"
+msgstr "Não cancelar"
+
+#: templates/customer-portal/wpfs-customer-portal.php:138
+#: templates/customer-portal/wpfs-customer-portal.php:160
+#. translators: Button label for changing subscription
+msgid "Change subscription"
+msgstr "Modificar subscrição"
+
+#: templates/customer-portal/wpfs-customer-portal.php:145
+#: templates/customer-portal/wpfs-customer-portal.php:198
+#. translators: Button label for cancelling subscription
+#. Translators: Button label for discarding subscription update
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: templates/customer-portal/wpfs-customer-portal.php:163
+msgid "Subscription plan"
+msgstr "Plano de subscrição"
+
+#: templates/customer-portal/wpfs-customer-portal.php:191
+#. translators: Label for subscription summary with price and interval
+msgid "Summary:"
+msgstr "Resumo:"
+
+#: templates/customer-portal/wpfs-customer-portal.php:197
+#. translators: Button label for updating subscription
+msgid "Update subscription"
+msgstr "Atualizar subscrição"
+
+#: templates/customer-portal/wpfs-customer-portal.php:202
+msgid "You don't have any subscriptions."
+msgstr "Não tem quaisquer subscrições."
+
+#: templates/customer-portal/wpfs-customer-portal.php:205
+msgid "You don't have any finalized invoices."
+msgstr "Não tem quaisquer faturas finalizadas."
+
+#: templates/customer-portal/wpfs-customer-portal.php:210
+#. translators: Banner message for successfully updating subscription quantity
+msgid "Updated subscription."
+msgstr "Subscrição atualizada."
+
+#: templates/customer-portal/wpfs-customer-portal.php:213
+msgid "We couldn't update subscription. Please try again"
+msgstr "Não conseguimos atualizar a subscrição. Tente novamente"
+
+#: templates/customer-portal/wpfs-customer-portal.php:218
+#. translators: Banner message for successfully cancelling subscription
+msgid "Cancelled subscription."
+msgstr "Subscrição cancelada."
+
+#: templates/customer-portal/wpfs-customer-portal.php:223
+#. translators: Banner message for successfully activating subscription
+msgid "Activated subscription."
+msgstr "Subscrição ativada."
+
+#: templates/customer-portal/wpfs-customer-portal.php:226
+msgid "Failed to cancel subscription, try again."
+msgstr "Falha no cancelamento da subscrição. Tente novamente."
+
+#: templates/customer-portal/wpfs-customer-portal.php:229
+msgid "Failed to activate subscription, try again."
+msgstr "Falha na ativação da subscrição. Tente novamente."
+
+#: templates/customer-portal/wpfs-enter-email-address.php:13
+msgid "Enter the e-mail address used for your purchase(s)."
+msgstr "Insira o endereço de e-mail utilizado para a(s) sua(s) compra(s)."
+
+#: templates/customer-portal/wpfs-enter-email-address.php:15
+msgid "You are going to receive a security code to your e-mail address."
+msgstr "Irá receber um código de segurança no seu endereço de e-mail."
+
+#: templates/customer-portal/wpfs-enter-email-address.php:20
+#. translators: Login form field placeholder for the email address
+msgid "Enter e-mail address"
+msgstr "Insira o endereço de e-mail"
+
+#: templates/customer-portal/wpfs-enter-email-address.php:28
+#. translators: Button label for receiving a security code in email to log in
+msgid "Get security code"
+msgstr "Obter código de segurança"
+
+#: templates/customer-portal/wpfs-enter-security-code.php:14
+#. translators: Login form field placeholder for security code
+msgid "Enter any non-empty security code (DEMO MODE)."
+msgstr "Introduzir qualquer código de segurança não vazio (MODO DE DEMONSTRAÇÃO)."
+
+#: templates/customer-portal/wpfs-enter-security-code.php:16
+#. translators: Login form field placeholder for security code
+msgid "Enter the security code sent to your email address."
+msgstr "Insira o código de segurança enviado para o seu endereço de e-mail."
+
+#: templates/customer-portal/wpfs-enter-security-code.php:21
+msgid "Enter received security code"
+msgstr "Insira o código de segurança recebido"
+
+#: templates/customer-portal/wpfs-enter-security-code.php:24
+msgid "Sign in"
+msgstr "Iniciar sessão"
+
+#: templates/customer-portal/wpfs-enter-security-code.php:25
+#: templates/customer-portal/wpfs-invalid-session.php:10
+#. translators: Link text to restart the login process
+msgid "Back to e-mail address"
+msgstr "Voltar ao endereço de e-mail"
+
+#: templates/customer-portal/wpfs-invalid-session.php:9
+msgid "Your login session is invalid, please log in again."
+msgstr "A sua sessão é inválida. Inicie sessão novamente."
+
+#: templates/customer-portal/wpfs-select-account.php:8
+#. translators: Page title on the 'Select account' page of the Customer portal
+msgid "Select a customer to proceed"
+msgstr "Selecione um cliente para continuar"
+
+#: templates/customer-portal/wpfs-select-account.php:11
+#. translators: p1: Customer's email address
+msgid ""
+"Several Stripe customers are associated with the email address "
+"<strong>%s</strong>."
+msgstr "Diversos clientes Stripe encontram-se associados a este endereço de e-mail <strong>%s</strong>."
+
+#: templates/customer-portal/wpfs-select-account.php:16
+#. translators: Page subtitle on the 'Select account' page of the Customer
+#. portal
+msgid "Available customers"
+msgstr "Clientes disponíveis"
+
+#: templates/customer-portal/wpfs-select-account.php:28
+#. translators: Number of subscriptions displayed in the account selector
+msgid "%s subscription"
+msgid_plural "%s subscriptions"
+msgstr[0] "%s subscrição"
+msgstr[1] "%s subscrições"
+
+#: templates/customer-portal/wpfs-select-account.php:31
+#. translators: Label displayed in the account selector when the account has no
+#. subscriptions
+msgid "No subscription"
+msgstr "Sem subscrição"
+
+#: templates/customer-portal/wpfs-select-account.php:35
+msgid "Created at %s"
+msgstr "Criada em %s"
+
+#: templates/forms/wpfs-form-not-found.php:1
+msgid "Form not found."
+msgstr "Formulário não encontrado."
+
+#: templates/forms/wpfs-form.php:157
+#. translators: Banner title of not finding the plan assigned to the form
+msgid "Invalid plan"
+msgstr "Plano inválido"
+
+#: templates/forms/wpfs-form.php:163
+#. translators: Banner error message of not finding the plan assigned to the
+#. form p1: Form name p2: Plan name
+msgid "Checkout subscription form \"%1$s\": cannot find subscription plan \"%2$s\"."
+msgstr "Formulário de compra de subscrição «%1$s»: não é possível encontrar o plano de subscrição «%2$s»."
+
+#: templates/forms/wpfs-form.php:207
+msgid "Select at least one plan for this form!"
+msgstr "Selecione pelo menos um plano para este formulário!"
+
+#: templates/forms/wpfs-form.php:240
+#. translators: Message displayed in place of a successfully applied coupon
+#. code
+msgid "Coupon code <strong>%s</strong> added."
+msgstr "Código de cupão <strong>%s</strong> adicionado."
+
+#: templates/forms/wpfs-form.php:242
+#. translators: Button label for removing a redeemed coupon code
+msgid "Remove"
+msgstr "Retirar"
+
+#: templates/forms/wpfs-form.php:248
+#. translators: Button label for redeeming a coupon
+msgid "Redeem"
+msgstr "Resgatar"
+
+#: templates/forms/wpfs-form.php:360 templates/forms/wpfs-form.php:370
+#. translators: Form field label for captcha
+msgid "Prove you are a human"
+msgstr "Prove que é um ser humano"
+
+#: templates/forms/wpfs-form.php:400
+#. translators: Link that trigger the opening of the payment details table
+msgid "Payment details"
+msgstr "Dados de pagamento"
+
+#: templates/forms/wpfs-form.php:429
+#. translators: Label for the total price
+msgid "Total"
+msgstr "Total"
+
+#: wp-full-stripe.php:41
+#. translators: p1: Required version of PHP p2: Current version of PHP
+msgid ""
+"The minimum PHP version for running WP Full Stripe is %1$s but %2$s is "
+"found.<br/><br/>Please press the \"Back\" browser button, upgrade PHP, and "
+"activate the plugin again."
+msgstr "A versão PHP mínima para executar o WP Full Stripe é a %1$s, mas foi encontrada a %2$s.<br/><br/>Prima o botão para «Voltar» do navegador, atualize o PHP e ative novamente o plugin."
+
+#: wp-full-stripe.php:48
+#. translators: p1: Required version of Wordpress p2: Current version of
+#. Wordpress
+msgid ""
+"The minimum WordPress version for running WP Full Stripe is %1$s but %2$s "
+"is found.<br/><br/>Please press the \"Back\" browser button, upgrade "
+"Wordpress, and activate the plugin again."
+msgstr "A versão WordPress mínima para executar o WP Full Stripe é a %1$s, mas foi encontrada a %2$s.<br/><br/>Prima o botão para «Voltar» do navegador, atualize o PHP e ative novamente o plugin."
+
+#: wp-full-stripe.php:55 wp-full-stripe.php:62
+#. translators: p1: Name of required extension p2: Name of required extension
+msgid ""
+"WP Full Stripe cannot find a required PHP extension called "
+"\"%1$s\".<br/><br/>Please press the \"Back\" browser button, install/enable "
+"\"%2$s\" for PHP, and activate the plugin again."
+msgstr "O WP Full Stripe não conseguiu encontrar uma extensão PHP necessária chamada «%1$s».<br/><br/>Prima o botão para «Voltar» do navegador, instale/permita «%2$s» para PHP e ative o plugin novamente."
+
+#: wp-full-stripe.php:71
+msgid ""
+"Another plugin has loaded an incompatible Stripe API client. Deactivate all "
+"other Stripe plugins, and try to activate WP Full Stripe again."
+msgstr "Outro plugin carregou um cliente Stripe API incompatível. Desative todos os outros plugins Stripe e tente ativar novamente o WP Full Stripe."
+
+#: wp-full-stripe.php:107
+#. translators: Textual description of how often a periodic task of the plugin
+#. runs
+msgid "Every 15 minutes"
+msgstr "A cada 15 minutos"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Full Stripe"
+msgstr "WP Full Stripe"
+
+#. Author URI of the plugin/theme
+msgid "https://paymentsplugin.com"
+msgstr "https://paymentsplugin.com"
+
+#. Description of the plugin/theme
+msgid "Complete Stripe payments integration for Wordpress"
+msgstr "Integração completa de pagamentos Stripe para Wordpress"
+
+#. Author of the plugin/theme
+msgid "Mammothology"
+msgstr "Mammothology"
+
+#: includes/wp/class-wp-list-table.php:781
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "%1$s de %2$s"

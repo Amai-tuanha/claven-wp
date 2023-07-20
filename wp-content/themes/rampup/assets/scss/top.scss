@@ -1,0 +1,1754 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+@import "configuration";
+
+//________________________________________________________
+//mixin
+//________________________________________________________
+@mixin section {
+  padding: 8rem 0;
+
+  @media #{$mintab} {
+    padding: 6rem 0;
+  }
+
+  @media #{$maxsp},#{$minsp} {
+    padding: 4rem 0;
+  }
+}
+@mixin transition {
+  transition: 0.3s;
+}
+
+//________________________________________________________
+//メディアクエリ
+//________________________________________________________
+$maxtab: "only screen and (min-width:769px) and (max-width:1023px)";
+$sp-indent: "only screen and (max-width:560px)";
+
+//________________________________________________________
+//全体の指定
+//________________________________________________________
+
+// //スクロールバー
+#top {
+  &:-webkit-scrollbar {
+    width: 5px;
+    height: 0;
+  }
+  &:-webkit-scrollbar-track {
+    background: rgba(gray, 0.3);
+    border: none;
+  }
+  &:-webkit-scrollbar-thumb {
+    background-color: $blue_12b;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  @media #{$mintab} {
+    font-size: 1.6rem;
+  }
+
+  @media #{$maxsp} {
+    font-size: 1.4rem;
+  }
+  @media #{$minsp} {
+    font-size: 1.2rem;
+  }
+}
+
+.text {
+  &_bold {
+    color: $primary;
+    font-weight: bold;
+  }
+}
+
+#top {
+  overflow: hidden;
+}
+
+/*inner*/
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+
+  @media #{$maxsp} {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+
+.inner-950 {
+  width: 100%;
+  max-width: 950px;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+
+  @media #{$maxsp} {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+
+.inner-min {
+  width: 100%;
+  max-width: 700px;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+
+  @media #{$maxsp} {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+
+.inner-price {
+  width: 100%;
+  max-width: 600px;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+
+  @media #{$maxsp} {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+
+//__________________________________________________________________________________
+//段落落ち
+//__________________________________________________________________________________
+
+.indent-1 {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.indent-2 {
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+//__________________________________________________________________________________
+//レスポンシブ表示出しわけ
+//__________________________________________________________________________________
+//PC TABで改行
+.pc {
+  display: block;
+
+  @media #{$mintab},#{$maxsp} {
+    display: none;
+  }
+}
+
+.tab {
+  display: block;
+
+  @media #{$pc},#{$maxtab},#{$sp-indent} {
+    display: none;
+  }
+}
+
+//SPで改行
+.sp {
+  display: none;
+
+  @media #{$sp-indent} {
+    display: block;
+  }
+}
+
+//pc/spの表示・非表示
+.pc-none {
+  @media #{$pc},#{$maxtab} {
+    display: none !important;
+  }
+}
+
+.sp-none {
+  @media #{$mintab},#{$maxsp} {
+    display: none !important;
+  }
+}
+
+//スマホ・タブレット時flexの順番変更
+
+@media #{$mintab},#{$maxsp} {
+  .order1 {
+    order: 1;
+  }
+  .order2 {
+    order: 2;
+  }
+}
+
+//__________________________________________________________________________________
+//cta
+//__________________________________________________________________________________
+.cta {
+  position: relative;
+  padding: 5rem 0;
+  background: linear-gradient(25deg, $green_008, $blue_12b);
+
+  img {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.1;
+  }
+
+  &_contents {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+
+    &_title {
+      margin-bottom: 3rem;
+      color: $white_fff;
+      font-size: 3rem;
+      letter-spacing: 0.5rem;
+
+      @media #{$mintab} {
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+      }
+      @media #{$maxsp} {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+      }
+
+      @media #{$minsp} {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+
+    &_text {
+      margin-bottom: 3rem;
+      color: $white_fff;
+    }
+
+    a {
+      display: block;
+      max-width: 500px;
+      padding: 2rem 0;
+      margin: 0 auto;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.5rem;
+      background: $white_fff;
+      border: solid 6px $black_333;
+      border-radius: 50px;
+      @media #{$maxsp} {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+      }
+      @media #{$minsp} {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+      }
+      &:hover {
+        color: $white_fff;
+        background: $black_333;
+      }
+    }
+
+    button {
+      display: block;
+      padding: 1rem 2rem;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 0.5rem;
+      background: $white_fff;
+      border: solid 6px $black_333;
+      border-radius: 50px;
+      @media #{$maxsp} {
+        font-size: 1.6rem;
+      }
+      @media #{$minsp} {
+        font-size: 1.6rem;
+        letter-spacing: 0.2rem;
+      }
+      &:hover {
+        color: $white_fff;
+        background: $black_333;
+      }
+    }
+  }
+}
+
+//黒見出し
+.heading {
+  text-align: center;
+
+  h2 {
+    display: inline-block;
+    padding: 2rem 3rem;
+    margin-bottom: 5rem;
+    color: $white_fff;
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    background: $black_333;
+
+    @media #{$maxsp} {
+      padding: 2rem 5%;
+      font-size: 1.8rem;
+    }
+
+    @media #{$minsp} {
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+//中央揃え本文
+.center-text {
+  margin-bottom: 10rem;
+  letter-spacing: 0.3rem;
+
+  @media #{$mintab} {
+    margin-bottom: 7rem;
+  }
+
+  @media #{$maxsp} {
+    margin-bottom: 7rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+//背景色
+.bg-orange {
+  background-color: #eef4f4;
+}
+
+.bg-gray {
+  background-color: #f7f7f7;
+}
+
+//会話吹き出し
+.speechbubble {
+  &_flex {
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &_icon {
+      width: 23%;
+      text-align: center;
+
+      @media #{$mintab} {
+        width: 22%;
+      }
+      @media #{$mintab} {
+        width: 22%;
+      }
+      @media #{$maxsp} {
+        width: 22%;
+      }
+
+      figure {
+        @include bgi;
+        height: 250px;
+        clip-path: circle(40% at 50% 50%);
+        background-position: center;
+        background-size: contain;
+
+        -webkit-clip-path: circle(40% at 50% 50%);
+
+        @media #{$mintab} {
+          height: 140px;
+          clip-path: circle(42% at 50% 50%);
+
+          -webkit-clip-path: circle(42% at 50% 50%);
+        }
+
+        @media #{$maxsp} {
+          height: 90px;
+          clip-path: circle(42% at 50% 50%);
+
+          -webkit-clip-path: circle(42% at 50% 50%);
+        }
+
+        @media #{$minsp} {
+          height: 85px;
+          clip-path: circle(42% at 50% 50%);
+
+          -webkit-clip-path: circle(42% at 50% 50%);
+        }
+      }
+
+      figcaption {
+        font-size: 1.4rem;
+        font-weight: 400;
+
+        @media #{$maxsp} {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &_text {
+      @include flex;
+      align-items: center;
+      justify-content: center;
+      width: 72%;
+
+      @media #{$mintab} {
+        width: 70%;
+      }
+
+      @media #{$maxsp} {
+        width: 70%;
+      }
+
+      .speechbubble-orange {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100%;
+        padding: 3rem;
+        background: $white_fff;
+        border: solid 6px $green_008;
+        border-radius: 10px;
+
+        @media #{$mintab} {
+          padding: 3rem 7%;
+        }
+        @media #{$maxsp} {
+          padding: 2rem 7%;
+        }
+
+        &:before {
+          position: absolute;
+          top: 45%;
+          left: -37px;
+          z-index: 2;
+          margin-top: -12px;
+          content: "";
+          border: 20px solid transparent;
+          border-right: 20px solid $white_fff;
+
+          @media #{$mintab} {
+            top: 30%;
+          }
+          @media #{$maxsp} {
+            top: 15%;
+          }
+        }
+
+        &:after {
+          position: absolute;
+          top: 45%;
+          left: -45px;
+          z-index: 1;
+          margin-top: -12px;
+          content: "";
+          border: 20px solid transparent;
+          border-right: 20px solid $green_008;
+
+          @media #{$mintab} {
+            top: 30%;
+          }
+          @media #{$maxsp} {
+            top: 15%;
+          }
+        }
+
+        p {
+          font-size: 2rem;
+          font-weight: 600;
+          letter-spacing: 0.3rem;
+
+          @media #{$mintab} {
+            font-size: 2rem;
+            line-height: 4rem;
+          }
+          @media #{$maxsp} {
+            font-size: 1.8rem;
+            line-height: 3.5rem;
+            letter-spacing: 0.05rem;
+            text-align: justify;
+            text-justify: inter-ideograph;
+          }
+        }
+      }
+
+      .speechbubble-yellow {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100%;
+        padding: 3rem;
+        background: $white_fff;
+        border: solid 6px $blue_12b;
+        border-radius: 10px;
+
+        @media #{$mintab} {
+          padding: 3rem 7%;
+        }
+        @media #{$maxsp} {
+          padding: 2rem 7%;
+        }
+
+        &:before {
+          position: absolute;
+          top: 45%;
+          right: -37px;
+          z-index: 2;
+          margin-top: -12px;
+          content: "";
+          border: 20px solid transparent;
+          border-right: 20px solid $white_fff;
+          transform: scale(-1, 1);
+
+          @media #{$mintab} {
+            top: 30%;
+          }
+          @media #{$maxsp} {
+            top: 15%;
+          }
+        }
+
+        &:after {
+          position: absolute;
+          top: 45%;
+          right: -45px;
+          z-index: 1;
+          margin-top: -12px;
+          content: "";
+          border: 20px solid transparent;
+          border-right: 20px solid $blue_12b;
+          transform: scale(-1, 1);
+
+          @media #{$mintab} {
+            top: 30%;
+          }
+          @media #{$maxsp} {
+            top: 15%;
+          }
+        }
+
+        p {
+          font-size: 2rem;
+          font-weight: 600;
+          letter-spacing: 0.3rem;
+
+          @media #{$mintab} {
+            font-size: 2rem;
+            line-height: 4rem;
+          }
+          @media #{$maxsp} {
+            font-size: 1.8rem;
+            line-height: 3.5rem;
+            letter-spacing: 0.05rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+//________________________________________________________
+//mv
+//________________________________________________________
+
+.mv {
+  position: relative;
+
+  &_logo {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    z-index: 9999;
+    @media #{$maxsp},#{$minsp} {
+      top: 1.5rem;
+      left: 5%;
+    }
+
+    a {
+      @include transition;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      img {
+        width: 250px;
+
+        @media #{$maxsp},#{$minsp} {
+          width: 130px;
+        }
+      }
+    }
+  }
+
+  &_btn {
+    @include transition;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 3rem 5rem;
+    background: linear-gradient(25deg, $green_008, $blue_12b);
+
+    @media #{$mintab},#{$maxsp},#{$minsp} {
+      display: none;
+    }
+
+    p {
+      color: $white_fff;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 0.5rem;
+
+      &:after {
+        margin-left: 0.5rem;
+        content: "\f054";
+        font-family: "Font Awesome 5 Pro";
+        font-size: 1.4rem;
+        font-weight: 900;
+      }
+    }
+
+    &:hover {
+      background: $black_333;
+
+      p {
+        color: $white_fff;
+      }
+    }
+  }
+
+  &_img {
+    @include bgi;
+    position: relative;
+    height: 78vh;
+    background-position: 50% 70%;
+    background-size: cover;
+
+    @media #{$maxtab} {
+      height: 70vh;
+      background-position: 40% 70%;
+      background-size: cover;
+    }
+
+    @media #{$mintab} {
+      height: 60vh;
+      background-position: 40% 70%;
+      background-size: cover;
+    }
+
+    @media #{$maxsp},#{$minsp} {
+      height: 70vh;
+      background-position: 60% 70%;
+      background-size: cover;
+    }
+
+    &_copy {
+      position: absolute;
+      top: 45%;
+      left: 6%;
+
+      @media #{$maxtab} {
+        top: 57%;
+        left: 5%;
+      }
+
+      @media #{$mintab} {
+        top: 57%;
+        left: 5%;
+      }
+
+      @media #{$maxsp},#{$minsp} {
+        top: 57%;
+        left: 5%;
+      }
+
+      #jaticker-1 {
+        display: table;
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
+        color: $white_fff;
+        font-size: 2.6rem;
+        letter-spacing: 0.5rem;
+        background: $black_333;
+
+        @media #{$mintab} {
+          padding: 1rem 1rem;
+          margin-bottom: 1rem;
+          font-size: 2rem;
+          letter-spacing: 0.3rem;
+        }
+
+        @media #{$maxsp} {
+          padding: 1rem 1rem;
+          margin-bottom: 1rem;
+          font-size: 1.4rem;
+          letter-spacing: 0.3rem;
+        }
+
+        @media #{$minsp} {
+          padding: 0.5rem;
+          margin-bottom: 0.7rem;
+          font-size: 1.4rem;
+          letter-spacing: 0.2rem;
+        }
+      }
+
+      #jaticker-2 {
+        display: table;
+        padding: 1rem 2rem;
+        color: $white_fff;
+        font-size: 2.6rem;
+        letter-spacing: 0.5rem;
+
+        @media #{$mintab} {
+          padding: 1rem 1rem;
+          margin-bottom: 1rem;
+          font-size: 2rem;
+          letter-spacing: 0.3rem;
+        }
+
+        @media #{$maxsp} {
+          padding: 1rem 1rem;
+          font-size: 1.6rem;
+          letter-spacing: 0.3rem;
+        }
+
+        @media #{$minsp} {
+          padding: 0.5rem;
+          font-size: 1.4rem;
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+//________________________________________________________
+//Catch
+//________________________________________________________
+
+.catch {
+  position: relative;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+  background: linear-gradient(25deg, $green_008, $blue_12b);
+
+  @media #{$mintab} {
+    padding-top: 14rem;
+  }
+
+  @media #{$maxsp} {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+
+  @media #{$minsp} {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  &_img {
+    img {
+      position: absolute;
+      top: -7rem;
+      right: 0;
+      left: 0;
+      width: 100%;
+      max-width: 950px;
+      padding: 0 2rem;
+      padding-right: 1.6rem;
+      padding-left: 1.6rem;
+      margin: 0 auto;
+
+      @media #{$maxsp},#{$minsp} {
+        top: -2rem;
+      }
+    }
+  }
+
+  &_text {
+    color: $white_fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+
+    @media #{$mintab} {
+      font-size: 2rem;
+      line-height: 3rem;
+      letter-spacing: 0.3rem;
+    }
+
+    @media #{$maxsp} {
+      font-size: 1.6rem;
+      line-height: 3rem;
+      letter-spacing: 0.1rem;
+    }
+
+    @media #{$minsp} {
+      font-size: 1.3rem;
+      line-height: 3rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+//________________________________________________________
+//knowledge
+//________________________________________________________
+
+.knowledge {
+  @include section;
+
+  .knowledge_flowimage {
+    display: block;
+    margin: 5rem 0;
+
+    @media #{$mintab} {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    @media #{$minsp} {
+      margin: 0 auto;
+    }
+  }
+
+  .knowledge_copy {
+    margin: 6rem 0;
+    font-size: 3rem;
+    text-align: center;
+
+    p {
+      margin-bottom: 2rem;
+      font-size: 3.6rem;
+      font-weight: 600;
+      letter-spacing: 0.5rem;
+
+      @media #{$maxsp} {
+        font-size: 3rem;
+      }
+      @media #{$maxsp} {
+        font-size: 2.3rem;
+      }
+    }
+
+    h5 {
+      display: inline;
+      font-size: 3rem;
+      line-height: 1.6;
+      letter-spacing: 0.6rem;
+      background: linear-gradient(transparent 60%, rgba(#ff1010, 0.2) 60%);
+
+      @media #{$mintab} {
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+      }
+
+      @media #{$maxsp} {
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+      }
+
+      @media #{$maxsp} {
+        font-size: 2.3rem;
+      }
+    }
+  }
+}
+
+//________________________________________________________
+//about
+//________________________________________________________
+
+.about {
+  @include section;
+
+  &_title {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+
+    @media #{$mintab} {
+      font-size: 3rem;
+    }
+    @media #{$mintab} {
+      font-size: 1.8rem;
+    }
+    @media #{$maxsp} {
+      padding: 3rem 0;
+      font-size: 1.6rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .yellow-line {
+    display: inline;
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(transparent 60%, rgba($primary, 0.7) 60%);
+  }
+
+  &_flex {
+    @include flex;
+    // justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &_image {
+      @include bgi;
+      width: 45%;
+      height: 250px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+
+      @media #{$mintab} {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+      @media #{$maxsp} {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &_text {
+      justify-content: center;
+      width: 45%;
+      margin-left: 5%;
+      text-align: justify;
+      text-justify: inter-ideograph;
+
+      @media #{$mintab} {
+        width: 100%;
+      }
+      @media #{$maxsp} {
+        width: 100%;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+}
+
+//________________________________________________________
+//point
+//________________________________________________________
+.point {
+  @include section;
+
+  &_content {
+    span {
+      position: relative;
+      left: -0.6rem;
+      font-size: 7rem;
+      font-weight: 600;
+      letter-spacing: 0.5rem;
+
+      @media #{$minsp} {
+        left: -0.44rem;
+        font-size: 5rem;
+      }
+    }
+
+    &_box {
+      position: relative;
+      top: -1.8em;
+      width: 100%;
+      padding: 3rem 5rem;
+      border: solid 6px $black_333;
+
+      @media #{$mintab} {
+        padding: 1rem 5% 3rem 5%;
+      }
+
+      @media #{$maxsp} {
+        padding: 1rem 5% 3rem 5%;
+      }
+      @media #{$minsp} {
+        top: -1.3em;
+      }
+
+      &_flex {
+        @include flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        figure {
+          @include bgi;
+          width: 30%;
+          height: 280px;
+          clip-path: circle(45% at 50% 50%);
+          background-position: center;
+          background-size: cover;
+
+          -webkit-clip-path: circle(45% at 50% 50%);
+
+          @media #{$mintab} {
+            width: 100%;
+            clip-path: circle(30% at 50% 50%);
+
+            -webkit-clip-path: circle(30% at 50% 50%);
+          }
+
+          @media #{$maxsp} {
+            width: 100%;
+          }
+        }
+
+        &_text {
+          width: 68%;
+          margin-top: 2rem;
+          text-align: justify;
+          text-justify: inter-ideograph;
+
+          @media #{$mintab},#{$maxsp} {
+            width: 100%;
+          }
+
+          h3 {
+            display: inline-block;
+            padding: 1.8rem 3rem;
+            margin-bottom: 2rem;
+            color: $white_fff;
+            font-size: 2rem;
+            background: $blue_12b;
+
+            @media #{$maxsp} {
+              display: block;
+              padding: 1.8rem 5%;
+              font-size: 2.1rem;
+            }
+            @media #{$minsp} {
+              font-size: 1.7rem;
+            }
+          }
+
+          p {
+            @media #{$maxsp} {
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 2.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//________________________________________________________
+//voice
+//________________________________________________________
+.voice {
+  @include section;
+
+  &_box {
+    padding-bottom: 8rem;
+
+    @media #{$maxsp} {
+      padding-bottom: 5rem;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 8rem;
+    }
+
+    @media #{$pc},#{$maxtab} {
+      &:not(:last-child) {
+        border-bottom: solid 6px $black_333;
+      }
+    }
+
+    &_flex {
+      @include flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &_slide {
+        width: 20%;
+        text-align: center;
+
+        @media #{$mintab},#{$maxsp} {
+          display: none;
+        }
+
+        .swiper-container {
+          .swiper-slide {
+            border: solid 3px $black_333;
+            p {
+              font-size: 1.2rem;
+            }
+            span {
+              position: relative;
+              top: -0.5rem;
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .swiper-pagination {
+          transform: translate3d(0, 0, 0);
+          transition: 300ms opacity;
+
+          .swiper-pagination-bullet {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 0;
+
+            &:nth-child(n + 2):nth-last-child(n + 2) {
+              margin: 0 0.7rem;
+            }
+          }
+          .swiper-pagination-bullet-active {
+            background: $blue_12b;
+          }
+        }
+      }
+
+      &_contents {
+        &_profile {
+          @include flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          figure {
+            @include bgi;
+            width: 30%;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+            border: solid 3px $black_333;
+
+            @media #{$mintab},#{$maxsp} {
+              width: 300px;
+              height: 300px;
+              margin: 0 auto;
+              border: solid 6px $black_333;
+            }
+          }
+
+          &_text {
+            width: 65%;
+
+            @media #{$mintab},#{$maxsp} {
+              width: 100%;
+            }
+
+            h6 {
+              margin-bottom: 1rem;
+              font-size: 2rem;
+              letter-spacing: 0.3rem;
+
+              @media #{$maxsp} {
+                text-align: center;
+              }
+            }
+
+            h5 {
+              color: $green_008;
+              letter-spacing: 1rem;
+              @media #{$mintab},#{$maxsp} {
+                text-align: center;
+              }
+            }
+
+            p {
+              margin-top: 3rem;
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 2.5rem;
+
+              @media #{$mintab},#{$maxsp} {
+                margin-top: 1rem;
+              }
+            }
+          }
+        }
+
+        &_title {
+          display: inline-block;
+          padding: 1.5rem 3rem;
+          margin-top: 4rem;
+          margin-bottom: 2rem;
+          color: $white_fff;
+          letter-spacing: 0.3rem;
+          background: $blue_12b;
+
+          @media #{$mintab},#{$maxsp} {
+            padding: 1.8rem 5%;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+          }
+
+          @media #{$minsp} {
+            font-size: 1.7rem;
+          }
+        }
+        &_text {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 2.5rem;
+        }
+      }
+    }
+
+    //sp-works
+    &_works {
+      margin-top: 5rem;
+
+      @media #{$pc},#{$maxtab} {
+        display: none;
+      }
+
+      h4 {
+        width: 100%;
+        padding: 1rem 0;
+        color: $white_fff;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        background: $black_333;
+      }
+
+      &_contents {
+        height: 60vh;
+        padding: 5%;
+        overflow: hidden;
+        overflow: scroll;
+        border: solid 3px $black_333;
+
+        &_item {
+          padding-bottom: 1rem;
+          margin-bottom: 3rem;
+
+          &:not(:last-child) {
+            border-bottom: solid 3px $black_333;
+          }
+
+          figure {
+            height: 200px;
+            background-size: cover;
+            border: solid 3px $black_333;
+
+            @media #{$maxsp} {
+              height: 150px;
+            }
+          }
+          p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+          }
+          span {
+            position: relative;
+            top: -0.5rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+//________________________________________________________
+//flow
+//________________________________________________________
+.flow {
+  @include section;
+
+  &_flex {
+    @include flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: solid 5px $black_333;
+
+    @media #{$maxsp} {
+      border: solid 3px $black_333;
+    }
+
+    &:nth-child(n + 2):nth-last-child(n + 2) {
+      margin: 0 0 2rem;
+    }
+
+    &_number {
+      @include flex;
+      justify-content: center;
+      width: 13%;
+      padding: 1.4rem 2rem;
+      color: $white_fff;
+      font-size: 2.5rem;
+      font-weight: 600;
+      text-align: center;
+      background: $blue_12b;
+      border-right: solid 5px $black_333;
+
+      @media #{$mintab} {
+        font-size: 1.8rem;
+      }
+
+      @media #{$maxsp} {
+        padding: 1.5rem 1rem;
+        font-size: 1.6rem;
+        border-right: solid 3px $black_333;
+      }
+    }
+
+    &_text {
+      width: 87%;
+      padding: 2rem 1.5rem;
+      margin-bottom: -2px;
+      font-size: 1.8rem;
+      font-weight: 600;
+
+      @media #{$mintab} {
+        padding: 0rem 1.5rem;
+        font-size: 1.8rem;
+      }
+
+      @media #{$maxsp} {
+        padding: 0.4rem 1rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+//________________________________________________________
+//plan
+//________________________________________________________
+.plan {
+  @include section;
+
+  &_text {
+    letter-spacing: 0.3rem;
+    text-align: center;
+
+    @media #{$mintab} {
+      line-height: 3.5rem;
+    }
+
+    @media #{$maxsp} {
+      font-size: 1.4rem;
+      line-height: 3rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  &_price {
+    &_1 {
+      @include flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 5rem;
+      border: solid 5px $black_333;
+
+      @media #{$maxsp} {
+        border: solid 3px $black_333;
+      }
+
+      &:nth-child(n + 2):nth-last-child(n + 2) {
+        margin: 0 0 2rem;
+      }
+
+      &_item {
+        @include flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        padding: 2rem 1rem;
+        color: $white_fff;
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+        text-align: center;
+        background: $green_008;
+        border-right: solid 5px $black_333;
+
+        @media #{$mintab} {
+          font-size: 1.8rem;
+        }
+
+        @media #{$maxsp} {
+          padding: 1.5rem 1rem;
+          font-size: 1.6rem;
+          letter-spacing: 0.05rem;
+          border-right: solid 3px $black_333;
+        }
+      }
+
+      &_contents {
+        width: 50%;
+        padding: 2rem 1.5rem;
+        font-size: 2.5rem;
+        text-align: center;
+        background: $white_fff;
+
+        @media #{$mintab} {
+          font-size: 1.8rem;
+        }
+
+        @media #{$maxsp} {
+          padding: 1.5rem 1rem;
+          font-size: 1.5rem;
+          letter-spacing: 0.05rem;
+        }
+      }
+    }
+
+    &_2 {
+      margin-top: 5rem;
+      border: solid 3px $black_333;
+
+      @media #{$mintab},#{$maxsp} {
+        margin-top: 3rem;
+        border: none;
+      }
+
+      .split-table {
+        @media #{$mintab},#{$maxsp} {
+          display: none;
+        }
+
+        tr,
+        th,
+        td {
+          width: 100% /4;
+          padding: 2rem;
+          font-size: 2rem;
+          font-weight: 600;
+          text-align: center;
+          border: solid 3px $black_333;
+        }
+
+        .orange {
+          color: $white_fff;
+          letter-spacing: 0.1rem;
+          background: $blue_12b;
+        }
+        .gray {
+          color: $white_fff;
+          letter-spacing: 0.1rem;
+          background: #797979;
+        }
+
+        .times {
+          font-size: 2rem;
+          background: rgba($blue_12b, 0.1);
+        }
+      }
+
+      .split-table-sp {
+        margin-bottom: 3rem;
+
+        @media #{$pc},#{$maxtab} {
+          display: none;
+        }
+
+        tr,
+        th,
+        td {
+          width: 100% /4;
+          padding: 1rem;
+          font-size: 1.6rem;
+          font-weight: 500;
+          text-align: center;
+          border: solid 3px $black_333;
+        }
+
+        .orange {
+          color: $white_fff;
+          font-weight: 600;
+          letter-spacing: 0.1rem;
+          background: $blue_12b;
+        }
+        .gray {
+          color: $white_fff;
+          letter-spacing: 0.1rem;
+          background: #797979;
+        }
+
+        .times {
+          background: rgba($blue_12b, 0.3);
+        }
+      }
+    }
+  }
+}
+
+//________________________________________________________
+//faq
+//________________________________________________________
+.faq {
+  @include section;
+
+  &_box {
+    &:nth-child(n + 2) {
+      margin-bottom: 10rem;
+
+      @media #{$maxsp} {
+        margin-bottom: 7rem;
+      }
+    }
+
+    &_flex {
+      @include flex;
+      flex-wrap: wrap;
+
+      &:nth-child(2) {
+        margin-top: 2rem;
+      }
+
+      &_img {
+        width: 10%;
+
+        img {
+          width: 60%;
+
+          @media #{$maxsp} {
+            width: 100%;
+          }
+        }
+      }
+
+      &_Q {
+        width: 90%;
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+
+        @media #{$maxsp} {
+          padding: 0.5rem 0 0 1.5rem;
+          font-size: 1.8rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+
+      &_A {
+        width: 90%;
+        font-weight: 500;
+        text-align: justify;
+        text-justify: inter-ideograph;
+
+        @media #{$maxsp} {
+          padding: 0rem 0 0 1.5rem;
+          font-size: 1.6rem;
+          line-height: 2.8rem;
+        }
+      }
+    }
+  }
+}
+
+//________________________________________________________
+//contact
+//________________________________________________________
+.contact {
+  position: relative;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+  &-bg {
+    background: linear-gradient(25deg, $green_008, $blue_12b);
+  }
+  .contact-backlink {
+    margin-top: 3rem;
+    color: $black_333;
+    font-size: 1.4rem;
+  }
+  @media #{$mintab} {
+    padding-top: 8rem;
+  }
+
+  @media #{$maxsp} {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+
+  @media #{$minsp} {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+  .contact-submit_button {
+    padding: 2rem;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: black;
+    border: none;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .contact_img {
+    img {
+      position: absolute;
+      top: -3rem;
+      right: 0;
+      left: 0;
+      width: 100%;
+      max-width: 950px;
+      padding: 0 2rem;
+      padding-right: 1.6rem;
+      padding-left: 1.6rem;
+      margin: 0 auto;
+
+      @media #{$mintab} {
+        top: -2rem;
+      }
+
+      @media #{$maxsp},#{$minsp} {
+        top: -1.5rem;
+      }
+    }
+  }
+
+  .contact_title {
+    margin-bottom: 2rem;
+    color: $white_fff;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contact_text {
+    margin-bottom: 4rem;
+    color: $white_fff;
+    letter-spacing: 0.3rem;
+    text-align: center;
+
+    span {
+      color: red;
+    }
+
+    @media #{$mintab} {
+      font-size: 1.8rem;
+      line-height: 4rem;
+      letter-spacing: 0.3rem;
+    }
+
+    @media #{$maxsp} {
+      font-size: 1.6rem;
+      line-height: 3rem;
+      letter-spacing: 0.1rem;
+    }
+
+    @media #{$minsp} {
+      font-size: 1.3rem;
+      line-height: 4rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .contact-wrap {
+    margin-top: 5rem;
+
+    .contact-wrap_box {
+      @include flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+
+      label {
+        width: 25%;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+
+        @media #{$mintab},#{$maxsp} {
+          width: 100%;
+        }
+      }
+
+      &_item {
+        width: 75%;
+
+        @media #{$mintab},#{$maxsp} {
+          width: 100%;
+        }
+
+        input,
+        textarea {
+          padding: 2rem 1rem;
+          letter-spacing: 0.1rem;
+          border: solid 5px $black_333;
+
+          @media #{$mintab},#{$maxsp} {
+            padding: 1rem 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// フォームのスタイル
+.contact-backlink {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.contact-submit_button {
+  margin-bottom: 3rem;
+  background: linear-gradient(25deg, $green_008, $blue_12b);
+}
+
+.screen-reader-response {
+  margin-top: 8rem;
+}
+
+// スマホ固定リンク
+.sp-fix {
+  position: relative;
+
+  a {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 2rem 0;
+    background: $black_333;
+
+    p {
+      color: $white_fff;
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+
+      &:after {
+        margin-left: 1rem;
+        content: "\f054";
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 900;
+      }
+    }
+  }
+}

@@ -1,0 +1,609 @@
+@charset "UTF-8";
+.mypage {
+  padding: 10rem 0;
+  padding-top: 4rem;
+  background-color: #eaedf2;
+  letter-spacing: 0.05em;
+}
+.mypage .mypage__title {
+  padding: 0.2rem 1.6rem;
+  margin: 4rem 0 1.6rem;
+  color: #ffffff;
+  background-color: rgba(93, 172, 125, 0.5);
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypage .mypage__minTitle {
+    font-size: 2rem;
+  }
+}
+.mypage .mypage__minTitle > .mypage__minTitleText {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypage .mypage__minTitle > .mypage__minTitleText {
+    font-size: 1.4rem;
+  }
+}
+.mypage .mypage__greeting {
+  margin-bottom: 3.2rem;
+}
+.mypage .mypage__contentsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 860px) {
+  .mypage .mypage__contentsFlex {
+    flex-direction: column-reverse;
+  }
+}
+.mypage .mypage__contentsFlex .mypage__main {
+  width: 100%;
+}
+@media only screen and (max-width: 860px) {
+  .mypage .mypage__contentsFlex .mypage__main {
+    max-width: 100%;
+  }
+}
+.mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitle {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitle {
+    font-size: 2.2rem;
+  }
+}
+.mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 766px) {
+  .mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex .mypage__mainChildTitle {
+  margin-bottom: 0;
+}
+.mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex .mypage__mainChildTitleButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  .mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex .mypage__mainChildTitleButtons {
+    width: 100%;
+    justify-contents: space-between;
+  }
+}
+.mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex .mypage__mainChildTitleButtons .mypage__button {
+  max-width: 170px;
+  width: 100%;
+  margin-bottom: 0;
+  margin-right: 1.6rem;
+  padding: 0.8rem 4.6rem;
+  position: relative;
+  font-weight: 600;
+}
+.mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex .mypage__mainChildTitleButtons .mypage__button:last-child {
+  margin-right: 0;
+}
+@media only screen and (max-width: 480px) {
+  .mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex .mypage__mainChildTitleButtons .mypage__button {
+    padding: 0.8rem 3.2rem;
+    max-width: 100%;
+    width: 49%;
+  }
+  .mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex .mypage__mainChildTitleButtons .mypage__button:first-child {
+    margin-right: 2%;
+  }
+}
+.mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex .mypage__mainChildTitleButtons .mypage__button .mypage__buttonArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 13px;
+}
+.mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex .mypage__mainChildTitleButtons .mypage__button .mypage__buttonArrow.-prev {
+  left: 14px;
+}
+.mypage .mypage__contentsFlex .mypage__main .mypage__mainChild .mypage__mainChildTitleFlex .mypage__mainChildTitleButtons .mypage__button .mypage__buttonArrow.-next {
+  right: 14px;
+}
+.mypageSidebar {
+  width: 300px;
+  min-width: 300px;
+  margin-left: 4rem;
+}
+@media only screen and (max-width: 860px) {
+  .mypageSidebar {
+    margin-left: 0rem;
+    width: 100%;
+    max-width: 300px;
+    min-width: 0;
+    margin: 0 auto 8rem;
+  }
+}
+.mypageSidebar .mypageSidebar__progress {
+  margin-bottom: 9rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageSidebar .mypageSidebar__progress {
+    margin-bottom: 1.2rem;
+  }
+}
+.mypageSidebar .mypageSidebar__progress .mypageSidebar__progressTitle {
+  font-size: 2rem;
+  padding: 1.6rem 0;
+}
+.mypageSidebar .mypageSidebar__progress .mypageSidebar__circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mypageSidebar .mypageSidebar__progress .mypageSidebar__circles .mypageSidebar__circlesChild {
+  width: 33%;
+  margin-bottom: 2.8rem;
+  transition: 0.3s;
+}
+.mypageSidebar .mypageSidebar__progress .mypageSidebar__circles .mypageSidebar__circlesChild:not(:nth-child(3n)) {
+  margin-right: 0.5%;
+}
+.mypageSidebar .mypageSidebar__progress .mypageSidebar__circles .mypageSidebar__circlesChild:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.mypageSidebar .mypageSidebar__progress .mypageSidebar__circles .mypageSidebar__circlesChild .mypageSidebar__circlesCat {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.mypage__button {
+  display: inline-block;
+  background-color: #5DAC7D;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border: 3px solid #5DAC7D;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 1rem;
+  transition: 0.3s;
+}
+.mypage__button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.mypage__button:last-child {
+  margin-bottom: 0;
+}
+.mypage__button.-disabled {
+  background-color: transparent;
+  border-color: #cbcbcb;
+  color: #cbcbcb;
+  pointer-events: none;
+}
+.mypage__button.-disabled:hover {
+  cursor: auto;
+  opacity: 1;
+}
+.svgCircleWrap {
+  display: block;
+  position: relative;
+}
+.svgCircleWrap.-sidebar {
+  max-width: 90px;
+}
+.svgCircleWrap.-modal {
+  max-width: 140px;
+  margin-right: 2.4rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .svgCircleWrap.-modal {
+    margin-right: 0;
+    margin-bottom: 1.6rem;
+  }
+}
+.svgCircleWrap.-modal.-modal .svgCircle {
+  margin: 0;
+}
+.svgCircleWrap .svgCircle__check {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 30px;
+  display: none;
+}
+.svgCircleWrap .svgCircle__check.-done {
+  display: block;
+}
+.svgCircleWrap .svgCircle {
+  width: 100%;
+}
+.svgCircleWrap .svgCircle .svgCircle__colored {
+  animation: load 2s;
+}
+@keyframes load {
+  /*アニメーション*/
+  0% {
+    stroke-dashoffset: 277;
+  }
+}
+.mypageHeaderWrap {
+  margin-top: 6rem;
+}
+.mypageHeaderWrap .mypageHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.8rem 2.4rem 0;
+  background-color: #ffffff;
+  z-index: 999;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexLeft .mypageHeader__logo {
+  display: block;
+  width: 25rem;
+  margin-right: 6rem;
+  margin-bottom: 1.8rem;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexLeft .mypageHeader__logo img {
+  width: 100%;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 350px) {
+  .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexLeft .mypageHeader__logo img {
+    width: 220px;
+  }
+}
+.mypageHeader__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.6rem;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 943px) {
+  .mypageHeader__menu {
+    display: none;
+  }
+}
+.mypageHeader__menu .menu-item {
+  padding-bottom: 0;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  padding-bottom: 0;
+  text-align: center;
+  margin-left: 3.2rem;
+}
+@media only screen and (max-width: 1000px) {
+  .mypageHeader__menu .menu-item {
+    margin-left: 2rem;
+  }
+}
+.mypageHeader__menu .menu-item:first-of-type {
+  margin-left: 0;
+}
+.mypageHeader__menu .menu-item:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 480px) {
+  .mypageHeader__menu .menu-item {
+    width: 49.5%;
+  }
+}
+.mypageHeader__menu .menu-item.current-menu-item {
+  position: relative;
+}
+.mypageHeader__menu .menu-item.current-menu-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #90d2d8;
+  display: inline-block;
+  content: "";
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.8rem;
+  z-index: 10;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 943px) {
+  .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight {
+    display: none;
+  }
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight .mypageHeader__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight .mypageHeader__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight .mypageHeader__flexRightText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight .mypageHeader__flexRightText .mypageHeader__name {
+  font-size: 1.4rem;
+  margin-right: 1.5rem;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight .mypageHeader__accordion {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.3s;
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+  width: 160px;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight .mypageHeader__accordion.-active {
+  pointer-events: auto;
+  opacity: 1;
+  transition: 0.3s;
+  display: block;
+  top: calc(100% + 21px);
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight .mypageHeader__accordion .mypageHeader__accordionChild {
+  box-shadow: 0, 3px, 4px, rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.6rem;
+  transition: 0.3s;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight .mypageHeader__accordion .mypageHeader__accordionChild:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight .mypageHeader__accordion .mypageHeader__accordionChild:last-child {
+  margin-bottom: 0;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__flexRight .mypageHeader__accordion .mypageHeader__accordionChild > * {
+  background-color: #ffffff;
+  display: block;
+  padding: 1rem 1.6rem;
+  font-size: 1.4rem;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__hamburger {
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 33px;
+  justify-content: space-between;
+  transition: 0.3s;
+  display: none;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__hamburger:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+@media screen and (max-width: 943px) {
+  .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__hamburger .mypageHeader__hamburgerLine {
+  width: 100%;
+  height: 2px;
+  background-color: #5DAC7D;
+  display: inline-block;
+  transform-origin: right center;
+  transition: 0.3s;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__hamburger .mypageHeader__hamburgerLine.-hamburger-active {
+  transition: 0.3s;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__hamburger .mypageHeader__hamburgerLine.-hamburger-active.-top {
+  transform: rotate(-45deg);
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__hamburger .mypageHeader__hamburgerLine.-hamburger-active.-middle {
+  width: 0;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__hamburger .mypageHeader__hamburgerLine.-hamburger-active.-bottom {
+  transform: rotate(45deg);
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav {
+  position: fixed;
+  top: 61px;
+  right: 0;
+  width: 100%;
+  height: calc(100% - 61px);
+  transform: translateX(100%);
+  transition: 0.3s;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav.-gnav-active {
+  transform: translateX(0%);
+  transition: 0.3s;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents {
+  height: 100%;
+  padding: 2.4rem;
+  background-color: #5DAC7D;
+  width: 350px;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__gnavProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.2rem;
+  transition: 0.3s;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__gnavProfile:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__gnavProfile .mypageHeader__gnavAvatar {
+  margin-right: 1.6rem;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__gnavProfile .mypageHeader__gnavAvatar > img {
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  object-position: center;
+  vertical-align: middle;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__gnavProfile .mypageHeader__gnavName {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .menu-item, .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .mypageHeader__menuItem {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  transition: 0.3s;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .menu-item:hover, .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .mypageHeader__menuItem:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .menu-item:last-child, .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .mypageHeader__menuItem:last-child {
+  margin-bottom: 0;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .menu-item::before, .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .mypageHeader__menuItem::before {
+  display: inline-block;
+  color: #5DAC7D;
+  content: "●";
+  margin-right: 1rem;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .menu-item.current-menu-item, .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .menu-item.-current, .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .mypageHeader__menuItem.current-menu-item, .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .mypageHeader__menuItem.-current {
+  position: relative;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .menu-item.current-menu-item::before, .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .menu-item.-current::before, .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .mypageHeader__menuItem.current-menu-item::before, .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .mypageHeader__menuItem.-current::before {
+  color: #ffffff;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .menu-item > a, .mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__menuSP .mypageHeader__menuItem > a {
+  color: #ffffff;
+}
+.mypageHeaderWrap .mypageHeader .mypageHeader__flex .mypageHeader__gnav .mypageHeader__gnavContents .mypageHeader__gnavLogout {
+  display: inline-block;
+  margin-top: auto;
+  color: #ffffff;
+}
+.-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+@media only screen and (max-width: 860px) {
+  .-sticky {
+    position: static;
+  }
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .-sticky {
+    position: static;
+  }
+}
+.contractEnd {
+  margin: 4rem 0;
+  padding: 4rem 0;
+  border: 4px solid #000000;
+  text-align: center;
+}
+.contractEnd .contractEnd__text {
+  font-size: 1.8rem;
+}
+.mypage__user-edit .send {
+  padding: 15px 70px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #5DAC7D;
+  border: none;
+  display: block;
+  margin: 4rem auto 8rem;
+  text-align: center;
+  width: 253px;
+}
+@media only screen and (max-width: 480px) {
+  .mypage__user-edit .send {
+    font-size: 1.6rem;
+  }
+}
+.mypage__user-edit .send.-mauto0 {
+  margin: 0 auto;
+}
+.mypage__user-edit .send:hover {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0.7;
+}
+.fas.fa-angle-down.-colorPrimary {
+  color: #5DAC7D;
+}

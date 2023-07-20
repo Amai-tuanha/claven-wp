@@ -1,0 +1,283 @@
+@charset "UTF-8";
+.sideBar {
+  position: fixed;
+  width: 250px;
+  z-index: 10;
+  height: 100%;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 943px) {
+  .sideBar {
+    display: none;
+  }
+}
+.sideBar .sideBar__box {
+  position: relative;
+  width: 100%;
+}
+.sideBar .sideBar__box:hover {
+  cursor: pointer;
+}
+.sideBar .sideBar__box:hover .sideBar__titleCharacter {
+  animation: hover_font_color 0.3s ease-out forwards;
+  color: #5DAC7D;
+}
+.sideBar .sideBar__box:hover .sideBar__title {
+  animation: hover_bg_color 0.3s ease-out forwards;
+  background-color: #ffffff;
+}
+.sideBar .sideBar__box:hover .fas {
+  animation: hover_font_color 0.3s ease-out forwards;
+  color: #5DAC7D;
+}
+.sideBar .sideBar__box:hover .sideBar__block.open {
+  display: block;
+}
+@media only screen and (max-width: 1000px) {
+  .sideBar .sideBar__box:hover .sideBar__block.open {
+    display: none;
+  }
+}
+.sideBar .sideBar__box .sideBar__title {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #5DAC7D;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 22px;
+  border-bottom: 1px solid #88c6a2;
+}
+.sideBar .sideBar__box .sideBar__title:hover {
+  animation: opacity 0.3s ease-out forwards;
+}
+@media only screen and (max-width: 1200px) {
+  .sideBar .sideBar__box .sideBar__title {
+    padding-left: 11px;
+  }
+}
+.sideBar .sideBar__box .sideBar__block {
+  display: none;
+  position: absolute;
+  width: 250px;
+  top: 0;
+  left: 250px;
+  background-color: #ffffff;
+  color: #333333;
+  border-radius: 2px;
+  padding: 10px;
+  /*   浮かせる・折り返させない */
+  z-index: 9999;
+  white-space: nowrap;
+  /*   影をつけて浮いてるように見せる */
+  box-shadow: 0 2px 8px rgba(77, 77, 77, 0.2);
+}
+.sideBar .sideBar__box .sideBar__block.-open {
+  transition: 0.3s;
+}
+.sideBar .sideBar__box .sideBar__block.-open:hover {
+  display: block;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.sideBar .sideBar__box .sideBar__block .sideBar__list {
+  position: relative;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+.sideBar .sideBar__box .sideBar__block .sideBar__list.-current a {
+  font-weight: bold;
+  color: #5DAC7D;
+}
+.sideBar .sideBar__box .sideBar__block .sideBar__list.-current a::before {
+  content: "";
+  background-color: #5DAC7D;
+}
+@media only screen and (max-width: 1200px) {
+  .sideBar .sideBar__box .sideBar__block .sideBar__list.-current a::before {
+    left: 13px;
+  }
+}
+.sideBar .sideBar__box .sideBar__block .sideBar__list a {
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  padding-left: 3.8rem;
+}
+@media only screen and (max-width: 1200px) {
+  .sideBar .sideBar__box .sideBar__block .sideBar__list a {
+    padding-left: 3rem;
+  }
+}
+.sideBar .sideBar__box .sideBar__block .sideBar__list a::before {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 12px;
+  height: 1px;
+  content: "";
+  background-color: #333333;
+}
+@media only screen and (max-width: 1200px) {
+  .sideBar .sideBar__box .sideBar__block .sideBar__list a::before {
+    left: 13px;
+  }
+}
+.sideBar .sideBar__box .sideBar__block .sideBar__list a:hover {
+  color: #5DAC7D;
+  transform: scale(1.05);
+}
+.sideBar .sideBar__box .sideBar__block .sideBar__list a:hover::before {
+  content: "";
+  background-color: #5DAC7D;
+}
+@media only screen and (max-width: 1200px) {
+  .sideBar .sideBar__box .sideBar__block .sideBar__list a:hover::before {
+    left: 13px;
+  }
+}
+.sideBar__title.-rightMenu {
+  font-size: 1.6rem;
+  color: #ffffff;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.sideBar__title.-rightMenu::before {
+  content: "●";
+  margin-right: 1rem;
+  color: transparent;
+}
+.sideBar__title.-rightMenu.-currentPage::before {
+  content: "●";
+  margin-right: 1rem;
+  color: inherit;
+}
+.-accordionPart {
+  display: none;
+}
+.appearAccordion {
+  display: block;
+  animation: 0.3s fadeIn;
+}
+.sideBar__button {
+  background-color: #ffffff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+}
+.sideBar__button::before, .sideBar__button::after {
+  position: absolute;
+  content: "";
+  display: block;
+  transition: all 0.4s;
+  background-color: #5DAC7D;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+.sideBar__button::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.sideBar__button.open::before {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.sideBar__titleAndButtonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+}
+.-childLi {
+  margin-top: 1.6rem;
+}
+.-childLi .-childAnchor {
+  margin-left: 3.2rem;
+  color: #ffffff;
+  display: inline-block;
+}
+.sideBar__titleCharacter {
+  opacity: 1;
+  color: #ffffff;
+}
+#sidebar {
+  transition: all 0.3s;
+}
+.fas {
+  color: #ffffff;
+}
+.sideBar__menu {
+  background-color: #5DAC7D;
+}
+.sideBar__underSpace {
+  display: flex;
+  align-items: center;
+  padding-left: 0.7rem;
+  background-color: #5DAC7D;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+#toggleButton {
+  width: 4rem;
+  height: 4rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #5DAC7D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+#toggleButton:hover {
+  animation: hover_opacity 0.3s ease-out forwards;
+  cursor: pointer;
+}
+.sidebar__icon {
+  display: inline-block;
+  width: 3.2rem;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes hover_opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@keyframes hover_bg_color {
+  0% {
+    background-color: #5DAC7D;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+@keyframes hover_font_color {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #5DAC7D;
+  }
+}

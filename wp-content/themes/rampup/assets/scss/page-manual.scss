@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import "configuration";
+
+.manual {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  .inner {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .manual__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: $d_primary;
+
+    @media #{$tab} {
+      font-size: 2rem;
+    }
+  }
+  .manual__content {
+    padding: 0 4rem;
+    text-align: center;
+  }
+  .manual__subTitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding-top: 4rem;
+    padding-bottom: 2.4rem;
+    text-decoration: underline;
+
+    @media #{$tab} {
+      font-size: 1.8rem;
+    }
+  }
+  .manual__video {
+    background-color: $gray_707;
+    width: 100%;
+    max-width: 700px;
+    height: 424px;
+  }
+  .manual__index {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    @media #{$tab} {
+      font-size: 1.6rem;
+    }
+  }
+  .manual__text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 2.4rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+    text-justify: inter-ideograph;
+
+    @media #{$tab} {
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+ol {
+  list-style: decimal outside;
+  padding-left: 2em;
+}
+.terms-of-service__inner {
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+.terms-of-service__inner .terms-of-service__header {
+  text-align: center;
+}
+.terms-of-service__inner .terms-of-service__title {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.terms-of-service__inner .terms-of-service__subtitle {
+  margin-top: 4rem;
+}
+.terms-of-service__inner .terms-of-service__text {
+  font-size: 1.4rem;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+}
+.terms-of-service__inner .terms-of-service__text.-smallIndent {
+  margin-left: 2em;
+  text-indent: -2em;
+}
+.terms-of-service__inner .terms-of-service__text.-noIndent {
+  margin-left: 0;
+  text-indent: 0;
+}
+.terms-of-service__inner .terms-of-service__text.-largeIndent {
+  margin-left: 3.2em;
+  text-indent: -3.2em;
+}
+.terms-of-service__inner .terms-of-service__text.-ml {
+  margin-left: 5em;
+}
+.termscheck {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+input[type=checkbox] {
+  transform: scale(2);
+}

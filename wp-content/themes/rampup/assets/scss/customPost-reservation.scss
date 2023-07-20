@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+@import "configuration";
+
+.singelReservation {
+  padding-bottom: 4rem;
+
+  // ---------- テーブル ----------
+  .singelReservation__table {
+    tbody {
+      border: 1.5px solid $d_primary;
+    }
+    // ---------- tr ----------
+    .singelReservation__tr {
+      th,
+      td {
+        background-color: $white_fff;
+              // background-color: $primary !important;
+
+
+      }
+    }
+    // ---------- th ----------
+    .singelReservation__tHead {
+      min-width: 250px;
+      width: 250px;
+      @media #{$tab}, #{$sp} {
+        min-width: 150px;
+        width: 150px;
+      }
+      &.-longColspan {
+        background-color: $d_primary;
+        color: $white_fff;
+        text-align: left;
+      }
+    
+      
+    }
+    .singelReservation__tHead.-modified{
+      background-color: $primary !important;
+
+    }
+
+    // ---------- td ----------
+    .singelReservation__tDesc {
+      a {
+        color: $primary;
+        text-decoration: underline;
+        &.-button {
+          color: $black_333;
+          text-decoration: none;
+        }
+      }
+
+      &.-flex {
+        @include flex;
+        // align-items: flex-end;
+      }
+
+      &.-aic {
+        align-items: center;
+      }
+
+      .-unit {
+        min-width: 50px;
+        padding-left: 0.5em;
+      }
+      // ---------- input ----------
+      // .user_age{
+      //   width: 10%;
+      // }
+    }
+  }
+
+  .singelReservation__center {
+    @include flex;
+    justify-content: center;
+  }
+
+  // ---------- ボタン ----------
+  .singelReservation__buttonWrap {
+    margin-top: 0.8rem;
+    text-align: center;
+  }
+
+  // ---------- 表示切り替え ----------
+  .-onlyAdmin {
+    display: none;
+  }
+}

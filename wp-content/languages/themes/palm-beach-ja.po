@@ -1,0 +1,455 @@
+# Translation of Themes - Palm Beach in Japanese
+# This file is distributed under the same license as the Themes - Palm Beach package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-08-04 12:29:50+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Themes - Palm Beach\n"
+
+#. Theme Name of the plugin/theme
+msgid "Palm Beach"
+msgstr "Palm Beach"
+
+#: inc/customizer/functions/magazine-widget-area-control.php:33
+#: inc/customizer/sections/customizer-magazine.php:51
+msgid "Add Magazine Widget"
+msgstr "マガジンウィジェットを追加"
+
+#. Template Name of the plugin/theme
+msgid "Full-width Layout"
+msgstr "全幅レイアウト"
+
+#. Template Name of the plugin/theme
+msgid "Centered Layout"
+msgstr "中央レイアウト"
+
+#: inc/customizer/customizer.php:81
+msgid "Display Tagline"
+msgstr "キャッチフレーズを表示"
+
+#: inc/widgets/widget-magazine-posts-grid.php:24
+#: inc/widgets/widget-magazine-posts-grid.php:39
+msgid "Magazine (Grid)"
+msgstr "マガジン (グリッド)"
+
+#: inc/template-tags.php:154
+msgid "Search"
+msgstr "検索"
+
+#: inc/customizer/sections/customizer-general.php:87
+msgid "Blog Title"
+msgstr "ブログのタイトル"
+
+#: template-parts/content-page.php:17 template-parts/content-single.php:17
+msgid "Pages:"
+msgstr "ページ:"
+
+#: template-parts/content-none.php:32
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "お探しのコンテンツは見つかりません。検索をお試しください。"
+
+#: template-parts/content-none.php:27
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "ご指定の検索条件に一致する投稿がありません。他のキーワードでもう一度検索してみてください。"
+
+#: template-parts/content-none.php:23
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%1$s\">ここから始めましょう</a>。"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "何も見つかりませんでした"
+
+#: searchform.php:20
+msgctxt "submit button"
+msgid "Search"
+msgstr "検索"
+
+#: searchform.php:14
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "検索 &hellip;"
+
+#: searchform.php:12 searchform.php:16
+msgctxt "label"
+msgid "Search for:"
+msgstr "検索対象:"
+
+#: search.php:20
+msgid "Search Results for: %s"
+msgstr "「%s」の検索結果"
+
+#: inc/widgets/widget-magazine-posts-grid.php:243
+msgid "Display post excerpt"
+msgstr "抜粋を表示"
+
+#: inc/widgets/widget-magazine-posts-grid.php:230
+msgid "Three Columns Grid"
+msgstr "3カラムグリッド"
+
+#: inc/widgets/widget-magazine-posts-grid.php:229
+msgid "Two Columns Grid"
+msgstr "2カラムグリッド"
+
+#: inc/widgets/widget-magazine-posts-grid.php:227
+msgid "Grid Layout:"
+msgstr "グリッドレイアウト:"
+
+#: inc/widgets/widget-magazine-posts-grid.php:212
+msgid "Category:"
+msgstr "カテゴリー:"
+
+#: inc/widgets/widget-magazine-posts-grid.php:206
+msgid "Title:"
+msgstr "タイトル:"
+
+#: inc/widgets/widget-magazine-posts-grid.php:235
+msgid "Number of posts:"
+msgstr "投稿数:"
+
+#: inc/magazine.php:60
+msgid "View all posts from category %s"
+msgstr "%sカテゴリーのすべての投稿を表示"
+
+#: inc/theme-info.php:153
+msgid "rate it"
+msgstr "評価する"
+
+#: inc/theme-info.php:153
+msgid "Review Palm Beach"
+msgstr "Palm Beach のレビュー"
+
+#: inc/theme-info.php:152
+msgid "https://themezee.com/"
+msgstr "https://themezee.com/"
+
+#: inc/theme-info.php:150
+msgid "%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)"
+msgstr "%1$s は %2$s がお届けしています。もしテーマが気に入ったら、%3$s 😊"
+
+#: inc/theme-info.php:103
+msgid "Get more features"
+msgstr "さらに機能を入手"
+
+#: inc/theme-info.php:83
+msgid "Customize Theme"
+msgstr "テーマをカスタマイズ"
+
+#: inc/theme-info.php:80
+msgid "%s makes use of the Customizer for all theme settings. Click on \"Customize Theme\" to open the Customizer now."
+msgstr "%s はすべてのテーマ設定をカスタマイザーで行います。「テーマのカスタマイズ」をクリックしてカスタマイザーを開きましょう。"
+
+#: inc/theme-info.php:71
+msgid "View %s Documentation"
+msgstr "%s のドキュメンテーションを表示"
+
+#: inc/theme-info.php:67
+msgid "You need help to setup and configure this theme? We got you covered with an extensive theme documentation on our website."
+msgstr "テーマの設定にお困りですか ? Web サイトにある広範囲のテーマドキュメンテーションで網羅しています。"
+
+#: inc/theme-info.php:57
+msgid "Getting Started with %s"
+msgstr "%s をはじめましょう"
+
+#: inc/theme-info.php:20
+msgid "Theme Info"
+msgstr "テーマ情報"
+
+#: inc/theme-info.php:19 inc/theme-info.php:40
+msgid "Welcome to %1$s %2$s"
+msgstr "%1$s %2$s へようこそ"
+
+#: inc/template-tags.php:402
+msgid "Powered by %1$s and %2$s."
+msgstr "Powered by %1$s and %2$s."
+
+#: inc/template-tags.php:389
+msgctxt "pagination"
+msgid "Next Posts"
+msgstr "次の記事"
+
+#: inc/template-tags.php:388
+msgctxt "pagination"
+msgid "Previous Posts"
+msgstr "前の記事"
+
+#: inc/template-tags.php:335
+msgctxt "post navigation"
+msgid "Next Post"
+msgstr "次の記事"
+
+#: inc/template-tags.php:334
+msgctxt "post navigation"
+msgid "Previous Post"
+msgstr "前の記事"
+
+#: inc/template-tags.php:314
+msgid "Read more"
+msgstr "もっと読む"
+
+#: inc/template-tags.php:285
+msgid "Tags"
+msgstr "タグ"
+
+#: inc/template-tags.php:269
+msgid "No comments"
+msgstr "コメントなし"
+
+#: inc/template-tags.php:241
+msgid "View all posts by %s"
+msgstr "%s のすべての投稿を表示"
+
+#: inc/template-tags.php:159
+msgid "404: Page not found"
+msgstr "404: ページが見つかりません"
+
+#: inc/customizer/sections/customizer-upgrade.php:19
+msgid "More Features"
+msgstr "さらに多くの機能"
+
+#: inc/customizer/sections/customizer-slider.php:139
+msgid "Slider Speed (in ms)"
+msgstr "スライダーの速さ (ミリ秒)"
+
+#: inc/customizer/sections/customizer-slider.php:125
+msgid "Fade Effect"
+msgstr "フェード効果"
+
+#: inc/customizer/sections/customizer-slider.php:124
+msgid "Slide Effect"
+msgstr "スライド効果"
+
+#: inc/customizer/sections/customizer-slider.php:117
+msgid "Slider Animation"
+msgstr "スライダーのアニメーション"
+
+#: inc/customizer/sections/customizer-slider.php:99
+msgid "Number of Posts"
+msgstr "投稿数"
+
+#: inc/customizer/sections/customizer-slider.php:82
+msgid "Slider Category"
+msgstr "スライダーカテゴリー"
+
+#: inc/customizer/sections/customizer-slider.php:64
+msgid "Show Slider on blog index"
+msgstr "ブログインデックスのスライダーを表示"
+
+#: inc/customizer/sections/customizer-slider.php:49
+msgid "Show Slider on Magazine Homepage"
+msgstr "マガジンホームページでスライダーを表示"
+
+#: inc/customizer/sections/customizer-slider.php:35
+msgid "Activate Post Slider"
+msgstr "投稿スライダーを有効化"
+
+#. #-#-#-#-#  palm-beach.pot (Palm Beach 1.3)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: inc/customizer/sections/customizer-slider.php:19
+msgid "Post Slider"
+msgstr "投稿スライダー"
+
+#: inc/customizer/sections/customizer-post.php:164
+msgid "Display post navigation on single posts"
+msgstr "個別投稿ページで投稿ナビゲーションを表示"
+
+#: inc/customizer/sections/customizer-post.php:148
+msgid "Display post tags on single posts"
+msgstr "個別投稿ページで投稿タグを表示"
+
+#: inc/customizer/sections/customizer-post.php:132
+msgid "Display post comments on single posts"
+msgstr "個別投稿の投稿コメントを表示"
+
+#: inc/customizer/sections/customizer-post.php:116
+msgid "Display post categories on single posts"
+msgstr "個別投稿の投稿カテゴリーを表示"
+
+#: inc/customizer/sections/customizer-post.php:101
+msgid "Single Post Meta"
+msgstr "個別投稿メタ"
+
+#: inc/customizer/sections/customizer-post.php:83
+msgid "Excerpt Length"
+msgstr "抜粋の長さ"
+
+#: inc/customizer/sections/customizer-post.php:66
+msgid "Display post author"
+msgstr "投稿者を表示"
+
+#: inc/customizer/sections/customizer-post.php:50
+msgid "Display post date"
+msgstr "投稿日を表示"
+
+#: inc/customizer/sections/customizer-post.php:35
+msgid "Post Meta"
+msgstr "投稿メタ"
+
+#: inc/customizer/sections/customizer-post.php:19
+msgid "Post Settings"
+msgstr "投稿設定"
+
+#: inc/customizer/sections/customizer-general.php:70
+msgid "Enable sticky header feature"
+msgstr "固定ヘッダー機能を有効化"
+
+#: inc/customizer/sections/customizer-general.php:56
+msgid "Sticky Header"
+msgstr "上部固定のヘッダー"
+
+#: inc/customizer/sections/customizer-general.php:41
+msgid "Right Sidebar"
+msgstr "右サイドバー"
+
+#: inc/customizer/sections/customizer-general.php:40
+msgid "Left Sidebar"
+msgstr "左サイドバー"
+
+#: inc/customizer/sections/customizer-general.php:34
+msgid "Theme Layout"
+msgstr "テーマレイアウト"
+
+#: inc/customizer/sections/customizer-general.php:19
+msgid "General Settings"
+msgstr "一般設定"
+
+#: inc/customizer/functions/custom-controls.php:123 inc/theme-info.php:134
+msgid "Install Plugins"
+msgstr "プラグインをインストール"
+
+#: inc/customizer/functions/custom-controls.php:118 inc/theme-info.php:130
+msgid "Extend the functionality of your WordPress website with our free and easy to use plugins."
+msgstr "プラグインを使って、WordPress サイトを無料で簡単に、機能拡張しましょう。"
+
+#: inc/customizer/functions/custom-controls.php:115 inc/theme-info.php:127
+msgid "Recommended Plugins"
+msgstr "おすすめプラグイン"
+
+#: inc/customizer/functions/custom-controls.php:107 inc/theme-info.php:117
+msgid "Learn more about %s Pro"
+msgstr "%s プロについて詳しく知る"
+
+#: inc/customizer/functions/custom-controls.php:106 inc/theme-info.php:116
+msgid "https://themezee.com/addons/palm-beach-pro/"
+msgstr "https://themezee.com/addons/palm-beach-pro/"
+
+#: inc/customizer/functions/custom-controls.php:102 inc/theme-info.php:113
+msgid "Purchase the %s Pro Add-on and get additional features and advanced customization options."
+msgstr "%s プロアドオンを購入して追加機能と高度なカスタマイズ設定を入手する。"
+
+#: inc/customizer/functions/custom-controls.php:99 inc/theme-info.php:110
+msgid "Pro Version Add-on"
+msgstr "プロ版アドオン"
+
+#: inc/customizer/functions/custom-controls.php:65
+#: inc/widgets/widget-magazine-posts-grid.php:215
+msgid "All Categories"
+msgstr "すべてのカテゴリー"
+
+#: inc/customizer/customizer.php:158 inc/theme-info.php:50
+msgid "Rate this theme"
+msgstr "このテーマを評価"
+
+#: inc/customizer/customizer.php:157 inc/theme-info.php:50
+#: inc/theme-info.php:153
+msgid "https://wordpress.org/support/theme/palm-beach/reviews/?filter=5"
+msgstr "https://wordpress.org/support/theme/palm-beach/reviews/?filter=5"
+
+#: inc/customizer/customizer.php:152 inc/theme-info.php:49
+#: inc/theme-info.php:64
+msgid "Theme Documentation"
+msgstr "テーマのドキュメント"
+
+#: inc/customizer/customizer.php:151 inc/theme-info.php:49
+#: inc/theme-info.php:70
+msgid "https://themezee.com/docs/palm-beach-documentation/"
+msgstr "https://themezee.com/docs/palm-beach-documentation/"
+
+#: inc/customizer/customizer.php:146 inc/theme-info.php:48
+msgid "Theme Demo"
+msgstr "テーマデモ"
+
+#: inc/customizer/customizer.php:140 inc/theme-info.php:47
+msgid "Theme Page"
+msgstr "テーマページ"
+
+#. #-#-#-#-#  palm-beach.pot (Palm Beach 1.3)  #-#-#-#-#
+#. Theme URI of the plugin/theme
+#: inc/customizer/customizer.php:139 inc/theme-info.php:47
+msgid "https://themezee.com/themes/palm-beach/"
+msgstr "https://themezee.com/themes/palm-beach/"
+
+#: inc/customizer/customizer.php:136 inc/theme-info.php:46
+msgid "Theme Links"
+msgstr "テーマのリンク"
+
+#: inc/customizer/customizer.php:64
+msgid "Display Site Title"
+msgstr "サイトのタイトルを表示"
+
+#: inc/customizer/customizer.php:39
+msgid "Background"
+msgstr "背景"
+
+#: inc/customizer/customizer.php:33 inc/theme-info.php:77
+msgid "Theme Options"
+msgstr "テーマ設定"
+
+#: inc/back-compat.php:41 inc/back-compat.php:51 inc/back-compat.php:64
+msgid "%1$s requires at least WordPress version %2$s. You are running version %3$s. Please upgrade and try again."
+msgstr "%1$s は、WordPress バージョン%2$s以上が必要です。現在のバージョンは%3$sです。更新してやり直してください。"
+
+#: header.php:26
+msgid "Skip to content"
+msgstr "コンテンツへスキップ"
+
+#. #-#-#-#-#  palm-beach.pot (Palm Beach 1.3)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: functions.php:122
+msgid "Magazine Homepage"
+msgstr "マガジンホームページ"
+
+#: functions.php:114
+msgid "Appears on posts and pages except the full width template."
+msgstr "全幅テンプレート以外の投稿と固定ページで表示します。"
+
+#: functions.php:112
+msgid "Sidebar"
+msgstr "サイドバー"
+
+#: functions.php:49
+msgid "Main Navigation"
+msgstr "メインナビゲーション"
+
+#: comments.php:59
+msgid "Leave a Reply"
+msgstr "返信を残す"
+
+#: comments.php:55
+msgid "Comments are closed."
+msgstr "ただいまコメントは受け付けていません。"
+
+#: comments.php:30 inc/template-tags.php:269
+msgid "% comments"
+msgstr "%件のコメント"
+
+#: comments.php:30 inc/template-tags.php:269
+msgid "One comment"
+msgstr "1件のコメント"
+
+#: 404.php:16
+msgid "It looks like nothing was found at this location. Maybe try a search or one of the links below?"
+msgstr "ここにはなにもないようです。下記のリンクまたは検索をお試しください。"
+
+#. Author URI of the plugin/theme
+msgid "https://themezee.com"
+msgstr "https://themezee.com"
+
+#. Author of the plugin/theme
+msgid "ThemeZee"
+msgstr "ThemeZee"

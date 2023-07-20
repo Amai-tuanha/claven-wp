@@ -1,0 +1,20 @@
+{
+  // "editor.formatOnSave": true,
+  // "editor.tabSize": 2,
+  // "files.trimTrailingWhitespace": true,
+  // "workbench.tree.renderIndentGuides": "always",
+  // "remote.SSH.useLocalServer": false,
+  "html.format.wrapAttributes": "force-aligned",
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/assets/css/"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false
+  // "git.ignoreLimitWarning": true,
+  // "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+  // "intelephense.completion.insertUseDeclaration": false
+}

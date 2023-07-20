@@ -1,0 +1,459 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+
+@import "configuration";
+
+//____________________________
+//マイページ 課題進捗
+//____________________________
+// ---------- 課題進捗バー ----------
+.mypageProgress__bar {
+  $bdrs: 4px;
+  @include flex;
+  justify-content: space-between;
+  position: relative;
+  border-radius: $bdrs;
+  padding-right: 2.4rem;
+  background-color: $white_fff;
+  width: 100%;
+  height: 78px;
+  margin-bottom: 11rem;
+  @media #{$tab}, #{$sp} {
+    margin-bottom: 7rem;
+  }
+
+  .mypageProgress__barDotLines {
+    width: 10%;
+    z-index: 40;
+    background-color: transparent;
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      display: inline-block;
+      content: "";
+      transform: translateY(-50%);
+      background: linear-gradient(
+          to bottom,
+          rgba(235, 237, 242, 1),
+          rgba(235, 237, 242, 1) 20%,
+          rgba(0, 0, 0, 0) 20%,
+          rgba(0, 0, 0, 0) 100%
+        )
+        0% 0%;
+      background-size: 1px 5px;
+      width: 1px;
+      height: 100%;
+    }
+    &:last-of-type {
+      &::after {
+        height: calc(100% + 5px);
+        width: 3px;
+        background: $primary;
+        border-radius: 4px;
+      }
+
+      &::before {
+        position: absolute;
+        bottom: calc(100% + 5.5px);
+        right: 0%;
+        width: 40px;
+        transform: translateX(50%);
+        display: inline-block;
+        content: "100%";
+        font-size: 1.4rem;
+        letter-spacing: 0;
+        color: $primary;
+      }
+    }
+
+    // &.-allDone {
+    //   &:last-of-type {
+    //     &::before {
+    //       display: none;
+    //     }
+    //   }
+    // }
+  }
+
+  // border-bottom: 2px solid $primary;
+
+  // ---------- ストローク部分 ----------
+  .mypageProgress__stroke {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    border-radius: $bdrs;
+    background-color: $blue_90D;
+    max-width: calc(100% - 24px);
+
+    // ---------- パーセンテージ表示 ----------
+    .mypageProgress__strokePercentage {
+      position: absolute;
+      top: calc(100% + 4px);
+      @include flex;
+      flex-direction: column;
+      align-items: center;
+      right: 0;
+      transform: translateX(50%);
+
+      > img {
+        width: 26px;
+        vertical-align: middle;
+      }
+    }
+
+    &.-allDone {
+      .mypageProgress__strokePercentage {
+        display: none;
+      }
+    }
+  }
+  // ---------- 完了後のメッセージ ----------
+  .mypageProgress__messageWrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: 100;
+    @include flex;
+
+    .mypageProgress__message {
+      font-size: 2.4rem;
+      color: $white_fff;
+      padding: 0 0.8rem;
+
+      @media #{$tab}, #{$sp} {
+        padding: 0 0.4rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  // ---------- 進捗パーセンテージ ----------
+  .mypageProgress__Percentage {
+    @include flex;
+    position: absolute;
+    top: calc(50% + 1rem);
+    left: 50%;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    padding: 0.2rem 0.8rem;
+    background-color: transparentize($white_fff, 0.2);
+    box-shadow: 2px 2px 4px transparentize($gray_c6c, 0.2);
+    transform: translate(-50%, -50%);
+
+    // ---------- テキスト ---------
+    .mypage__percentageText {
+      text-align: center;
+    }
+
+    // ---------- パーセン ----------
+    .mypage__percentage {
+      color: $primary;
+      font-size: 200%;
+      line-height: 1.2;
+    }
+  }
+}
+
+// ---------- 各課題ごとの進捗 ----------
+.mypageProgress__postsWrap {
+  .mypageProgress__postsChild {
+    display: none;
+    // &.-show,
+    &#step1 {
+      // display: block;
+    }
+
+    .mypageProgress__post {
+      $padding: 1.3rem 2rem 1.2rem;
+      box-shadow: 0 0 6px, rgba($black_000, 0.2);
+      background-color: $white_fff;
+      margin-bottom: 2rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      // ---------- 投稿タイトル ----------
+      .mypageProgress__postTitle {
+        position: relative;
+        @include flex;
+        font-weight: 600;
+        font-size: 1.6rem;
+        padding: 1.3rem 2rem 1.2rem;
+        padding-right: 5rem;
+        transition: 0.3s;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.7;
+          transition: 0.3s;
+        }
+
+        @media #{$tab}, #{$sp} {
+          // font-size: 1.4rem;
+          padding: 1rem 1.6rem;
+          padding-right: 4rem;
+        }
+
+        // ---------- CHAPTER ----------
+        .mypageProgress__postContentChapter {
+          color: $blue_90D;
+          min-width: 110px;
+          width: 110px;
+          @media #{$tab}, #{$sp} {
+            // min-width: 90px;
+            // width: 90px;
+          }
+        }
+
+        // ---------- タイトル ----------
+        .mypageProgress__postContentLine {
+          display: inline-block;
+          width: 2px;
+          height: 1em;
+          background-color: $gray_d1d;
+          margin-right: 1.4rem;
+          margin-top: 0.3rem;
+        }
+
+        // ---------- チェックマーク ----------
+        .mypageProgress__postContentCheck {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 20px;
+          width: 26px;
+
+          @media #{$tab}, #{$sp} {
+            right: 10px;
+            width: 20px;
+          }
+        }
+      }
+
+      // ---------- 投稿コンテンツ ----------
+      .mypageProgress__postContent {
+        padding: $padding;
+        margin-top: 1.8rem;
+        display: none;
+
+        // ---------- 投稿ディスクリプション ----------
+        .mypageProgress__postContentText {
+          margin-bottom: 1.6rem;
+          & > *:first-child {
+            margin-top: 0 !important;
+          }
+
+          &.singlePost {
+            font-size: 1.4rem;
+            @media #{$tab}, #{$sp} {
+              font-size: 1.2rem;
+            }
+            * {
+              font-size: 1.4rem;
+              @media #{$tab}, #{$sp} {
+                font-size: 1.2rem;
+              }
+            }
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+              font-size: 1.6rem;
+              @media #{$tab}, #{$sp} {
+                font-size: 1.4rem;
+              }
+            }
+
+            h2 {
+              background-color: transparent;
+              position: static;
+              color: $black_333;
+              padding: 0;
+              margin-bottom: 1rem;
+
+              &::before,
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+
+        // ---------- ボタン ----------
+        .mypage__button {
+          max-width: 300px;
+          width: 100%;
+
+          &.-disabled {
+            background-color: $gray_d1d;
+            color: $white_fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ---------- 勉強会出席 ----------
+.mypageSeminar__stampsWrap {
+  margin-bottom: 5.8rem;
+  // ---------- リスト ----------
+  .mypageSeminar__stamps {
+    @include flex;
+    flex-wrap: wrap;
+
+    // ---------- リスト 子要素 ----------
+    .mypageSeminar__stamp {
+      width: 16%;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      background-color: $white_fff;
+      padding: 1.6rem 2rem;
+      @include flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+
+      @media screen and (max-width: 1080px) {
+        width: 24%;
+      }
+      @media screen and (max-width: 620px) {
+        width: 49%;
+      }
+
+      &::before {
+        z-index: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        font-size: 2.6rem;
+        color: $gray_EAE;
+        content: attr(index);
+      }
+
+      &:not(:nth-child(6n)) {
+        margin-right: 0.8%;
+      }
+
+      @media screen and (max-width: 1080px) {
+        &:not(:nth-child(6n)) {
+          margin-right: 0%;
+        }
+        &:not(:nth-child(4n)) {
+          margin-right: 1.3%;
+        }
+      }
+
+      @media screen and (max-width: 620px) {
+        &:not(:nth-child(4n)) {
+          margin-right: 0%;
+        }
+        &:not(:nth-child(2n)) {
+          margin-right: 2%;
+        }
+      }
+
+      &:hover {
+        .mypageSeminar__stampTitle {
+          transition: 0.3s;
+          opacity: 1 !important;
+        }
+      }
+
+      // ---------- スタンプ タイトル ----------
+      .mypageSeminar__stampTitle {
+        transition: 0.3s;
+        @include flex;
+        align-items: center;
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.6rem;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        background-color: rgba($white_fff, 0.8);
+        text-align: center;
+        z-index: 20;
+        opacity: 0;
+
+        @media #{$tab}, #{$sp} {
+          font-size: 1.2rem;
+        }
+      }
+
+      // ---------- スタンプ 画像 ----------
+      .mypageSeminar__stampImg {
+        position: relative;
+        width: 100%;
+
+        > svg {
+          width: 100%;
+          vertical-align: middle;
+          margin-bottom: 0.6rem;
+
+          g {
+            stroke: transparent;
+          }
+          path {
+            fill: transparent;
+          }
+        }
+
+        &.-show {
+          > svg {
+            g {
+              stroke: $blue_90D;
+            }
+            path {
+              fill: $blue_90D;
+            }
+          }
+        }
+      }
+
+      // ---------- スタンプ 日付 ----------
+      .mypageSeminar__stampDate {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+        opacity: 0;
+        color: $gray_707;
+
+        &.-show {
+          opacity: 1;
+        }
+
+        @media #{$tab} {
+          font-size: 1.4rem;
+        }
+
+        @media #{$sp} {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

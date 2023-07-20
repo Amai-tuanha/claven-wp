@@ -1,0 +1,28 @@
+# Translation of Plugins - Japanese font for WordPress(Previously: Japanese Font for TinyMCE) - Development (trunk) in Japanese
+# This file is distributed under the same license as the Plugins - Japanese font for WordPress(Previously: Japanese Font for TinyMCE) - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-02-25 12:58:47+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Japanese font for WordPress(Previously: Japanese Font for TinyMCE) - Development (trunk)\n"
+
+#. Plugin Name of the plugin
+msgid "Japanese font for WordPress (priviously: Japanese Font for TinyMCE)"
+msgstr "Japanese Font for WordPress (旧名: Japanese Font for TInyMCE)"
+
+#. Description of the plugin
+msgid "Add Japanese font to both Gutenberg and TinyMCE Advanced plugin's font family selections."
+msgstr "日本語フォントをTinyMCE AdvancedプラグインとGutenbergに追加します。"
+
+#. Author URI of the plugin
+msgid "https://raspi-diary.com/"
+msgstr "https://raspi-diary.com/"
+
+#. Author of the plugin
+msgid "raspi0124"
+msgstr "raspi0124"

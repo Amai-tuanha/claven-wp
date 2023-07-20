@@ -1,0 +1,1815 @@
+# Translation of Plugins - All in One SEO – Best WordPress SEO Plugin – Easily Improve SEO Rankings &amp; Increase Traffic - Development (trunk) in Japanese
+# This file is distributed under the same license as the Plugins - All in One SEO – Best WordPress SEO Plugin – Easily Improve SEO Rankings &amp; Increase Traffic - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-05-21 06:46:47+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - All in One SEO – Best WordPress SEO Plugin – Easily Improve SEO Rankings &amp; Increase Traffic - Development (trunk)\n"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/Dashboard.php:61
+msgid "%s Overview"
+msgstr "%s 概要"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/Dashboard.php:45
+msgid "%s Setup"
+msgstr "%s 設定"
+
+#: app/Common/Views/admin/settings-page.php:180
+msgid "View supported browsers"
+msgstr "サポートされるブラウザーを表示"
+
+#. Translators: 1 - "AIOSEO".
+#: app/Common/Views/admin/settings-page.php:173
+msgid "You are using a browser which is no longer supported by %1$s. Please update or use another browser in order to access the plugin settings."
+msgstr "%1$s がサポートしていないブラウザを使用しています。プラグイン設定にアクセスするには、ブラウザを更新するか、別のブラウザを使用してください。"
+
+#: app/Common/Views/admin/settings-page.php:167
+msgid "Your browser version is not supported"
+msgstr "お使いのブラウザのバージョンはサポートされていません"
+
+#: app/Common/Views/admin/settings-page.php:162
+msgid "Resolve This Issue"
+msgstr "この問題を解決する"
+
+#. Translators: 1 - "AIOSEO".
+#: app/Common/Views/admin/settings-page.php:154
+msgid "Copy the error message above and paste it in a message to the %1$s support team."
+msgstr "上記のエラーメッセージをコピーし、%1$s サポートチームへのメッセージに貼り付けてください。"
+
+#. Translators: 1 - Line break HTML tag, 2 - "AIOSEO".
+#: app/Common/Views/admin/settings-page.php:140
+msgid "There seems to be an issue running JavaScript on your website. %1$s%2$s is built with JavaScript to give you the best experience possible."
+msgstr "このサイトで JavaScript を実行すると問題が発生するようです。%1$s%2$sは、お客様に最高の体験を提供するために JavaScript で構築されています。"
+
+#: app/Common/Views/admin/settings-page.php:134
+msgid "Ooops! It Appears JavaScript Didn’t Load"
+msgstr "おっと ! JavaScript が読み込まれなかったようです"
+
+#. Translators: 1 - The sitemap name, 2 - The current page.
+#: app/Common/Sitemap/Xsl.php:64
+msgid "%1$s Sitemap %2$s"
+msgstr "%1$s サイトマップ %2$s"
+
+#. Translators: Minimum input length in characters to start searching posts in
+#. the "Insert/edit link" modal.
+#: app/Common/Admin/Admin.php:312
+msgctxt "minimum input length for searching post links"
+msgid "3"
+msgstr "2"
+
+#: app/Common/Admin/Admin.php:303
+msgid "Link selected."
+msgstr "リンクを選択しました。"
+
+#: app/Common/Admin/Admin.php:297
+msgid "Insert/edit link"
+msgstr "リンクの挿入/編集"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:847
+msgid "six-figure"
+msgstr "six-figure"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:638
+msgid "first"
+msgstr "最初"
+
+#: app/Common/Standalone/PageBuilders/Elementor.php:91
+msgid "AIOSEO"
+msgstr "AIOSEO"
+
+#: app/Common/Models/Post.php:442
+msgid "No content yet"
+msgstr "まだコンテンツがありません"
+
+#: app/Common/Api/Plugins.php:75
+msgid "Plugin update failed. Please check permissions and try again."
+msgstr "プラグインのアップデートに失敗しました。パーミッションを確認し、もう一度やり直してください。"
+
+#: app/Common/Api/Analyze.php:130
+msgid "Please enter a valid headline."
+msgstr "有効な見出しを入力してください。"
+
+#: app/Common/Admin/Admin.php:178 app/Common/Admin/Admin.php:179
+msgid "Link Assistant"
+msgstr "リンクアシスタント"
+
+#: app/Common/Views/sitemap/xsl/templates/header.php:49
+msgid "sitemap"
+msgstr "サイトマップ"
+
+#: app/Common/Views/sitemap/xsl/templates/format-priority.php:30
+msgid "High"
+msgstr "高"
+
+#: app/Common/Views/sitemap/xsl/templates/format-priority.php:29
+msgid "Medium"
+msgstr "中"
+
+#: app/Common/Views/sitemap/xsl/templates/format-priority.php:28
+msgid "Low"
+msgstr "低"
+
+#: app/Common/Views/sitemap/xsl/templates/empty-sitemap.php:39
+msgid "Configure Sitemap"
+msgstr "サイトマップを設定"
+
+#: app/Common/Views/sitemap/xsl/templates/empty-sitemap.php:37
+msgid "Back to Homepage"
+msgstr "ホームページへ戻る"
+
+#: app/Common/Views/sitemap/xsl/templates/empty-sitemap.php:34
+msgid "There are no posts here"
+msgstr "ここには投稿がありません"
+
+#: app/Common/Views/sitemap/xsl/styles.php:103
+msgid "Back"
+msgstr "戻る"
+
+#: app/Common/Views/sitemap/xsl/default.php:279
+msgid "Images"
+msgstr "画像"
+
+#: app/Common/Views/sitemap/xsl/default.php:104
+msgid "URL Count"
+msgstr "URL カウント"
+
+#: app/Common/Views/sitemap/xsl/default.php:42
+#: app/Common/Views/sitemap/xsl/default.php:92
+#: app/Common/Views/sitemap/xsl/default.php:257
+#: app/Common/Views/sitemap/xsl/default.php:444
+msgid "Sitemap Index"
+msgstr "サイトマップインデックス"
+
+#: app/Common/Options/Options.php:560
+msgid "404 - Page Not Found"
+msgstr "404 - ページが見つかりません"
+
+#: app/Common/Options/Options.php:559
+msgid "Search Results for"
+msgstr "検索結果"
+
+#: app/Common/Views/sitemap/html/widget-options.php:138
+msgid "Descending"
+msgstr "降順"
+
+#: app/Common/Views/sitemap/html/widget-options.php:137
+msgid "Ascending"
+msgstr "昇順"
+
+#: app/Common/Views/sitemap/html/widget-options.php:122
+#: app/Common/Views/sitemap/xsl/default.php:113
+#: app/Common/Views/sitemap/xsl/default.php:319
+msgid "Last Updated"
+msgstr "最終更新日時"
+
+#: app/Common/Models/Post.php:424
+msgid "Content"
+msgstr "コンテンツ"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:851
+msgid "to the"
+msgstr "to the"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:653
+msgid "more"
+msgstr "詳細"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:651
+msgid "social"
+msgstr "ソーシャル"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:641
+msgid "years"
+msgstr "年"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:628
+msgid "photos"
+msgstr "写真"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:613
+msgid "video"
+msgstr "動画"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:603
+msgid "here"
+msgstr "こちら"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:577
+msgid "the"
+msgstr "the"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:560
+msgid "to"
+msgstr "to"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:541
+msgid "by"
+msgstr "by"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:529
+msgid "and"
+msgstr "と"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:498
+msgid "value"
+msgstr "値"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:404
+msgid "approved"
+msgstr "承認済み"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:347
+msgid "professional"
+msgstr "仕事関係"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:289
+#: app/Common/Standalone/HeadlineAnalyzer.php:316
+#: app/Common/Standalone/HeadlineAnalyzer.php:526
+msgid "has"
+msgstr "含む"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:271
+msgid "thousand"
+msgstr "千"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:196
+msgid "List"
+msgstr "リスト"
+
+#: app/Common/Breadcrumbs/Widget.php:41
+msgid "AIOSEO - Breadcrumbs"
+msgstr "AIOSEO - パンくずリスト"
+
+#: app/Common/Breadcrumbs/Widget.php:32
+msgid "Display the current page breadcrumb."
+msgstr "このページのパンくずリストを表示。"
+
+#: app/Common/Breadcrumbs/Tags.php:201
+msgid "Archive format"
+msgstr "アーカイブフォーマット"
+
+#: app/Common/Breadcrumbs/Tags.php:192
+msgid "The search string."
+msgstr "検索文字列。"
+
+#: app/Common/Breadcrumbs/Tags.php:191
+msgid "Search String"
+msgstr "検索文字列"
+
+#: app/Common/Breadcrumbs/Tags.php:151
+msgid "Author Display Name"
+msgstr "投稿者の表示名"
+
+#: app/Common/Breadcrumbs/Tags.php:147
+msgid "The blog page title."
+msgstr "ブログページのタイトル。"
+
+#: app/Common/Breadcrumbs/Tags.php:124
+msgid "The label."
+msgstr "ラベル。"
+
+#: app/Common/Breadcrumbs/Tags.php:123
+msgid "Label"
+msgstr "ラベル"
+
+#: app/Common/Breadcrumbs/Tags.php:119
+msgid "The permalink."
+msgstr "パーマリンク。"
+
+#: app/Common/Breadcrumbs/Tags.php:146
+msgid "Blog Page Title"
+msgstr "ブログページのタイトル"
+
+#: app/Common/Breadcrumbs/Tags.php:186
+msgid "Day"
+msgstr "日"
+
+#: app/Common/Breadcrumbs/Tags.php:176
+msgid "Year"
+msgstr "年"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:535
+msgid "at"
+msgstr "@"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:563
+msgid "of"
+msgstr "/"
+
+#: app/Common/Schema/Context.php:224
+msgid "Not Found"
+msgstr "見つかりません"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:202
+msgid "Question"
+msgstr "問題"
+
+#: app/Common/Utils/Tags.php:315
+msgid "The first name of the post author."
+msgstr "投稿者の名"
+
+#: app/Common/Utils/Tags.php:310
+msgid "The display name of the post author."
+msgstr "投稿者の表示名。"
+
+#: app/Common/Views/sitemap/html/widget-options.php:128
+msgid "ID"
+msgstr "ID"
+
+#: app/Common/Models/Post.php:425 app/Common/Models/Post.php:443
+msgid "Please add some content first."
+msgstr "最初にコンテンツを追加してください。"
+
+#: app/Common/Models/Post.php:434
+msgid "Please add a title first."
+msgstr "最初にタイトルを追加してください"
+
+#: app/Common/Breadcrumbs/Tags.php:171
+msgid "404 Error Format"
+msgstr "404エラーフォーマット"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:208
+msgid "General"
+msgstr "一般"
+
+#: app/Common/Breadcrumbs/Widget.php:104
+msgid "Title:"
+msgstr "タイトル:"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:647
+msgid "media"
+msgstr "メディア"
+
+#: app/Common/Admin/Admin.php:184
+msgid "Redirects"
+msgstr "リダイレクト"
+
+#: app/Common/Views/sitemap/html/widget-options.php:144
+msgid "Exclude Posts / Pages"
+msgstr "ページ・投稿を除外"
+
+#: app/AIOSEO.php:239
+msgid "Plugin is missing required dependencies. Please contact support for more information."
+msgstr "プラグインに必要な依存関係がありません。詳細にサポートに連絡してください。"
+
+#. Translators: 1 - Opening HTML link tag, 2 - Closing HTML link tag.
+#: app/Common/Views/sitemap/xsl/templates/header.php:26
+msgid "You can find more information about XML Sitemaps at %1$ssitemaps.org%2$s."
+msgstr "XML サイトマップの詳細については %1$ssitemaps.org%2$s をご覧ください。"
+
+#. Translators: 1 - "statically" or "dynamically", 2 - The date, 3 - The  time,
+#. 4 - The plugin name ("All in One SEO").
+#: app/Common/Sitemap/Output.php:37
+msgid "This sitemap was %1$s generated on %2$s at %3$s by %4$s - the original SEO plugin for WordPress."
+msgstr "このサイトマップは、WordPress オリジナル SEO プラグイン %4$s によって、%2$s %3$s、%1$s 生成されました。"
+
+#: app/Common/Sitemap/Output.php:32
+msgid "statically"
+msgstr "静的に"
+
+#: app/Common/Sitemap/Sitemap.php:144
+msgid "Delete Static Files"
+msgstr "静的ファイルを削除する"
+
+#: app/Common/Sitemap/Sitemap.php:134
+msgid "Static sitemap files detected"
+msgstr "静的サイトマップファイルが検出された"
+
+#. Translators: 1 - The plugin name ("All in One SEO").
+#: app/Common/Admin/Notices/Migration.php:45
+msgid "This notice will automatically disappear as soon as the migration has completed. Meanwhile, everything should continue to work as expected."
+msgstr "この通知は、移行が完了するとすぐに自動的に消えます。 その間、すべてが期待どおりに機能し続けるはずです。"
+
+#. Translators: 1 - The plugin name ("All in One SEO").
+#: app/Common/Admin/Notices/Migration.php:44
+msgid "%1$s is currently upgrading your database and migrating your SEO data in the background."
+msgstr "%1$sは現在、データベースをアップグレードし、バックグラウンドでSEOデータを移行しています。"
+
+#. Translators: 1 - The plugin name ("AIOSEO).
+#: app/Common/Admin/Notices/Migration.php:42
+msgid "%1$s V3->V4 Migration In Progress"
+msgstr "%1$s V3-> V4移行が進行中"
+
+#. Translators: The plugin name ("All in One SEO").
+#: app/Common/Admin/Notices/Review.php:99
+msgid "CEO of %1$s"
+msgstr "%1$sのCEO"
+
+#: app/Common/Admin/Notices/Notices.php:544
+msgid "Conflicting Plugins Detected"
+msgstr "競合するプラグインが検出されました"
+
+#: app/Common/Admin/Notices/Notices.php:464
+msgid "Invalid Description Format"
+msgstr "無効な記述フォーマットです"
+
+#: app/Common/Admin/Notices/Notices.php:415
+msgid "Search Engines Blocked"
+msgstr "ブロックされたエンジンを検索する"
+
+#. Translators: 1 - The plugin name ("All in One SEO").
+#: app/Common/Admin/Notices/Import.php:41
+msgid "This notice will automatically disappear as soon as the import has completed. Meanwhile, everything should continue to work as expected."
+msgstr "この通知は、インポートが完了するとすぐに自動的に消えます。 その間、すべてが期待どおりに機能し続けるはずです。"
+
+#. Translators: 1 - The plugin name ("All in One SEO").
+#: app/Common/Admin/Notices/Import.php:40
+msgid "%1$s is importing your existing SEO data in the background."
+msgstr "%1$sは、既存のSEOデータをバックグラウンドでインポートしています。"
+
+#: app/Common/Admin/Notices/Import.php:38
+msgid "SEO Meta Import In Progress"
+msgstr "SEOメタインポートが進行中"
+
+#. Translators: 1 - The short plugin name ("AIOSEO").
+#: app/Common/Admin/Admin.php:998
+msgid "%1$s Score"
+msgstr "%1$s スコア"
+
+#. Translators: 1 - The short plugin name ("AIOSEO").
+#: app/Common/Standalone/DetailsColumn.php:114
+msgid "%1$s Details"
+msgstr "%1$s 詳細"
+
+#. Translators: 1 - The plugin name ("All in One SEO"), - 2 - This placeholder
+#. will be replaced with star icons, - 3 - "WordPress.org" - 4 - The plugin
+#. name ("All in One SEO").
+#: app/Common/Admin/Admin.php:937
+msgid "Please rate %1$s %2$s on %3$s to help us spread the word. Thank you!"
+msgstr "広めるため、%3$sで%1$s%2$sを評価してください。 ありがとうございました！"
+
+#. Translators: 1 - HTML whitespace character, 2 - Opening HTML code tag, 3 -
+#. Closing HTML code tag.
+#: app/Common/Admin/Admin.php:310
+msgid "%1$sAdd %2$srel=\"UGC\"%3$s to link"
+msgstr "%1$sリンクに%2$srel = \"UGC\"%3$sを追加"
+
+#. Translators: 1 - HTML whitespace character, 2 - Opening HTML code tag, 3 -
+#. Closing HTML code tag.
+#: app/Common/Admin/Admin.php:308
+msgid "%1$sAdd %2$srel=\"sponsored\"%3$s to link"
+msgstr "%1$sリンクに%2$srel = \"sponsored\"%3$sを追加"
+
+#. Translators: 1 - HTML whitespace character, 2 - Opening HTML code tag, 3 -
+#. Closing HTML code tag.
+#: app/Common/Admin/Admin.php:306
+msgid "%1$sAdd %2$srel=\"nofollow\"%3$s to link"
+msgstr "%1$sリンクに%2$srel = \"nofollow\"%3$sを追加"
+
+#: app/Common/Admin/Admin.php:204
+msgid "Analytics"
+msgstr "アナリティクス"
+
+#: app/Common/Admin/Admin.php:196
+msgid "Tools"
+msgstr "ツール"
+
+#: app/Common/Admin/Admin.php:192
+msgid "SEO Analysis"
+msgstr "SEO分析"
+
+#: app/Common/Admin/Admin.php:188
+msgid "Local SEO"
+msgstr "ローカルSEO"
+
+#: app/Common/Admin/Admin.php:174
+msgid "Sitemaps"
+msgstr "サイトマップ"
+
+#: app/Common/Admin/Admin.php:170
+msgid "Social Networks"
+msgstr "ソーシャルネットワーク"
+
+#: app/Common/Admin/Admin.php:166
+msgid "Search Appearance"
+msgstr "検索の外観"
+
+#: app/Common/Admin/Admin.php:158
+msgid "Dashboard"
+msgstr "ダッシュボード"
+
+#. Translators: 1 - The plugin name ("All in One SEO").
+#: app/Common/Standalone/SetupWizard.php:173
+msgid "%1$s &rsaquo; Onboarding Wizard"
+msgstr "%1$s &rsaquo; Onboarding ウィザード"
+
+#: app/Common/Admin/SiteHealth.php:379
+msgid "Your entire site is set to globally nofollow content."
+msgstr "全体サイトがグローバルにnofollowコンテンツに設定されています。"
+
+#: app/Common/Admin/SiteHealth.php:313
+msgid "Your entire site is set to globally noindex content."
+msgstr "全体サイトがグローバルにnoindexコンテンツに設定されています。"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:292
+msgid "%1$s is updated to the latest version"
+msgstr "%1$sが最新バージョンに更新されます"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:275
+msgid "%1$s needs to be updated"
+msgstr "%1$sを更新する必要があります"
+
+#: app/Common/Admin/SiteHealth.php:200 app/Common/Admin/SiteHealth.php:235
+msgid "Go to Schema Settings"
+msgstr "スキーマ設定に移動"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:52
+msgid "%1$s Schema Markup"
+msgstr "%1$sスキーママークアップ"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:46
+msgid "%1$s Plugin Update"
+msgstr "%1$sプラグイン更新"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:41
+msgid "%1$s Site Info"
+msgstr "%1$s サイト情報"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:36
+msgid "%1$s Site Public"
+msgstr "%1$sサイトパブリック"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/PostSettings.php:135
+msgid "%1$s Settings"
+msgstr "%1$s 設定"
+
+#. Translators: 1 - The date the article was published on.
+#: app/Common/Schema/Graphs/NewsArticle.php:31
+msgid "Published on %1$s."
+msgstr "%1$sに公開しました。"
+
+#: app/Common/Options/Options.php:558
+msgid "Archives for"
+msgstr "アーカイブ:"
+
+#. Translators: This refers to the homepage of the site.
+#: app/Common/Breadcrumbs/Breadcrumbs.php:499
+#: app/Common/Options/Options.php:557 app/Common/Schema/Breadcrumb.php:306
+#: app/Common/Views/sitemap/xsl/partials/breadcrumb.php:24
+msgid "Home"
+msgstr "ホーム"
+
+#: app/Common/Options/Options.php:549
+msgid "default"
+msgstr "デフォルト"
+
+#: app/Common/Utils/Tags.php:978
+msgid "Sample Taxonomy Name Value"
+msgstr "タクソノミー名の値の例"
+
+#: app/Common/Utils/Tags.php:976
+msgid "Sample Custom Field Value"
+msgstr "カスタムフィールド値の例"
+
+#: app/Common/Utils/Tags.php:974
+msgid "Example search string"
+msgstr "文字列検索例"
+
+#: app/Common/Utils/Tags.php:934
+msgid "Sample author biography"
+msgstr "作者伝記のサンプル"
+
+#: app/Common/Utils/Tags.php:926
+msgid "Sample Archive Title"
+msgstr "アーカイブタイトルのサンプル"
+
+#: app/Common/Utils/Tags.php:906
+msgid "Sample taxonomy description"
+msgstr "タクソノミー説明の例"
+
+#: app/Common/Utils/Tags.php:886
+msgid "Sample Taxonomy Title"
+msgstr "タクソノミー題名の例"
+
+#: app/Common/Utils/Tags.php:881
+msgid "An example of content from your page/post."
+msgstr "ページ・投稿よりコンテンツ例"
+
+#: app/Common/Utils/Tags.php:869 app/Common/Utils/Tags.php:872
+msgid "Sample excerpt from a page/post."
+msgstr "ページ・投稿より抜粋の例"
+
+#: app/Common/Utils/Tags.php:822
+msgid "Sample Parent"
+msgstr "サンプルの親"
+
+#: app/Common/Utils/Tags.php:819
+msgid "Sample Post"
+msgstr "投稿の例"
+
+#: app/Common/Utils/Tags.php:804
+msgid "Sample caption for media."
+msgstr "メディア用見出し例"
+
+#: app/Common/Utils/Tags.php:799
+msgid "A sample alt tag for your image"
+msgstr "画像のサンプル alt タグ"
+
+#: app/Common/Utils/Tags.php:522
+msgid "The meta description for the current page/post."
+msgstr "現在のページ/投稿のメタ説明。"
+
+#: app/Common/Utils/Tags.php:516
+msgid "The name of the first term of a given taxonomy that is assigned to the current page/post."
+msgstr "現在のページ/投稿に割り当てられている特定の分類法の最初の用語の名前。"
+
+#: app/Common/Utils/Tags.php:515
+msgid "Taxonomy Name"
+msgstr "タクソノミー名"
+
+#: app/Common/Utils/Tags.php:511
+msgid "The term the user is searching for."
+msgstr "ユーザー検索用語"
+
+#: app/Common/Utils/Tags.php:510
+msgid "Search Term"
+msgstr "検索キーワード"
+
+#: app/Common/Utils/Tags.php:505
+msgid "A custom field from the current page/post."
+msgstr "現在ページ・投稿からカスタムフィールド"
+
+#: app/Common/Utils/Tags.php:504
+msgid "Custom Field"
+msgstr "カスタムフィールド"
+
+#: app/Common/Utils/Tags.php:500
+msgid "The tagline for your site, set in the general settings."
+msgstr "サイト用のキャッチフレーズ、『一般設定にセットする』"
+
+#: app/Common/Utils/Tags.php:499
+msgid "Tagline"
+msgstr "キャッチフレーズ"
+
+#: app/Common/Utils/Tags.php:494
+msgid "The description for your site."
+msgstr "サイト用の説明"
+
+#: app/Common/Utils/Tags.php:470 app/Common/Utils/Tags.php:482
+msgid "Site link (link as text)."
+msgstr "サイトリンク（テキストとしてのリンク）。"
+
+#: app/Common/Utils/Tags.php:469
+msgid "Site Link (Alt)"
+msgstr "サイトリンク（Alt）"
+
+#: app/Common/Utils/Tags.php:464
+msgid "Site link (name as text)."
+msgstr "サイトリンク（テキストとしての名前）。"
+
+#: app/Common/Utils/Tags.php:463 app/Common/Utils/Tags.php:481
+msgid "Site Link"
+msgstr "サイトリンク"
+
+#: app/Common/Utils/Tags.php:459
+msgid "The separator defined in the search appearance settings."
+msgstr "区切りは外観設定で定義"
+
+#: app/Common/Breadcrumbs/Tags.php:141 app/Common/Utils/Tags.php:458
+msgid "Separator"
+msgstr "区切り"
+
+#. Translators: 1 - The type of page (Post, Page, Category, Tag, etc.).
+#: app/Common/Breadcrumbs/Tags.php:130 app/Common/Utils/Tags.php:454
+msgid "The original title of the current post."
+msgstr "現在の投稿の元のタイトル"
+
+#. Translators: 1 - The type of page (Post, Page, Category, Tag, etc.).
+#: app/Common/Utils/Tags.php:447
+msgid "Post link (link as text)."
+msgstr "リンクを投稿する（テキストとしてのリンク）。"
+
+#. Translators: 1 - The type of page (Post, Page, Category, Tag, etc.).
+#: app/Common/Utils/Tags.php:440
+msgid "Post link (name as text)."
+msgstr "投稿リンク（テキストとしての名前）。"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:434
+msgid "The year when the page/post was published, localized."
+msgstr "ページ・投稿が公開され、ローカライズされた年。"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:433
+msgid "%1$s Year"
+msgstr "%1$s年"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:428
+msgid "The month when the page/post was published, localized."
+msgstr "ページ・投稿が公開され、ローカライズされた月。"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:427
+msgid "%1$s Month"
+msgstr "%1$s月"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:422
+msgid "The day of the month when the page/post was published, localized."
+msgstr "ページ・投稿が公開され、ローカライズされた月の日。"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:421
+msgid "%1$s Day"
+msgstr "%1$s日"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:416
+msgid "The date when the page/post was published, localized."
+msgstr "ページ・投稿が公開され、ローカライズされた日付。"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:415
+msgid "%1$s Date"
+msgstr "%1$s日付"
+
+#: app/Common/Utils/Tags.php:410
+msgid "The date of the current archive, localized."
+msgstr "ローカライズされた現在のアーカイブの日付。"
+
+#: app/Common/Utils/Tags.php:409
+msgid "Archive Date"
+msgstr "アーカイブの日付"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:405
+msgid "The content of your page/post."
+msgstr "ページ・投稿のコンテンツ"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:404
+msgid "%1$s Content"
+msgstr "%1$sコンテンツ"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:393
+msgid "The excerpt defined on your page/post."
+msgstr "ページ・投稿で定義された抜粋"
+
+#. Translators: 1 - The singular name of the post type.
+#: app/Common/Utils/Tags.php:392
+msgid "%1$s Excerpt"
+msgstr "%1$s抜粋"
+
+#: app/Common/Utils/Tags.php:387
+msgid "The current year, localized."
+msgstr "ローカライズされた現在の年"
+
+#: app/Common/Utils/Tags.php:386
+msgid "Current Year"
+msgstr "今年"
+
+#: app/Common/Utils/Tags.php:382
+msgid "The current month, localized."
+msgstr "ローカライズされた現在の月"
+
+#: app/Common/Utils/Tags.php:381
+msgid "Current Month"
+msgstr "今月"
+
+#: app/Common/Utils/Tags.php:377
+msgid "The current day of the month, localized."
+msgstr "ローカライズされた現在の月の日"
+
+#: app/Common/Utils/Tags.php:376
+msgid "Current Day"
+msgstr "当日"
+
+#: app/Common/Utils/Tags.php:372
+msgid "The current date, localized."
+msgstr "ローカライズされた現在の日付"
+
+#: app/Common/Utils/Tags.php:371
+msgid "Current Date"
+msgstr "日付"
+
+#: app/Common/Utils/Tags.php:367
+msgid "The page number for the current paginated page."
+msgstr "現在ページ付けされているページのページ番号。"
+
+#: app/Common/Breadcrumbs/Tags.php:196 app/Common/Utils/Tags.php:366
+msgid "Page Number"
+msgstr "ページ番号"
+
+#: app/Common/Utils/Tags.php:362
+msgid "The permalink for the current page/post."
+msgstr "ページ・投稿用のパーマリンク"
+
+#: app/Common/Breadcrumbs/Tags.php:118 app/Common/Utils/Tags.php:361
+msgid "Permalink"
+msgstr "パーマリンク"
+
+#. Translators: 1 - The type of page (Post, Page, Category, Tag, etc.).
+#: app/Common/Utils/Tags.php:356
+msgid "Current or first category link (link as text)."
+msgstr "現在・最初のカテゴリリンク（テキストとしてのリンク）。"
+
+#. Translators: 1 - The type of page (Post, Page, Category, Tag, etc.).
+#: app/Common/Utils/Tags.php:355 app/Common/Utils/Tags.php:446
+msgid "%1$s Link (Alt)"
+msgstr "%1$sリンク(Alt)"
+
+#. Translators: 1 - The type of page (Post, Page, Category, Tag, etc.).
+#: app/Common/Utils/Tags.php:349
+msgid "Current or first category link (name as text)."
+msgstr "現在・最初のカテゴリリンク（テキストとしての名前）。"
+
+#. Translators: 1 - The type of page (Post, Page, Category, Tag, etc.).
+#: app/Common/Utils/Tags.php:348 app/Common/Utils/Tags.php:439
+msgid "%1$s Link"
+msgstr "%1$sリンク"
+
+#. Translators: 1 - The singular name of the current taxonomy.
+#: app/Common/Utils/Tags.php:343
+msgid "Current or first category description."
+msgstr "現在・最初のカテゴリの説明。"
+
+#. Translators: 1 - The singular name of the current taxonomy.
+#: app/Common/Utils/Tags.php:342
+msgid "%1$s Description"
+msgstr "%1$s説明"
+
+#. Translators: 1 - The type of page (Post, Page, Category, Tag, etc.).
+#: app/Common/Breadcrumbs/Tags.php:129 app/Common/Breadcrumbs/Tags.php:135
+#: app/Common/Utils/Tags.php:336 app/Common/Utils/Tags.php:453
+msgid "%1$s Title"
+msgstr "%1$s タイトル"
+
+#. Translators: 1 - The type of page (Post, Page, Category, Tag, etc.).
+#: app/Common/Utils/Tags.php:330 app/Common/Utils/Tags.php:337
+msgid "Current or first category title."
+msgstr "現在・最初のカテゴリのタイトル。"
+
+#: app/Common/Utils/Tags.php:325
+msgid "The title of the current archive."
+msgstr "現在のアーカイブのタイトル。"
+
+#: app/Common/Utils/Tags.php:324
+msgid "Archive Title"
+msgstr "アーカイブタイトル"
+
+#: app/Common/Breadcrumbs/Tags.php:161 app/Common/Utils/Tags.php:319
+msgid "Author Last Name"
+msgstr "作者の姓"
+
+#: app/Common/Breadcrumbs/Tags.php:156 app/Common/Utils/Tags.php:314
+msgid "Author First Name"
+msgstr "作者の名"
+
+#: app/Common/Utils/Tags.php:309
+msgid "Author Name"
+msgstr "投稿者名"
+
+#: app/Common/Utils/Tags.php:305
+msgid "The biography of the author."
+msgstr "作者の伝記"
+
+#: app/Common/Utils/Tags.php:304
+msgid "Author Biography"
+msgstr "作者経歴"
+
+#: app/Common/Utils/Tags.php:300
+msgid "Author archive link (link as text)."
+msgstr "作者アーカイブリンク（テキストとしてのリンク）"
+
+#: app/Common/Utils/Tags.php:299
+msgid "Author Link (Alt)"
+msgstr "作者リンク（Alt)"
+
+#: app/Common/Utils/Tags.php:295
+msgid "Author archive link (name as text)."
+msgstr "作者アーカイブリンク（テキストとしての名前）"
+
+#: app/Common/Utils/Tags.php:294
+msgid "Author Link"
+msgstr "作者リンク"
+
+#: app/Common/Utils/Tags.php:290
+msgid "Caption for the current media file."
+msgstr "現在のメディアファイルのキャプション。"
+
+#: app/Common/Utils/Tags.php:289
+msgid "Media Caption"
+msgstr "メディア用見出し"
+
+#: app/Common/Utils/Tags.php:284
+msgid "Image Alt Tag"
+msgstr "イメージのAltタグ"
+
+#: app/Common/Traits/Helpers/Wp.php:184
+msgid "Attachments"
+msgstr "添付ファイル"
+
+#. Translators: 1 - The phone number.
+#: app/Common/ImportExport/RankMath/TitleMeta.php:409
+msgid ""
+"We were unable to import the phone number that you previously entered for your Knowledge Graph schema markup.\n"
+"\t\t\t\t\tAs it needs to be internationally formatted, please enter it (%1$s) with the country code, e.g. +1 (555) 555-1234."
+msgstr "ナレッジグラフスキーママークアップに以前に入力した電話番号をインポートできませんでした。国際的にフォーマットする必要があるため、国コードを付けて（%1$s）入力してください。 +1（555）555-1234"
+
+#. Translators: 1 - The phone number.
+#: app/Common/Migration/GeneralSettings.php:740
+msgid "The phone number that you previously entered for your Knowledge Graph schema markup is invalid. As it needs to be internationally formatted, please enter it (%1$s) again with the country code, e.g. +1 (555) 555-1234."
+msgstr "ナレッジグラフスキーママークアップに以前に入力した電話番号が無効です。 国際的にフォーマットする必要があるため、国コードを付けてもう一度入力してください（%1$s）。 +1（555）555-1234"
+
+#: app/Common/ImportExport/RankMath/TitleMeta.php:406
+#: app/Common/Migration/GeneralSettings.php:737
+msgid "Invalid Phone Number for Knowledge Graph"
+msgstr "ナレッジグラフの電話番号が無効です"
+
+#: app/Common/Admin/Notices/Notices.php:423
+#: app/Common/Admin/Notices/Notices.php:472
+#: app/Common/Admin/Notices/Notices.php:548
+#: app/Common/ImportExport/RankMath/TitleMeta.php:415
+#: app/Common/Migration/GeneralSettings.php:745
+msgid "Fix Now"
+msgstr "今すぐ修正"
+
+#: app/Common/Migration/GeneralSettings.php:375
+msgid "Review Now"
+msgstr "今すぐレビュー"
+
+#. Translators: 1 - The plugin short name ("AIOSEO"), 2 - Same as previous.
+#: app/Common/Migration/Helpers.php:161
+msgid ""
+"%1$s has detected that you have one or more custom fields with spaces in their name.\n"
+"\t\t\t\t\t\t\t\tIn order for %2$s to correctly parse these custom fields, their names cannot contain any spaces."
+msgstr "%1$sは、名前にスペースが含まれる1つ以上のカスタムフィールドがあることを検出しました。 %2$sがこれらのカスタムフィールドを正しく解析するために、それらの名前にスペースを含めることはできません。"
+
+#: app/Common/Migration/Helpers.php:158
+msgid "Custom field names with spaces detected"
+msgstr "スペースが検出されたカスタムフィールド名"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Api/Wizard.php:264
+msgid "You selected to install the free MonsterInsights Analytics plugin during the setup of %1$s, but there was an issue during installation. Click below to manually install."
+msgstr "%1$sのセットアップ中に無料のMonsterInsights Analyticsプラグインをインストールすることを選択しましたが、インストール中に問題が発生しました。 手動でインストールするには、以下をクリックしてください。"
+
+#: app/Common/Api/Wizard.php:261 app/Common/Api/Wizard.php:269
+msgid "Install MonsterInsights"
+msgstr "Monsterinsightsをインストールする"
+
+#: app/Common/Api/Wizard.php:57
+msgid "Try Again"
+msgstr "もう一度お試しください"
+
+#: app/Common/Api/Wizard.php:54
+msgid "Unfortunately, there was an error importing your SEO plugin settings. This could be due to an incompatibility in the version installed. Make sure you are on the latest version of the plugin and try again."
+msgstr "残念ながら、SEOプラグイン設定のインポート中にエラーが発生しました。 これは、インストールされているバージョンの非互換性が原因である可能性があります。 プラグインの最新バージョンを使用していることを確認して、再試行してください。"
+
+#: app/Common/Api/Wizard.php:53
+msgid "SEO Plugin Import Failed"
+msgstr "SEOプラグインのインポートに失敗しました"
+
+#: app/Common/Api/Tools.php:224
+msgid "An error occurred while trying to write to the .htaccess file. Please try again later."
+msgstr ".htaccessファイルを書き込み中にエラーが発生しました。後でもう一度やり直してください。"
+
+#: app/Common/Api/Tools.php:121
+msgid "Unable to send debug email, please check your email send settings and try again."
+msgstr "デバッグメールを送信できません。メール送信設定を確認して、もう一度お試しください。"
+
+#. Translators: 1 - The plugin name ("All in One SEO"), 2 - The Site URL.
+#: app/Common/Api/Tools.php:100
+msgid "%1$s Debug Info from %2$s"
+msgstr "%2$sよりの%1$sデバッグ情報"
+
+#: app/Common/Api/Tools.php:42 app/Common/Api/Tools.php:66
+msgid "There was an error deleting the physical robots.txt file."
+msgstr "Physical robots.txtファイルの削除中にエラーが発生しました。"
+
+#: app/Common/Api/Tools.php:33
+msgid "There was an error importing the physical robots.txt file."
+msgstr "Physical robots.txtファイルのインポート中にエラーが発生しました。"
+
+#: app/Common/Api/Plugins.php:126 app/Common/Api/Sitemaps.php:84
+msgid "Deactivation failed. Please check permissions and try again."
+msgstr "非有効化に失敗しました。権限を確認して、もう一度お試しください。"
+
+#: app/Common/Api/Plugins.php:24
+msgid "Installation failed. Please check permissions and try again."
+msgstr "インストールに失敗しました。権限を確認して、もう一度お試しください。"
+
+#: app/Common/Api/PostsTerms.php:225
+msgid "Post ID is missing."
+msgstr "投稿IDがありません"
+
+#: app/Common/Api/PostsTerms.php:136 app/Common/Api/PostsTerms.php:168
+msgid "No post ID was provided."
+msgstr "投稿IDは提供されませんでした"
+
+#. Translators: 1 - The estimated reading time.
+#: app/Common/Social/Twitter.php:239
+msgid "%1$s minute"
+msgid_plural "%1$s minutes"
+msgstr[0] "%1$s分"
+
+#: app/Common/Social/Twitter.php:237
+msgid "Est. reading time"
+msgstr "推定読書時間"
+
+#: app/Common/Social/Twitter.php:228
+msgid "Written by"
+msgstr "投稿者"
+
+#: app/Common/Tools/BadBotBlocker.php:223
+msgid "(Invalid IP)"
+msgstr "(無効な IP)"
+
+#: app/Common/Tools/RobotsTxt.php:374
+msgid "Delete"
+msgstr "削除"
+
+#: app/Common/Tools/RobotsTxt.php:372
+msgid "Import and Delete"
+msgstr "インポートと削除"
+
+#. Translators: 1 - The plugin short name ("AIOSEO"), 2 - The plugin short name
+#. ("AIOSEO").
+#: app/Common/Tools/RobotsTxt.php:366
+msgid "%1$s has detected a physical robots.txt file in the root folder of your WordPress installation. We recommend removing this file as it could cause conflicts with WordPress' dynamically generated one. %2$s can import this file and delete it, or you can simply delete it."
+msgstr "%1$sは、WordPressインストールのルートフォルダーで物理robots.txtファイルを検出しました。 WordPressの動的に生成されたファイルと競合する可能性があるため、このファイルを削除することをお勧めします。%2$sは、このファイルをインポートして削除することも、単に削除することもできます。"
+
+#: app/Common/Tools/RobotsTxt.php:363
+msgid "Physical Robots.txt File Detected"
+msgstr "Physical Robots.txtファイルが検出されました"
+
+#: app/Common/Tools/SystemStatus.php:296 app/Common/Tools/SystemStatus.php:328
+msgid "needs update"
+msgstr "更新が必要"
+
+#: app/Common/Tools/SystemStatus.php:273
+msgid "Must-Use Plugins"
+msgstr "必須のプラグイン"
+
+#: app/Common/Tools/SystemStatus.php:194
+msgid "Not Set"
+msgstr "未設定"
+
+#: app/Common/Tools/SystemStatus.php:193
+msgid "MySQL SQL Mode"
+msgstr "MySQL SQLモード"
+
+#: app/Common/Tools/SystemStatus.php:182
+msgid "unknown"
+msgstr "不明"
+
+#: app/Common/Tools/SystemStatus.php:181
+msgid "Web Server"
+msgstr "Web サーバー"
+
+#: app/Common/Tools/SystemStatus.php:174
+msgid "Server Info"
+msgstr "サーバー情報"
+
+#: app/Common/Tools/SystemStatus.php:121
+msgid "Constants"
+msgstr "定数"
+
+#: app/Common/Tools/SystemStatus.php:106
+msgid "Base URL:"
+msgstr "ベース URL:"
+
+#: app/Common/Tools/SystemStatus.php:105
+msgid "Base Directory:"
+msgstr "ベースディレクトリ:"
+
+#: app/Common/Tools/SystemStatus.php:104
+msgid "Url:"
+msgstr "Url:"
+
+#: app/Common/Tools/SystemStatus.php:103
+msgid "Path:"
+msgstr "Path:"
+
+#: app/Common/Tools/SystemStatus.php:101
+msgid "Upload Directory Info"
+msgstr "ディレクトリ情報をアップロード"
+
+#: app/Common/Tools/SystemStatus.php:98
+msgid "Hidden"
+msgstr "非表示"
+
+#: app/Common/Tools/SystemStatus.php:98
+msgid "Visible"
+msgstr "表示"
+
+#: app/Common/Tools/SystemStatus.php:93
+msgid "Front Page Info"
+msgstr "フロントページ情報"
+
+#: app/Common/Tools/SystemStatus.php:89
+msgid "User Count"
+msgstr "ユーザー数"
+
+#: app/Common/Tools/SystemStatus.php:77
+msgid "Permalink Structure"
+msgstr "パーマリンク構造"
+
+#: app/Common/Tools/SystemStatus.php:65
+msgid "Timezone"
+msgstr "タイムゾーン"
+
+#: app/Common/Tools/SystemStatus.php:61
+msgid "User Language"
+msgstr "ユーザー言語"
+
+#: app/Common/Tools/SystemStatus.php:42
+msgid "Latest version:"
+msgstr "最新バージョン:"
+
+#. Translators: 1 - The plugin name ("All in One SEO"), 2 - Same as previous, 3
+#. - Same as previous.
+#: app/init/notices.php:227
+msgid "Your site already has %1$s Pro activated. If you want to switch to %2$s Lite, please first go to Plugins > Installed Plugins and deactivate %1$s. Then, you can activate %3$s Lite."
+msgstr "サイトではすでに%1$s Proが有効化されています。 %2$s Liteに切り替える場合は、まず[プラグイン]> [インストールされているプラ​​グイン]に移動し、%1$sを無効にします。次に、%3$s Liteをアクティブ化できます。"
+
+#: app/init/notices.php:225
+msgid "Heads up!"
+msgstr "注意 !"
+
+#. Translators: 1 - Opening HTML bold tag, 2 - Closing HTML bold tag, 3 - The
+#. plugin name ("All in One SEO"), 4 - Opening HTML link tag, 5 - Closing HTML
+#. link tag.
+#: app/init/notices.php:113
+msgid "%1$sNote:%2$s Support for PHP 5.4 will be discontinued in 2021. After this, if no further action is taken, %3$s functionality will be disabled. %4$sRead more for additional information.%5$s"
+msgstr "%1$s注:%2$s PHP 5.4のサポートは2021年に廃止されます。その後、それ以上のアクションが実行されない場合、%3$s の機能が無効になります。%4$s追加情報はこちらをご覧ください。%5$s"
+
+#. Translators: 1 - Opening HTML bold tag, 2 - Closing HTML bold tag, 3 -
+#. Opening HTML link tag, 4 - Closing HTML link tag.
+#: app/init/notices.php:90
+msgid "Your site is running an %1$soutdated version%2$s of PHP that is no longer supported and may cause issues with %3$s. Please contact your web hosting provider to update your PHP version or switch to a %4$srecommended WordPress hosting company%5$s."
+msgstr "あなたのサイトは、サポートされなくなった%1$sの古いバージョン%2$sのPHPを実行しており、%3$sで問題が発生する可能性があります。PHPバージョンを更新するか、%4$s推奨のWordPressホスティング会社%5$sに切り替えるには、Webホスティングプロバイダーに連絡してください。"
+
+#. Translators: 1 - Opening HTML bold tag, 2 - Closing HTML bold tag, 3 - The
+#. plugin name ("All in One SEO"), 4 - Opening HTML link tag, 5 - Closing HTML
+#. link tag.
+#: app/init/notices.php:46
+msgid "%1$sNote:%2$s %3$s plugin is disabled on your site until you fix the issue. %4$sRead more for additional information.%5$s"
+msgstr "%1$s注:%2$s %3$s プラグインは、問題を修正するまでサイトで無効になります。 %4$s追加情報はこちらをご覧ください。%5$s"
+
+#. Translators: 1 - Opening HTML bold tag, 2 - Closing HTML bold tag, 3 -
+#. Opening HTML link tag, 4 - Closing HTML link tag.
+#: app/init/notices.php:24
+msgid "Your site is running an %1$sinsecure version%2$s of PHP that is no longer supported. Please contact your web hosting provider to update your PHP version or switch to a %3$srecommended WordPress hosting company%4$s."
+msgstr "あなたのサイトでは、%1$sの安全でないバージョン%2$sのPHPが実行されていますが、サポートされなくなりました。 PHPのバージョンを更新するか、%3$s推奨のWordPressホスティング会社%4$sに切り替えるには、ウェブホスティングプロバイダーにお問い合わせください。"
+
+#. Translators: 1 - "WooCommerce".
+#: app/Lite/Admin/Notices/Notices.php:78
+msgid "Advanced %1$s Support"
+msgstr "高度な%1$sサポート"
+
+#: app/Lite/Admin/Connect.php:391
+msgid "The Pro version installed correctly, but it needs to be activated from the Plugins page inside your WordPress admin."
+msgstr "Proバージョンは正しくインストールされていますが、WordPress管理者のプラグインページからアクティブにする必要があります。"
+
+#: app/Lite/Admin/Connect.php:317
+msgid "You are not licensed."
+msgstr "ライセンスがありません"
+
+#. Translators: 1 - The marketing site anchor name ("aioseo.com").
+#: app/Lite/Admin/Connect.php:287
+msgid "Could not install upgrade. Please download from %1$s and install manually."
+msgstr "アップグレードをインストールできませんでした。 %1$sからダウンロードして手動でインストールしてください。"
+
+#: app/Lite/Admin/Connect.php:233
+msgid "Pro version is already installed."
+msgstr "Proバージョンは既にインストールされています"
+
+#: app/Lite/Admin/Connect.php:221
+msgid "Please enter your license key to connect."
+msgstr "接続するには、ライセンスキーを入力してください"
+
+#: app/Lite/Admin/Connect.php:215
+msgid "You are not allowed to install plugins."
+msgstr "プラグインのインストールは許可されていません"
+
+#. Translators: 1 - The plugin name ("All in One SEO").
+#: app/Lite/Admin/Connect.php:161
+msgid "%1$s &rsaquo; Connect"
+msgstr "%1$s &rsaquo;接続"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://aioseo.com/"
+msgstr "https://aioseo.com/"
+
+#: app/Common/Admin/SiteHealth.php:329 app/Common/Admin/SiteHealth.php:395
+msgid "Search Page"
+msgstr "検索ページ"
+
+#: app/Common/Admin/SiteHealth.php:328 app/Common/Admin/SiteHealth.php:394
+msgid "Date Archives"
+msgstr "日付別アーカイブ"
+
+#: app/Common/Admin/SiteHealth.php:327 app/Common/Admin/SiteHealth.php:393
+msgid "Author Archives"
+msgstr "投稿者アーカイブ"
+
+#: app/Common/Admin/SiteHealth.php:323 app/Common/Admin/SiteHealth.php:389
+msgid "Paginated Content"
+msgstr "複数ページコンテンツ"
+
+#: app/Common/Utils/Tags.php:531
+msgid "Categories"
+msgstr "カテゴリー"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:94
+msgid "The fields below contain important SEO information from %1$s that may effect your site."
+msgstr "以下のフィールドには、サイトに影響を与える可能性のある%1$sの重要なSEO情報が含まれています。"
+
+#: app/Common/Admin/SiteHealth.php:81
+msgid "Nofollowed content"
+msgstr "Nofollow コンテンツ"
+
+#: app/Common/Admin/SiteHealth.php:73
+msgid "Noindexed content"
+msgstr "Noindex コンテンツ"
+
+#: app/Common/Admin/SiteHealth.php:295
+msgid "Fantastic! By updating to the latest version, you have access to all the latest features, bug fixes and security improvements."
+msgstr "素晴らしい！ 最新バージョンに更新することで、すべての最新機能、バグ修正、およびセキュリティの改善にアクセスできます。"
+
+#: app/Common/Admin/SiteHealth.php:283
+msgid "Go to Plugins"
+msgstr "プラグインへ移動"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:280
+msgid "An update is available for %1$s. Upgrade to the latest version to receive all the latest features, bug fixes and security improvements."
+msgstr "%1$sの更新が利用可能です。 最新バージョンにアップグレードして、すべての最新機能、バグ修正、およびセキュリティの改善を受け取ります。"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:245
+msgid "Awesome! These are required for %1$s's Person schema markup."
+msgstr "素晴らしい！これらは、%1$sの個人スキーママークアップに必要です。"
+
+#: app/Common/Admin/SiteHealth.php:242
+msgid "Your Person Name and Image are set"
+msgstr "個人名と画像が設定されます"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:232
+msgid "Your Person Name and/or Image are blank. These values are required for %1$s's Person schema markup."
+msgstr "あなたの個人名および/または画像は空白です。これらの値は、%1$sの個人スキーママークアップに必要です。"
+
+#: app/Common/Admin/SiteHealth.php:229
+msgid "Your Person Name and/or Image are blank"
+msgstr "あなたの個人名および/または画像は空白です。"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:210
+msgid "Awesome! These are required for %1$s's Organization schema markup."
+msgstr "素晴らしい！これらは、%1$sの組織スキーママークアップに必要です。"
+
+#: app/Common/Admin/SiteHealth.php:207
+msgid "Your Organization Name and Logo are set"
+msgstr "組織名とロゴが設定されています"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:197
+msgid "Your Organization Name and/or Logo are blank. These values are required for %1$s's Organization schema markup."
+msgstr "組織名やロゴが空白です。 これらの値は、%1$sの組織スキーママークアップに必要です。"
+
+#: app/Common/Admin/SiteHealth.php:194
+msgid "Your Organization Name and/or Logo are blank"
+msgstr "組織名とロゴが空白です。"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:167
+msgid "Great! These are required for %1$s's schema markup and are often used as fallback values for various other features."
+msgstr "すごい！ これらは%1$sのスキーママークアップに必要であり、他のさまざまな機能のフォールバック値としてよく使用されます。"
+
+#: app/Common/Admin/SiteHealth.php:164
+msgid "Your Site Title and Tagline are set"
+msgstr "サイトタイトルとキャッチフレーズ設定済みです"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/SiteHealth.php:151
+msgid "Your Site Title and/or Tagline are blank. We recommend setting both of these values as %1$s requires these for various features, including our schema markup"
+msgstr "サイトのタイトルやキャッチフレーズが空白です。 %1$sはスキーママークアップを含むさまざまな機能にこれらを必要とするため、これらの値の両方を設定することをお勧めします"
+
+#: app/Common/Admin/SiteHealth.php:148
+msgid "Your Site Title and/or Tagline are blank"
+msgstr "サイトのタイトルやキャッチフレーズが空白です"
+
+#: app/Common/Admin/SiteHealth.php:129
+msgid "Your site is set to public. Search engines will index your website and it will appear in search results."
+msgstr "あなたのサイトは公開されています。 検索エンジンはあなたのウェブサイトにインデックスを付け、それは検索結果に表示されます。"
+
+#: app/Common/Admin/SiteHealth.php:128
+msgid "Your site appears in search results"
+msgstr "サイトが検索結果に表示されます"
+
+#: app/Common/Admin/SiteHealth.php:121
+msgid "Go to Settings > Reading"
+msgstr "[設定]> [閲覧]に移動します"
+
+#: app/Common/Admin/SiteHealth.php:120
+msgid "Your site is set to private. This means WordPress asks search engines to exclude your website from search results."
+msgstr "あなたのサイトはプライベートに設定されています。 これは、WordPressが検索エンジンにあなたのウェブサイトを検索結果から除外するように依頼することを意味します。"
+
+#: app/Common/Admin/SiteHealth.php:119
+msgid "Your site does not appear in search results"
+msgstr "サイトは検索結果に表示されません"
+
+#: app/Common/Utils/Tags.php:320
+msgid "The last name of the post author."
+msgstr "投稿者の姓"
+
+#: app/Common/Migration/GeneralSettings.php:471
+#: app/Common/Migration/SocialMeta.php:110
+msgid "Learn More"
+msgstr "さらに詳しく"
+
+#: app/Common/Admin/Admin.php:500
+msgid "LinkedIn Post Inspector"
+msgstr "LinkedIn Post Inspector"
+
+#: app/Common/Admin/SiteHealth.php:157
+msgid "Go to Settings > General"
+msgstr "「設定」>「一般」へ移動"
+
+#: app/Common/Admin/Admin.php:394 app/Common/Admin/Admin.php:669
+msgid "Notifications"
+msgstr "通知"
+
+#: app/Common/Views/sitemap/html/widget-options.php:119
+msgid "Publish Date"
+msgstr "公開日"
+
+#: app/Common/Views/sitemap/xsl/default.php:102
+#: app/Common/Views/sitemap/xsl/default.php:190
+#: app/Common/Views/sitemap/xsl/default.php:268
+#: app/Common/Views/sitemap/xsl/templates/header.php:37
+msgid "URL"
+msgstr "URL"
+
+#: app/Common/Admin/Notices/Review.php:92
+msgid "Not Really..."
+msgstr "いいえ、あまりそう思いません"
+
+#: app/Common/Admin/Notices/Review.php:91
+msgid "Yes I love it"
+msgstr "はい、好きです"
+
+#. Translators: 1 - The marketing site anchor name ("aioseo.com").
+#: app/Lite/Admin/Connect.php:288
+msgid "Plugin installed & activated."
+msgstr "プラグインをインストールして有効化しました。"
+
+#: app/Common/Admin/Admin.php:304
+msgid "Link has been inserted."
+msgstr "リンクを挿入しました．"
+
+#: app/Common/Admin/Admin.php:302
+msgid "No results found."
+msgstr "見つかりませんでした。"
+
+#: app/Common/Admin/Admin.php:300
+msgid "(no title)"
+msgstr "(タイトルなし)"
+
+#: app/Common/Admin/Admin.php:299
+msgid "Add Link"
+msgstr "リンク追加"
+
+#: app/Common/Admin/Admin.php:298
+msgid "Update"
+msgstr "更新"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/Notices/Notices.php:521
+msgid "Warning: %1$s has detected other active SEO or sitemap plugins. We recommend that you deactivate the following plugins to prevent any conflicts:"
+msgstr "警告: %1$s が他の有効な SEO またはサイトマッププラグインを検出しました。競合を防ぐために、次のプラグインを無効化することをおすすめします:"
+
+#: app/Common/Admin/Admin.php:920
+msgid "Give us a 5-star rating!"
+msgstr "評価5つをください！"
+
+#: app/Common/Admin/Admin.php:495
+msgid "Mobile-Friendly Test"
+msgstr "モバイルフレンドリーテスト"
+
+#: app/Common/Admin/Admin.php:490
+msgid "Google Page Speed Test"
+msgstr "Google Page Speed テスト"
+
+#: app/Common/Admin/Admin.php:485
+msgid "CSS Validator"
+msgstr "CSS 検証ツール"
+
+#: app/Common/Admin/Admin.php:480
+msgid "HTML Validator"
+msgstr "HTML 検証ツール"
+
+#: app/Common/Admin/Admin.php:475
+msgid "Pinterest Rich Pins Validator"
+msgstr "Pinterest Rich Pins Validator"
+
+#: app/Common/Admin/Admin.php:470
+msgid "Facebook Debugger"
+msgstr "Facebook デバッガー"
+
+#: app/Common/Admin/Admin.php:465
+msgid "Google Structured Data Test"
+msgstr "Google 構造化データテスト"
+
+#: app/Common/Admin/Admin.php:460
+msgid "Check Google Cache"
+msgstr "Google キャッシュを確認"
+
+#: app/Common/Admin/Admin.php:455
+msgid "Check links to this URL"
+msgstr "この URL へのリンクを確認"
+
+#: app/Common/Admin/Admin.php:447
+msgid "Analyze this page"
+msgstr "このページを分析"
+
+#. Translators: This is an action link users can click to open a feature
+#. request.
+#: app/Lite/Main/Filters.php:30
+msgid "Suggest a Feature"
+msgstr "機能を提案"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:600
+msgid "never"
+msgstr "決して"
+
+#: app/Common/Utils/Tags.php:285
+msgid "Your image's alt tag attribute."
+msgstr "イメージのAltタグ属性"
+
+#. Translators: 1 - "Pro".
+#: app/Lite/Admin/Notices/Notices.php:84
+msgid "Upgrade to %1$s"
+msgstr "%1$s にアップグレード"
+
+#: app/Common/Admin/Admin.php:208
+msgid "About Us"
+msgstr "会社案内"
+
+#: app/Common/Admin/Notices/Review.php:102
+msgid "I already did"
+msgstr "すでにしました"
+
+#: app/Common/Admin/Notices/Review.php:101
+msgid "Nope, maybe later"
+msgstr "結構です。後で検討するかもしれません"
+
+#. Translators: The plugin name ("All in One SEO").
+#: app/Common/Admin/Notices/Review.php:100
+msgid "Ok, you deserve it"
+msgstr "了解です。その価値があります"
+
+#: app/Common/Admin/Notices/Review.php:97
+msgid "That's awesome! Could you please do me a BIG favor and give it a 5-star rating on WordPress to help us spread the word and boost our motivation?"
+msgstr "すごい！ 私に大きな恩恵を与えて、WordPressで5つ星の評価を付けて、私たちが言葉を広め、モチベーションを高めるのを助けてくれませんか？"
+
+#. Translators: The plugin name ("All in One SEO").
+#: app/Common/Admin/Notices/Review.php:95
+msgid "Give feedback"
+msgstr "フィードバックを残す"
+
+#. Translators: The plugin name ("All in One SEO").
+#: app/Common/Admin/Notices/Review.php:94
+msgid "We're sorry to hear you aren't enjoying %1$s. We would love a chance to improve. Could you take a minute and let us know what we can do better?"
+msgstr "%1$sを楽しんでいないとのことでご不便をおかけしております。 私たちは改善する機会が欲しいです。 少し時間を取って、私たちがもっとうまくできることを教えていただけますか？"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/Notices/Review.php:88
+msgid "Are you enjoying %1$s?"
+msgstr "%1$s をお楽しみいただいていますか ?"
+
+#. Translators: 1 - The plugin name ("All in One SEO).
+#: app/Common/Api/Tools.php:116
+msgid "%1$s Debug Info"
+msgstr "%1$sデバッグ情報"
+
+#: app/Common/Breadcrumbs/Tags.php:197
+msgid "The page number."
+msgstr "ページ番号。"
+
+#: app/Common/Utils/Tags.php:329
+msgid "Category"
+msgstr "カテゴリー"
+
+#: app/Common/Breadcrumbs/Tags.php:181
+msgid "Month"
+msgstr "月"
+
+#: app/Common/Breadcrumbs/Breadcrumbs.php:281
+msgid "Page"
+msgstr "固定ページ"
+
+#: app/Common/Standalone/HeadlineAnalyzer.php:637
+msgid "year"
+msgstr "年"
+
+#: app/Common/Utils/Tags.php:476 app/Common/Utils/Tags.php:488
+msgid "Your site title."
+msgstr "サイトのタイトルです。"
+
+#. Translators: 1 - The plugin short name ("AIOSEO").
+#: app/Common/Admin/Notices/Notices.php:418
+msgid "Warning: %1$s has detected that you are blocking access to search engines. You can change this in Settings > Reading if this was unintended."
+msgstr "警告: %1$s は、サイトが検索エンジンへのアクセスをブロックしていることを検出しました。意図していない場合は、「設定 → 表示設定」で変更できます。"
+
+#: app/Common/Admin/Notices/Notices.php:425
+#: app/Common/Admin/Notices/Notices.php:474
+#: app/Common/Admin/Notices/Notices.php:550 app/Common/Api/Wizard.php:271
+#: app/Common/Api/Wizard.php:304
+#: app/Common/ImportExport/RankMath/TitleMeta.php:417
+#: app/Common/Migration/GeneralSettings.php:747
+#: app/Common/Migration/Helpers.php:168
+msgid "Remind Me Later"
+msgstr "後で再通知"
+
+#: app/Common/Admin/Notices/Review.php:96
+msgid "No thanks"
+msgstr "結構です"
+
+#. Translators: 1 - "WooCommerce", 2 - The plugin short name ("AIOSEO").
+#: app/Lite/Admin/Notices/Notices.php:80
+msgid "We have detected you are running %1$s. Upgrade to %2$s to unlock our advanced eCommerce SEO features, including SEO for Product Categories and more."
+msgstr "%1$sを実行していることが検出されました。 %2$sにアップグレードして、製品カテゴリのSEOなどの高度なeコマースSEO機能のロックを解除します。"
+
+#. Author of the plugin
+msgid "All in One SEO Team"
+msgstr "All in One SEO チーム"
+
+#: app/Common/Views/sitemap/xsl/templates/header.php:52
+msgid "sitemaps"
+msgstr "サイトマップ"
+
+#: app/Common/Views/sitemap/xsl/templates/header.php:45
+msgid "This sitemap index contains"
+msgstr "このサイトマップインデックスには以下が含まれます:"
+
+#: app/Common/Views/sitemap/xsl/templates/header.php:40
+msgid "URLs"
+msgstr "URL"
+
+#: app/Common/Views/sitemap/xsl/templates/header.php:33
+msgid "This sitemap contains"
+msgstr "このサイトマップには以下が含まれます:"
+
+#: app/Common/Views/sitemap/xsl/templates/header.php:22
+msgid "this is an XML Sitemap, meant to be consumed by search engines like Google or Bing."
+msgstr "これはXMLサイトマップで、GoogleやBingなどの検索エンジンによって使用されることを意図しています。"
+
+#: app/Common/Views/sitemap/xsl/templates/header.php:22
+msgid "Generated by"
+msgstr "生成: "
+
+#: app/Common/Admin/Dashboard.php:150
+msgid "Temporarily unable to load feed."
+msgstr "一時的にフィードを読み込むことができません。"
+
+#: app/Common/Tools/SystemStatus.php:337
+msgid "Inactive Plugins"
+msgstr "停止中のプラグイン"
+
+#: app/Common/Tools/SystemStatus.php:305
+msgid "Active Plugins"
+msgstr "使用中のプラグイン"
+
+#: app/Common/Views/sitemap/html/widget-options.php:158
+msgid "Exclude Terms"
+msgstr "タームを除外"
+
+#: app/Common/Tools/SystemStatus.php:97
+msgid "Search Engine Visibility"
+msgstr "検索エンジンでの表示"
+
+#: app/Common/Tools/SystemStatus.php:57
+msgid "Site Language"
+msgstr "サイトの言語"
+
+#: app/Common/Tools/SystemStatus.php:53 app/Common/Utils/Tags.php:475
+#: app/Common/Utils/Tags.php:487
+msgid "Site Title"
+msgstr "サイトのタイトル"
+
+#: app/Common/Migration/SocialMeta.php:75
+msgid "Use Content for Autogenerated Descriptions"
+msgstr "自動生成説明文に本文を使用"
+
+#. Translators: This is an action link users can click to open our general
+#. documentation page.
+#: app/Lite/Main/Filters.php:58
+msgid "Documentation"
+msgstr "ドキュメンテーション"
+
+#. Description of the plugin
+msgid "SEO for WordPress. Features like XML Sitemaps, SEO for custom post types, SEO for blogs, business sites, ecommerce sites, and much more. More than 80 million downloads since 2007."
+msgstr "WordPress の SEO。XML サイトマップ、カスタム投稿タイプ用 SEO、ブログ、ビジネスサイト、eコマースサイト向け SEO などの機能。2007年以来8000万以上のダウンロード。"
+
+#. Translators: This is an action link users can click to purchase a license
+#. for All in One SEO Pro.
+#: app/Lite/Admin/Admin.php:42 app/Lite/Admin/Admin.php:68
+#: app/Lite/Main/Filters.php:63
+msgid "Upgrade to Pro"
+msgstr "プロ版にアップグレード"
+
+#. Translators: This is an action link users can click to open the General
+#. Settings menu.
+#: app/Common/Admin/Admin.php:553 app/Lite/Main/Filters.php:48
+msgid "SEO Settings"
+msgstr "SEO 設定"
+
+#: app/Common/Sitemap/Output.php:32
+msgid "dynamically"
+msgstr "動的"
+
+#: app/Common/Sitemap/Xsl.php:35
+msgid "Additional Pages"
+msgstr "追加ページ"
+
+#: app/Common/Views/sitemap/xsl/default.php:293
+msgid "Change Frequency"
+msgstr "頻度を変更"
+
+#: app/Common/Views/sitemap/xsl/default.php:306
+msgid "Priority"
+msgstr "優先順位"
+
+#: app/Common/Views/sitemap/html/widget-options.php:92
+msgid "Taxonomies"
+msgstr "タクソノミー"
+
+#: app/Common/Views/sitemap/html/widget-options.php:69
+msgid "Post Types"
+msgstr "投稿タイプ"
+
+#: app/Common/Tools/SystemStatus.php:243
+msgid "Active Theme"
+msgstr "現在のテーマ"
+
+#: app/Common/Tools/SystemStatus.php:81
+msgid "Multisite"
+msgstr "マルチサイト"
+
+#: app/Common/Tools/SystemStatus.php:69
+msgid "Home URL"
+msgstr "ホーム URL"
+
+#: app/Common/Tools/SystemStatus.php:73
+msgid "Site URL"
+msgstr "サイト URL"
+
+#: app/Common/Tools/SystemStatus.php:225
+msgid "PHP XML Support"
+msgstr "PHP XML サポート"
+
+#: app/Common/Tools/SystemStatus.php:221
+msgid "PHP IPTC Support"
+msgstr "PHP IPTCサポート"
+
+#: app/Common/Tools/SystemStatus.php:217
+msgid "PHP Exif Support"
+msgstr "PHP Exifサポート"
+
+#: app/Common/Tools/SystemStatus.php:213
+msgid "PHP Max Script Execution Time"
+msgstr "PHP最大スクリプト実行時間"
+
+#: app/Common/Tools/SystemStatus.php:209
+msgid "PHP Max Post Size"
+msgstr "PHP 最大 POST サイズ"
+
+#: app/Common/Tools/SystemStatus.php:205
+msgid "PHP Max Upload Size"
+msgstr "PHP 最大アップロードサイズ"
+
+#: app/Common/Tools/SystemStatus.php:201
+msgid "PHP Memory Limit"
+msgstr "PHP メモリ上限"
+
+#: app/Common/Tools/SystemStatus.php:197
+msgid "PHP Version"
+msgstr "PHP バージョン"
+
+#: app/Common/Tools/SystemStatus.php:189
+msgid "MySQL Version"
+msgstr "MySQL バージョン"
+
+#: app/Common/Tools/SystemStatus.php:185
+msgid "Memory Usage"
+msgstr "メモリ使用量"
+
+#: app/Common/Tools/SystemStatus.php:177
+msgid "Operating System"
+msgstr "OS"
+
+#: app/Common/Tools/SystemStatus.php:82 app/Common/Tools/SystemStatus.php:86
+#: app/Common/Tools/SystemStatus.php:218 app/Common/Tools/SystemStatus.php:222
+#: app/Common/Tools/SystemStatus.php:226
+msgid "Yes"
+msgstr "はい"
+
+#: app/Common/Tools/SystemStatus.php:186
+msgid "N/A"
+msgstr "該当なし"
+
+#: app/Common/Tools/SystemStatus.php:129 app/Common/Tools/SystemStatus.php:133
+#: app/Common/Tools/SystemStatus.php:137 app/Common/Tools/SystemStatus.php:141
+#: app/Common/Tools/SystemStatus.php:145 app/Common/Tools/SystemStatus.php:149
+#: app/Common/Tools/SystemStatus.php:153
+msgid "Not set"
+msgstr "未設定"
+
+#: app/Common/Tools/SystemStatus.php:78
+msgid "Default"
+msgstr "デフォルト"
+
+#: app/Common/Utils/Tags.php:493
+msgid "Site Description"
+msgstr "サイト説明"
+
+#: app/Common/Migration/SocialMeta.php:79
+msgid "Run Shortcodes in Description"
+msgstr "説明でショートコードを実行する"
+
+#: app/Common/Migration/SocialMeta.php:83
+msgid "Run Shortcodes in Title"
+msgstr "タイトル内でショートコードを実行"
+
+#: app/Common/Tools/SystemStatus.php:82 app/Common/Tools/SystemStatus.php:86
+#: app/Common/Tools/SystemStatus.php:218 app/Common/Tools/SystemStatus.php:222
+#: app/Common/Tools/SystemStatus.php:226
+msgid "No"
+msgstr "いいえ"
+
+#: app/Common/Admin/Admin.php:200
+msgid "Feature Manager"
+msgstr "機能マネージャー"
+
+#: app/Common/Tools/SystemStatus.php:49
+msgid "Version"
+msgstr "バージョン"
+
+#. Translators: This is an action link users can click to open our premium
+#. support.
+#: app/Lite/Main/Filters.php:53
+msgid "Support"
+msgstr "サポート"
+
+#. Plugin Name of the plugin
+msgid "All in One SEO"
+msgstr "All in One SEO"
+
+#: app/Common/Admin/Admin.php:534
+msgid "Edit SEO"
+msgstr "SEO を編集"
+
+#: app/Common/Admin/Admin.php:386 app/Common/Admin/SiteHealth.php:91
+msgid "SEO"
+msgstr "SEO"
+
+#: app/Common/Utils/Tags.php:521
+msgid "Description"
+msgstr "説明"
+
+#: app/Common/Admin/Admin.php:301 app/Common/Models/Post.php:433
+#: app/Common/Views/sitemap/html/widget-options.php:8
+msgid "Title"
+msgstr "タイトル"
+
+#: app/Common/Tools/SystemStatus.php:129 app/Common/Tools/SystemStatus.php:133
+#: app/Common/Tools/SystemStatus.php:137 app/Common/Tools/SystemStatus.php:141
+#: app/Common/Tools/SystemStatus.php:145 app/Common/Tools/SystemStatus.php:149
+#: app/Common/Tools/SystemStatus.php:153
+msgid "Disabled"
+msgstr "無効"
+
+#: app/Common/Admin/Admin.php:162
+msgid "General Settings"
+msgstr "一般設定"
+
+#. Translators: 1 - The IP address. 2 - The referer.
+#: app/Common/Tools/BadBotBlocker.php:237
+msgid "Blocked bot with IP %1$s -- matched referer %2$s found in blocklist."
+msgstr "IP %1$s のブロックしたボット -- %2$s はブロックリストで見つかったリファラに一致しました。"
+
+#. Translators: 1 - The IP address. 2 - The user agent.
+#: app/Common/Tools/BadBotBlocker.php:228
+msgid "Blocked bot with IP %1$s -- matched user agent %2$s found in blocklist."
+msgstr "IP %1$s のブロックしたボット -- %2$s はブロックリストで見つかったユーザエージェントに一致しました。"

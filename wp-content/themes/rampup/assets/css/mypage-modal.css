@@ -1,0 +1,432 @@
+@charset "UTF-8";
+.modalWrap {
+  position: fixed;
+  top: calc(50% + 66px);
+  left: 50%;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.modalWrap::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50vw, -50vh);
+  background-color: rgba(0, 0, 0, 0.88);
+  display: inline-block;
+  content: "";
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modalWrap {
+    top: calc(50% + 61px);
+  }
+}
+.modalWrap .modal__contentScroll {
+  position: relative;
+  width: 100%;
+  max-width: 780px;
+  padding: 2.4rem;
+  margin: auto;
+  overflow: hidden;
+  height: calc(100% - 66px);
+}
+.modalWrap .modal__contentWrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  overflow: scroll;
+  max-width: calc(780px + 2.4rem * 2);
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2.4rem;
+}
+.modalWrap .modal__contentInner {
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  overflow: scroll;
+}
+.modalWrap .modal__contentInner .modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  width: 8rem;
+  height: 8rem;
+  background-color: #5DAC7D;
+  transform: translate(50%, -50%);
+  transition: 0.3s;
+}
+.modalWrap .modal__contentInner .modal__close:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.modalWrap .modal__contentInner .modal__content {
+  height: 100%;
+  max-height: 700px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild {
+  display: none;
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modalWrap .modal__contentInner .modal__content .modal__contentChild {
+    top: auto;
+    transform: translateY(0%);
+  }
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild.-js-mypage-animation {
+  border-radius: 10px;
+  border-top: solid 6px #5DAC7D;
+  padding-top: 4.3rem;
+  padding-bottom: 2.3rem;
+  position: relative;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modalWrap .modal__contentInner .modal__content .modal__contentChild.-js-mypage-animation {
+    padding-left: 5%;
+    padding-right: 6%;
+  }
+  .modalWrap .modal__contentInner .modal__content .modal__contentChild.-js-mypage-animation .modal__flex {
+    justify-content: center;
+  }
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template .modal__title {
+  padding: 2.4rem 1.6rem;
+  background-color: #5DAC7D;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template .modal__title .modal__titleText {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: center;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template .modal__main.-setting {
+  padding: 4.2rem 6rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template .modal__main.-setting {
+    padding: 2rem 3rem;
+  }
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template .modal__main {
+  padding: 4rem 2.4rem;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template .modal__main .modal__mainText {
+  margin-bottom: 3.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.modal__flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modal__flex {
+    flex-wrap: wrap;
+  }
+}
+.modal__flex .modal__flexChild {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 1.8rem 1.8rem 1.6rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modal__flex .modal__flexChild {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.modal__flex .modal__flexChild.-bgBlue {
+  background-color: #90d2d8;
+}
+.modal__flex .modal__flexChild.-bgLightgray {
+  background-color: #ebedf2;
+}
+.modal__flex .modal__flexChild .modal__flexTime {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.modal__flex .modal__flexChild .modal__flexInput {
+  width: auto;
+  max-width: 32px;
+  padding: 0;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+.modal__flex .membership_finishedButton {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 6rem;
+  color: #c6c6c6;
+  pointer-events: none;
+}
+.modal__flex .modal__heade {
+  max-width: 130px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.2;
+  letter-spacing: 0.05em;
+  background-color: #5DAC7D;
+  padding: 0 2.4rem;
+  border-radius: 23px;
+  color: #ffffff;
+}
+@media only screen and (max-width: 1006px) {
+  .modal__flex .modal__heade {
+    margin: 0 auto;
+  }
+}
+.modal__flex .modal__text {
+  text-align: left;
+}
+@media only screen and (max-width: 1006px) {
+  .modal__flex .modal__text {
+    text-align: center;
+  }
+}
+.modal__flex .modal__text.-type1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #5DAC7D;
+  padding-bottom: 2.2rem;
+  padding-top: 0.6rem;
+}
+.modal__flex .modal__text.-type2 {
+  font-size: 2rem;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+.modal__flex .svgCircle__colored {
+  animation: load 2s;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template .modal__mainButtonWrap {
+  margin-top: 3rem;
+  text-align: center;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template .modal__mainButtonWrap .modal__mainButton {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 1.2rem;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #5DAC7D;
+  border: none;
+  border-radius: 4px;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template .modal__mainButtonWrap .modal__mainButton.-center {
+  margin: 0 auto;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template .modal__mainButtonWrap .modal__closeButton {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #707070;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__template .modal__mainButtonWrap .modal__closeButton:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__titleBox {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  padding: 1.8rem 0.6rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #ebedf2;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__title {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__title {
+    font-size: 1.8rem;
+  }
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__titleImage {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__inputBox {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__inputBox {
+    flex-wrap: wrap;
+  }
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__inputText {
+  min-width: 180px;
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__inputText {
+    width: 100%;
+    margin-bottom: 0.4rem;
+  }
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__inputText.-required {
+  position: relative;
+  top: 0;
+  right: 0;
+  color: red;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__input {
+  width: 100%;
+  padding: 1.6rem 2.2rem;
+  border: 1px solid #5DAC7D;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__input {
+    width: 100%;
+  }
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__inputPasswordWrap {
+  flex-direction: column;
+  display: flex;
+  width: 72.408%;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__inputPasswordWrap {
+    width: 100%;
+  }
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__inputPasswordWrap input {
+  width: 100%;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__inputPasswordWrap p {
+  margin-top: 0.4rem;
+  color: #707070;
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__input.-profile {
+  display: flex;
+  padding-left: 0;
+  border: none;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__input.-profile input[type="file"] {
+  display: none;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__input.-profile .modal__setting__inputProfileWrap {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin-left: 1.2rem;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__input.-profile .modal__setting__text {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__input.-profile .modal__setting__Profilebutton {
+  width: 120px;
+  padding: 0.4rem 1.2rem;
+  color: #707070;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #eaedf2;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__input.-profile .modal__setting__Profilebutton:hover {
+  opacity: 0.7;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__input.-profile .modal__setting__image {
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__input.-profile .modal__setting__image > img {
+  object-fit: cover;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__buttonBox {
+  margin-top: 4.2rem;
+  text-align: center;
+}
+.modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__button {
+  width: 300px;
+  height: 54px;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #5DAC7D;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .modalWrap .modal__contentInner .modal__content .modal__contentChild .modal__setting__button {
+    width: 100%;
+  }
+}
+.modal__trigger {
+  transition: 0.3s;
+}
+.modal__trigger:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0.7;
+}
+input[type="number"].modal__flexInput::-webkit-outer-spin-button, input[type="number"].modal__flexInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}

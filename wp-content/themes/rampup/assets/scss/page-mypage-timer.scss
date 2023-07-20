@@ -1,0 +1,373 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+
+@import "configuration";
+
+//____________________________
+//マイページ タイマー
+//____________________________
+.mypageTimer {
+  // ---------- ストップウォッチ ----------
+  .mypageTimer__stopwatch {
+    margin-bottom: 3.5rem;
+    max-width: 570px;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    // margin-right: 2.4rem;
+
+    // ---------- タイトル ----------
+    .mypageTimer__stopwatchTitle {
+      background-color: $primary;
+      text-align: center;
+      padding: 1rem;
+      font-weight: 600;
+      font-size: 2rem;
+      color: $white_fff;
+    }
+
+    // ---------- 数字部分 ----------
+    .mypageTimer__stopwatchFlex {
+      padding: 2.4rem;
+      text-align: center;
+      background-color: $white_fff;
+      @include flex;
+      align-items: center;
+
+      @media #{$tab}, #{$sp} {
+        flex-wrap: wrap;
+      }
+
+      .mypageTimer__stopwatchNumberWrap {
+        width: 70%;
+        @media #{$tab}, #{$sp} {
+          width: 100%;
+          margin-bottom: 2.4rem;
+        }
+
+        .mypageTimer__stopwatchNumber {
+          color: $blue_90D;
+          font-weight: 600;
+
+          font-size: 5.2rem;
+          @media #{$tab}, #{$sp} {
+            font-size: 4.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  @at-root {
+    .mypage__timerButtons {
+      width: 30%;
+      @media #{$tab}, #{$sp} {
+        width: 100%;
+        @include flex;
+        justify-content: space-between;
+        .mypage__button {
+          width: 49%;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // ---------- 学習カレンダー全体 ----------
+  .mypageTimer__calendarWrap {
+    // ---------- 学習カレンダー　スイッチ部分 ----------
+    .mypageTimer__calendarSwitch {
+      @include flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      max-width: 570px;
+      @media #{$tab}, #{$sp} {
+        width: 100%;
+      }
+
+      // ---------- スイッチ子要素 ----------
+      .mypageTimer__calendarSwitchChild {
+        box-shadow: 0 0 6px rgba($black_000, 0.2);
+        margin-right: 1rem;
+        border-radius: 4px 4px 0 0;
+        overflow: hidden;
+        transition: 0.3s;
+        width: 32%;
+        margin-right: 2%;
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 0 8px rgba($black_000, 0.4);
+          transition: 0.3s;
+        }
+        @media #{$tab}, #{$sp} {
+          // width: 32%;
+          // &:not(:nth-child(3n)) {
+          //   margin-right: 2%;
+          // }
+        }
+
+        // ---------- スイッチフォーム ----------
+        .mypageTimer__calendarSwitchForm {
+          display: block;
+
+          // ---------- スイッチフォーム 送信ボタン ----------
+          .mypageTimer__calendarSwitchButton {
+            width: 100%;
+            height: 40px;
+            display: block;
+            background-color: $white_fff;
+            border: none;
+            font-size: 1.6rem;
+            font-weight: 600;
+            transition: 0.3s;
+            &:hover {
+              cursor: pointer;
+              opacity: 1;
+              transition: 0.3s;
+            }
+
+            &.-active {
+              background-color: $primary;
+              color: $white_fff;
+              height: 54px;
+            }
+
+            @media #{$tab}, #{$sp} {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    // ---------- 学習カレンダーベーじねーション ----------
+    .mypageTimer__calendarPagination {
+      position: relative;
+      @include flex;
+      align-items: center;
+      background-color: $primary;
+      padding: 1.1rem 1.6rem;
+      justify-content: space-between;
+
+      // ---------- 左側 ----------
+      .mypageTimer__calendarPaginationLeft {
+        @include flex;
+        align-items: center;
+
+        // ---------- 日付 ----------
+        .mypageTimer__calendarPaginationDate {
+          color: $white_fff;
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin-left: 1.8rem;
+          @media #{$sp} {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .mypageTimer__calendarPaginationForm {
+        // ---------- ボタン ----------
+        .mypageTimer__calendarPaginationButton {
+          background-color: transparent;
+          display: block;
+          height: 100%;
+          border: none;
+          img {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+    // ---------- 学習カレンダー グラフ部分全体 ----------
+    .mypageTimer__calendar {
+      $margin-bottom: 3.6rem; //はみ出させる分の長さ
+      background-color: $white_fff;
+      padding: 1.85rem 3.2rem 2.6rem;
+      @media #{$tab}, #{$sp} {
+        padding: 1.6rem 1rem;
+        padding-left: 0;
+      }
+
+      // ---------- 学習カレンダー グラフ部分 ----------
+      .mypageTimer__calendarFigureWrap {
+        height: 260px;
+        margin-bottom: $margin-bottom;
+        @include flex;
+        // ---------- 学習カレンダー 左の単位軸 ----------
+        .mypageTimer__calendarUnits {
+          @include flex;
+          flex-direction: column;
+          min-width: 60px;
+          padding-right: 1.6rem;
+          justify-content: space-between;
+          @media #{$tab}, #{$sp} {
+            min-width: 40px;
+            padding-right: 0.4rem;
+          }
+
+          // ---------- 学習カレンダー 左の単位軸 子要素 ----------
+          .mypageTimer__calendarUnitItem {
+            text-align: right;
+            font-size: 1.2rem;
+            font-weight: 500;
+            line-height: 1.2;
+
+            @media #{$tab}, #{$sp} {
+              font-size: 1rem;
+            }
+
+            &.-middle {
+              transform: translateY(-50%);
+            }
+            &.-bottom {
+              transform: translateY(50%);
+            }
+          }
+        }
+
+        // ---------- 学習カレンダー グラフ部分 ----------
+        .mypageTimer__calendarFigure {
+          @include flex;
+          border: 1px solid $gray_ebe;
+          justify-content: space-between;
+          height: 100%;
+          width: 100%;
+          position: relative;
+
+          &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            transform: translateY(-50%);
+            background-color: $gray_ebe;
+            display: inline-block;
+            content: "";
+          }
+
+          // ---------- 学習データ ----------
+          .mypageTimer__calendarDataWrap {
+            border-right: 1px solid $gray_ebe;
+            padding-top: 0.5em;
+            &:last-child {
+              border-right: none;
+            }
+            .mypageTimer__calendarData {
+              @include flex;
+              flex-direction: column;
+              height: 100%;
+              position: relative;
+
+              // ---------- 学習記録 ----------
+              .mypageTimer__calendarValue {
+                margin: auto;
+                margin-bottom: 0;
+                border: none;
+                // height: 100%;
+                width: 33%;
+                min-height: 1px;
+                transition: 0.3s;
+                position: relative;
+                background-color: rgba($blue_90D, 1);
+                &:hover {
+                  cursor: pointer;
+                  background-color: rgba($blue_90D, 0.7);
+                  transition: 0.3s;
+                  z-index: 10;
+                  opacity: 1;
+
+                  // ---------- グラフの頭に勉強時間を表示 ----------
+                  &::before {
+                    position: absolute;
+                    bottom: calc(100% + 8px);
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 64px;
+                    color: $black_000;
+                    padding: 0.4rem 0.2rem;
+                    background: $white_fff;
+                    border-radius: 4px;
+                    border: 1px solid $blue_90D;
+                    font-size: 1rem;
+                    text-align: center;
+                    display: inline-block;
+                    content: attr(time);
+                  }
+
+                  &::after {
+                    position: absolute;
+                    left: 50%;
+                    width: 10px;
+                    height: 10px;
+                    background: white;
+                    bottom: calc(100% + 4px);
+                    transform: translateX(-50%) rotate(45deg);
+                    border-bottom: 1px solid $blue_90D;
+                    border-right: 1px solid $blue_90D;
+                    content: "";
+                  }
+                }
+              }
+
+              // ---------- 日付 ----------
+              .mypageTimer__calendarDate {
+                position: absolute;
+                padding-top: 1rem;
+                line-height: 1.1;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                text-align: center;
+                font-size: 1.2rem;
+                font-weight: 500;
+                @media #{$tab}, #{$sp} {
+                  width: 40px;
+                  font-size: 1rem;
+                }
+
+                .-sp-only {
+                  display: none;
+                  @media #{$tab}, #{$sp} {
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+
+            // ---------- 日付または初期値の時 ----------
+            &.-changeRecord {
+              button {
+                // pointer-events: none !important;
+              }
+            }
+          }
+
+          // ---------- 学習データ 月間カレンダーの時のみ ----------
+          &.-month {
+            padding: 0 1.6rem;
+            @media #{$tab}, #{$sp} {
+              padding: 0 0.4rem;
+            }
+            .mypageTimer__calendarDataWrap {
+              border-right: none;
+
+              .mypageTimer__calendarValue {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

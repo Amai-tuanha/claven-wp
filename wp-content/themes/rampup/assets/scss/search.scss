@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+@import "configuration";
+
+//____________________________
+//search 検索結果ページのスタイル
+//____________________________
+.search {
+  .heading_type1 {
+    width: 100%;
+  }
+}
+
+//____________________________
+//search form のスタイル
+//____________________________
+.search_form {
+  @include flex;
+  width: 100%;
+  padding: 5px 9px 6px 9px;
+  background-color: $white_eae;
+  margin-bottom: 2.4rem;
+  @media #{$sp} {
+    width: 100%;
+  }
+  * {
+    background-color: $white_eae;
+  }
+  input {
+    width: 100%;
+    padding: 0;
+    font-size: 1.2rem;
+    background-color: $white_eae;
+    border: none;
+
+    &::placeholder {
+      color: $gray_c3c;
+      font-size: 1.2rem;
+    }
+  }
+  button {
+    padding: 0;
+    // background-color: transparent;
+    background-color: $white_eae;
+    border: none;
+    i {
+      margin-top: 3px;
+    }
+  }
+}
+
+.course__contentsWrap.-search {
+  padding-top: 2.4rem;
+
+  .course__contents {
+    // background-color: $white_fff;
+  }
+}
+
+.course__postContent {
+  .-searchHighlight {
+    font-weight: 600;
+    background: linear-gradient(transparent 60%, $yellow_fff 60%);
+  }
+  a {
+    // display: none !important;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "html.format.wrapAttributes": "force-aligned",
+  "files.trimTrailingWhitespace": true,
+  "workbench.tree.renderIndentGuides": "always",
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/view/asset/css/"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false
+}

@@ -1,0 +1,306 @@
+@charset "UTF-8";
+#wpfooter {
+  opacity: 0;
+}
+* {
+  overflow: visible;
+}
+.-disabled {
+  background-color: #dddddd !important;
+}
+.back_to_top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 8rem;
+  height: 8rem;
+  text-align: center;
+  background-color: #5DAC7D;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.back_to_top:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.back_to_top > p {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.-fixed01, .-fixed02, .-fixed03 {
+  position: sticky !important;
+  top: 0px;
+  left: 0px;
+}
+.-fixed01 {
+  z-index: 20;
+}
+.-fixed02 {
+  z-index: 10;
+}
+.-fixed03 {
+  z-index: 30;
+}
+.-break {
+  background-color: #dddddd !important;
+}
+.dashboard {
+  margin: 1rem 2rem 0 0.2rem;
+}
+.dashboard.-progress .-fixed01, .dashboard.-progress .-fixed02, .dashboard.-progress .-fixed03 {
+  top: 32px;
+  left: 160px;
+}
+.dashboard.-progress .dashboard__table {
+  overflow: visible;
+}
+.dashboard .dashboard__title {
+  transition: 0.3s;
+}
+.dashboard .dashboard__title:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.dashboard .dashboard__inner {
+  background-color: #ffffff;
+}
+.dashboard__table {
+  display: block;
+  white-space: nowrap;
+  overflow: auto;
+  /*スクロールバー全体*/
+  /*スクロールバーの軌道*/
+  /*スクロールバーの動く部分*/
+}
+.dashboard__table::-webkit-scrollbar {
+  width: 20px;
+}
+.dashboard__table::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(93, 172, 125, 0.2);
+}
+.dashboard__table::-webkit-scrollbar-thumb {
+  background-color: #5DAC7D;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+.dashboard__table .dashboard__tableRow {
+  overflow: visible;
+  background-color: #f2f7f4 !important;
+}
+.dashboard__table .dashboard__tableRow th, .dashboard__table .dashboard__tableRow td {
+  height: 42px;
+  padding: 0 15px;
+  vertical-align: middle;
+}
+.dashboard__table .dashboard__tableRow th {
+  height: 42px;
+  line-height: 1.75;
+}
+.dashboard__table .dashboard__tableRow .dashboard__tableHead {
+  color: #ffffff;
+  background-color: #5DAC7D;
+}
+.dashboard__table .dashboard__tableRow .dashboard__tableHead:before {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  height: 100%;
+  content: "";
+  border: 1px solid #cccccc;
+}
+.dashboard__table .dashboard__tableRow .dashboard__tableHead span {
+  white-space: pre-wrap;
+}
+.dashboard__table .dashboard__tableRow .dashboard__tableDesc {
+  position: relative;
+  text-align: center;
+}
+.dashboard__table .dashboard__tableRow .dashboard__tableDesc.-fixed02, .dashboard__table .dashboard__tableRow .dashboard__tableDesc.-fixed01 {
+  background-color: #ffffff;
+}
+.dashboard__table .dashboard__tableRow .dashboard__tableDesc.-done {
+  color: #ffffff;
+  text-align: center;
+  background-color: #5DAC7D;
+}
+.dashboard__table .dashboard__tableRow .dashboard__tableDesc .-id_radio {
+  position: absolute;
+  visibility: hidden;
+}
+.dashboard__table .dashboard__tableRow .dashboard__tableDesc .dashboard__tableIDlabel {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+}
+.dashboard__table .dashboard__tableRow .dashboard__tableDesc .dashboard__tableIDlabel.-seminar {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.-id_radio:checked + .-seminar {
+  background-color: #337662 !important;
+}
+.dashboard__table .dashboard__tableRow .dashboard__tableDesc .dashboard__tableIDlabel.-true {
+  color: #ffffff;
+  background-color: #5DAC7D;
+}
+.dashboard__table .dashboard__tableRow .dashboard__tableDesc .dashboard__select {
+  width: 180px;
+  max-width: 100%;
+  min-height: 0;
+  padding: 0 24px 0 8px;
+  font-size: 14px;
+  line-height: 2;
+  -webkit-appearance: none;
+  box-shadow: none;
+  border-radius: 3px;
+}
+.dashboard__submitWrap {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+}
+.dashboard__submitWrap .dashboard__submitCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  height: 100%;
+}
+.dashboard__submitWrap .dashboard__submitCover:hover {
+  cursor: pointer;
+}
+.dashboard__submitWrap .dashboard__submitButton {
+  background-color: #5DAC7D;
+  pointer-events: none;
+}
+.emailText textarea {
+  width: 100%;
+  min-height: 150px;
+  overflow: hidden;
+  resize: none;
+}
+.emailText .emailText__list .emailText__listChild .emailText__listTitle {
+  margin-bottom: 1.6rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.emailText .emailText__list .emailText__listChild .emailText__listTitle:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.emailText .emailText__list .emailText__listChild .emailText__shortCodes {
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 1.6rem;
+}
+.emailText .emailText__list .emailText__listChild .emailText__shortCodes .emailText__shortCodesChild {
+  position: relative;
+  padding: 0 4px;
+  margin-right: 8px;
+  background-color: #5DAC7D;
+  border-radius: 2px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+}
+.emailText .emailText__list .emailText__listChild .emailText__shortCodes .emailText__shortCodesChild:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.emailText .emailText__list .emailText__listChild .emailText__shortCodes .emailText__shortCodesChild .js__emailText__shortCodesAlert {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  display: none;
+  width: 50px;
+  padding: 2px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  background-color: black;
+  border-radius: 4px;
+  transform: translate(-50%, 0%);
+}
+.emailText__formRow {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.6rem;
+}
+.emailText__formRow .emailText__formTitle {
+  min-width: 55px;
+  font-weight: bold;
+}
+.emailText__formRow .email_formContent {
+  width: 100%;
+}
+.emailText .emailText__list .emailText__listChild .emailText__displayWrap .emailText__displayText {
+  white-space: pre-wrap;
+}
+.emailText .emailText__list .emailText__listChild .emailText__displayWrap .emailText__display {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  background-color: lightgray;
+}
+.emailText .emailText__list .emailText__listChild .emailText__displayWrap .emailText__div {
+  white-space: normal;
+}
+.dashboard__seminar {
+  margin-top: 3rem;
+}
+.flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.send {
+  padding: 15px 70px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #487474;
+  display: block;
+  margin: 4rem auto 0;
+  text-align: center;
+  width: 253px;
+}
+@media only screen and (max-width: 480px) {
+  .send {
+    font-size: 1.6rem;
+  }
+}
+.send:hover {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0.7;
+}

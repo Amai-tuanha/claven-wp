@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <filter id="パス_11" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.153"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_28" data-name="グループ 28" transform="translate(-1117 -160)">
+    <g transform="matrix(1, 0, 0, 1, 1117, 160)" filter="url(#パス_11)">
+      <path id="パス_11-2" data-name="パス 11" d="M13,0A13,13,0,1,1,0,13,13,13,0,0,1,13,0Z" transform="translate(3 3)" fill="#2c2c2c"/>
+    </g>
+    <g id="グループ_15" data-name="グループ 15" transform="translate(1127.682 171.272)">
+      <line id="線_4" data-name="線 4" x2="4.727" y2="4.727" transform="translate(0 4.727)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+      <line id="線_5" data-name="線 5" x1="5.909" y2="9.455" transform="translate(4.727 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

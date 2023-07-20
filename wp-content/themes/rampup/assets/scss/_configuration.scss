@@ -1,0 +1,147 @@
+@charset "UTF-8";
+//____________________________
+// 変数系, mixin, メディはクエリの格納ファイル
+// mixinは無許可に追加厳禁 *必要な場合はディレクターに相談
+//____________________________
+
+
+
+//____________________________
+//色設定
+//____________________________
+
+//共通
+$black_333: #333333;
+$black_333: #333333;
+$black_000: #000000;
+$white_fff: #ffffff;
+$white_f6f: #f6f6f6;
+
+// ---------- 白、黒、グレー系 ----------
+$white_fcf: #fcfcfc;
+$gray_dbd: #dbdbdb;
+$gray_f5f: #f5f5f5;
+$gray_d1d: #d1d1d1;
+$gray_f7f: #f7f8f7;
+$gray_f4f: #f4f7f5;
+$gray_efe: #efefef;
+$gray_c6c: #c6c6c6;
+
+//メインカラー
+$primary: #5DAC7D;
+$d_primary: #337662;
+
+//サブカラー
+$green_87d:#87D979;
+$green_bde:#bdedb4;
+$green_487:#487474;
+$green_a6d: #a6d3c8;
+$green_88c:#88c6a2;
+$blue_90D: #90d2d8;
+$gray_ebe: #ebedf2;
+$gray_c6c: #c6c6c6;
+$gray_272: #272727;
+$gray_EAE: #eaedf2;
+$gray_ddd: #dddddd;
+$gray_cbc: #cbcbcb;
+$gray_707: #707070;
+$gray_edf:#edf0ee;
+$red_ff0: #ff0000;
+
+// SNSアイコンの色
+$gray_1bb: #1bb200;
+
+// search
+$white_eae: #eaeaea;
+$gray_c3c: #c3c3c3;
+
+//サブカラー
+$blue_12b: #12b9bd;
+$green_008: #008555;
+$gray_d1d: #d1d1d1;
+$yellow_fff: #ffff66;
+
+//グレー
+$gray_c7c: #C7C7C7;
+$gray_ebebeb: #EBEBEB;
+
+// ---------- その他 ----------
+$green_388: #38803d;
+$green_4d7: #4d7e45;
+$red_e32: #e32020;
+$blue_295: #2955ce;
+$green_f2f:#f2f7f4;
+
+
+
+// グラデーションマーカー
+// $grd_05A_90deg: linear-gradient(90deg, #05A7A5 0%, #09BDA4 100%); 
+$grd_4ca_70deg: linear-gradient(transparent 70%, rgba($primary, 0.2) 70%);
+
+// マイページ
+//____________________________
+//メディアクエリ
+//____________________________
+$msp: "only screen and (max-width:374px)";
+$sp: "only screen and (max-width:480px)";
+$tab: "only screen and (max-width:766px)";
+$pc: "only screen and (min-width:767px)";
+$minsp: "only screen and (max-width:321px)";
+$maxsp: "only screen and (max-width:480px)";
+$mintab: "only screen and (min-width:481px) and (max-width:768px)";
+
+//____________________________
+//レスポンシブ
+//____________________________
+
+
+
+//横並び
+@mixin flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+//背景
+@mixin bgi {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+$test: #12b9bd;
+
+//____________________________
+//引数で指定した色の明るさに応じて白か黒を出力する関数
+//____________________________
+@function set_color($color) {
+  @if (lightness($color) > 50) {
+    @return $black_000;
+  } @else {
+    @return $white_fff;
+  }
+}
+
+// ---------- フレックス ----------
+@mixin flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+// ---------- フォント（追記変更可能） ----------
+@mixin noto__sans {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+@mixin yu__gothic {
+  font-family: YuGothic, "Yu Gothic", sans-serif;
+}
+
+@mixin hiragino {
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
+}
+
+

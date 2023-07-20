@@ -1,0 +1,43 @@
+11-30-2021 @ 13:28:27 - ---[ New import started at 2021-11-30 13:28:27 ] PHP Memory: 1 GB, WP Memory: 40 MB
+11-30-2021 @ 13:28:27 - Preparing for import.
+11-30-2021 @ 13:28:27 - Row :1 - Parsing item.
+11-30-2021 @ 13:28:27 - Row :1 - Parsing failed. Reason: User with same Email already exists. Email: info@clane.co.jp
+11-30-2021 @ 13:28:27 - Row :2 - Parsing item.
+11-30-2021 @ 13:28:27 - Row :2 - Parsing failed. Reason: User with same Email already exists. Email: ksfmasterpiece@gmail.com
+11-30-2021 @ 13:28:27 - Row :3 - Parsing item.
+11-30-2021 @ 13:28:27 - Row :3 - Processing item.
+11-30-2021 @ 13:28:27 - Processing users.
+11-30-2021 @ 13:28:28 - > &#8220;41&#8221;User imported successfully. ID:41
+11-30-2021 @ 13:28:28 - > Finished importing user 41
+11-30-2021 @ 13:28:28 - Row :3 - User imported successfully.
+11-30-2021 @ 13:28:28 - Row :4 - Parsing item.
+11-30-2021 @ 13:28:28 - Row :4 - Processing item.
+11-30-2021 @ 13:28:28 - Processing users.
+11-30-2021 @ 13:28:28 - > &#8220;42&#8221;User imported successfully. ID:42
+11-30-2021 @ 13:28:28 - > Finished importing user 42
+11-30-2021 @ 13:28:28 - Row :4 - User imported successfully.
+11-30-2021 @ 13:28:28 - Row :5 - Parsing item.
+11-30-2021 @ 13:28:28 - Row :5 - Processing item.
+11-30-2021 @ 13:28:28 - Processing users.
+11-30-2021 @ 13:28:28 - > &#8220;43&#8221;User imported successfully. ID:43
+11-30-2021 @ 13:28:28 - > Finished importing user 43
+11-30-2021 @ 13:28:28 - Row :5 - User imported successfully.
+11-30-2021 @ 13:28:28 - Row :6 - Parsing item.
+11-30-2021 @ 13:28:28 - Row :6 - Processing item.
+11-30-2021 @ 13:28:28 - Processing users.
+11-30-2021 @ 13:28:28 - > &#8220;44&#8221;User imported successfully. ID:44
+11-30-2021 @ 13:28:28 - > Finished importing user 44
+11-30-2021 @ 13:28:28 - Row :6 - User imported successfully.
+11-30-2021 @ 13:28:28 - Row :7 - Parsing item.
+11-30-2021 @ 13:28:28 - Row :7 - Parsing failed. Reason: User with same Email already exists. Email: d.style.kuwahara@gmail.com
+11-30-2021 @ 13:28:28 - Row :8 - Parsing item.
+11-30-2021 @ 13:28:28 - Row :8 - Parsing failed. Reason: User with same Email already exists. Email: operator@gmail.com
+11-30-2021 @ 13:28:28 - Row :9 - Parsing item.
+11-30-2021 @ 13:28:28 - Row :9 - Processing item.
+11-30-2021 @ 13:28:28 - Processing users.
+11-30-2021 @ 13:28:28 - > &#8220;45&#8221;User imported successfully. ID:45
+11-30-2021 @ 13:28:28 - > Finished importing user 45
+11-30-2021 @ 13:28:28 - Row :9 - User imported successfully.
+11-30-2021 @ 13:28:28 - Row :10 - Parsing item.
+11-30-2021 @ 13:28:28 - Row :10 - Parsing failed. Reason: User with same Email already exists. Email: kawakatsu@clane.co.jp
+11-30-2021 @ 13:28:28 - ---[ Import ended at 2021-11-30 13:28:28]---

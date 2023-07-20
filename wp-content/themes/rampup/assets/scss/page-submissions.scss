@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+@import "configuration";
+
+//____________________________
+//勉強会提出課題一覧ページ
+//____________________________
+
+.submissions {
+  padding: 8rem 0;
+  .submissionsLists {
+    // @include flex;
+    // flex-direction: column-reverse;
+    .submissionsList {
+      @include flex;
+      // flex-direction: column;
+    }
+    .submissionsList__period {
+      margin-top: 1em;
+      order: -1;
+      &.-period0 {
+        // display: none;
+      }
+
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+        transition: 0.3s;
+      }
+    }
+
+    .submissionsList__item {
+      display: block;
+      // display: none;
+      padding-left: 1em;
+    }
+  }
+}

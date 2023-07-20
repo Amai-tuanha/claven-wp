@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.mypageStatement {
+  background-color: #ffffff;
+  padding: 1.6rem 2.4rem;
+  border-radius: 10px;
+  margin-bottom: 6.4rem;
+}
+.mypageStatement .mypageStatement__img {
+  margin: 1em 0;
+}
+.mypageStatement .mypageStatement__img > img {
+  width: 100%;
+}
+.mypageStatement .mypageStatement__list .mypageStatement__listChild {
+  padding-left: 1.2em;
+  position: relative;
+  text-indent: -1.2em;
+}
+.mypageStatement .mypageStatement__text > a {
+  color: #5DAC7D;
+  text-decoration: underline;
+}
+.mypage__button.-seminarFile {
+  margin-top: 1em;
+  padding: 0.8rem;
+  background-color: #5DAC7D;
+  max-width: 170px;
+}

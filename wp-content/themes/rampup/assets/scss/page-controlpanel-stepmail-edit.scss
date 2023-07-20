@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+
+@import "configuration";
+
+//____________________________
+//rampupメール文章編集ページ
+//____________________________
+
+// ---------- タイトル ----------
+.projectDetail__title {
+  .projectDetail__box {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    .projectDetail__name {
+      font-size: 3rem;
+      font-weight: bold;
+      @media #{$sp} {
+        font-size: 2.2rem;
+      }
+    }
+    .projectDetail__edit {
+      cursor: pointer;
+      a {
+        font-size: 1.6rem;
+        @media #{$sp} {
+          font-size: 1rem;
+        }
+        &::after {
+          content: "\f044";
+          font-size: 1.6rem;
+          font-weight: 400;
+          font-family: "Font Awesome 5 Free";
+          padding-left: 0.5rem;
+          color: $green_388;
+        }
+      }
+    }
+  }
+}
+
+// ---------- 基本情報 各セクション大枠 ----------
+.list__wrap2 {
+  margin-top: 2.8rem;
+  margin-bottom: 4rem;
+  .list__tableInformation {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: left;
+    word-break: break-all;
+    border-spacing: 0 1px;
+    border: 1px solid $green_388;
+    .list__titleBox {
+      background:$primary ;
+      color: $white_fff;
+      font-size: 2rem;
+      font-weight: bold;
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
+      padding-left: 2.3rem;
+      @media only screen and (max-width: 1450px) {
+        padding-left: 1rem;
+      }
+      @media #{$sp} {
+        font-size: 1.8rem;
+      }
+    }
+    .list__textBox {
+      padding: 2.2rem 2.4rem;
+      .list__textItem {
+        background: $gray_f5f;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 0.5rem;
+        width: 100%;
+        @media #{$sp} {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .list__textBox2 {
+      padding: 2.2rem 2.4rem;
+      @include flex;
+      flex-direction: column;
+      .list__textItem2 {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+      input[type="text"] {
+        background: $gray_f5f;
+        height: 30px;
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 0.5rem;
+        @media #{$sp} {
+          font-size: 1.4rem;
+        }
+      }
+      textarea {
+        background: $gray_f5f;
+        font-size: 1.6rem;
+        padding: 0.5rem;
+        @media #{$sp} {
+          font-size: 1.4rem;
+        }
+      }
+      .shortCode {
+        margin-bottom: 0.7rem;
+        @include flex;
+        @media #{$tab} {
+          display: block;
+        }
+        .shortCode__title {
+          margin-right: 2rem;
+          font-size: 1rem;
+          padding: 0.5rem;
+          width: 100px;
+          margin-top: 0.5rem;
+        }
+        .shortCode__box {
+          flex: 1;
+          .shortCode__item {
+            background: $gray_f5f;
+            display: inline-block;
+            padding: 0.5rem;
+            margin-right: 0.5rem;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+    .send {
+      padding: 15px 70px;
+      // margin-top: 9.4rem;
+      color: $white_fff;
+      font-size: 1.8rem;
+      font-weight: bold;
+      background-color: $primary;
+      border: none;
+      display: block;
+      margin: 4rem auto;
+      text-align: center;
+      width: 253px;
+      justify-content: center;
+      @media #{$sp} {
+        // margin-top: 0rem;
+        font-size: 1.6rem;
+      }
+      &:hover {
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+.choice2 select {
+  width: 100%;
+  font-size: 1.1rem;
+  padding-left: 2rem;
+  cursor: pointer;
+  background: #f5f5f5;
+  height: 37px;
+}
+
+.choice2 {
+  position: relative;
+}
+.choice2::before {
+  pointer-events: none;
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  content: "";
+  width: 10px;
+  border-top: 10px solid #707070;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+.mt {
+  margin-top: 2rem;
+}
+
+// .mce-floatpanel.mce-popover.mce-bottom, .mce-menu {
+// 	// margin-top: 2px;
+// 	top: 720px !important;
+// }

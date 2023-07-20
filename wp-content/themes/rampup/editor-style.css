@@ -1,0 +1,186 @@
+
+
+html{
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 62.5%;
+}
+body{
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+ a,  p,  li,  dd,  td,  span,  pre,  strong,  em {
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 480px) {
+   a,  p,  li,  dd,  td,  span,  pre,  strong,  em {
+    font-size: 1.2rem;
+  }
+}
+ h1 {
+  padding: 1.5rem 0;
+  margin: 0.67em 0;
+  font-size: 3rem;
+}
+@media only screen and (min-width: 481px) and (max-width: 766px), only screen and (max-width: 480px) {
+   h1 {
+    font-size: 2.4rem;
+  }
+}
+ h2 {
+  position: relative;
+  padding: 0.5em;
+  margin: 2.5em 0 2em;
+  color: white;
+  font-size: 2.6rem;
+  line-height: 1.6;
+  background: #a6d3c8;
+}
+@media only screen and (min-width: 481px) and (max-width: 766px), only screen and (max-width: 480px) {
+   h2 {
+    font-size: 2.2rem;
+  }
+}
+ h2::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  border: none;
+  border-right: solid 20px #959e9b;
+  border-bottom: solid 15px transparent;
+}
+ h3 {
+  padding: 1rem 0 1rem 1rem;
+  margin: 0.8em 0 0.4em;
+  font-size: 2.6rem;
+  line-height: 1.5;
+  background-color: rgba(203, 203, 203, 0.3);
+  border-left: 4px solid #5DAC7D;
+}
+@media only screen and (min-width: 481px) and (max-width: 766px), only screen and (max-width: 480px) {
+   h3 {
+    font-size: 2.2rem;
+  }
+}
+ h4 {
+  padding: 1rem 0 0.2rem 1rem;
+  margin: 0.6em 0;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: #000;
+  position: relative;
+  background: linear-gradient(transparent 70%, rgba(76, 175, 145, 0.2) 70%);
+}
+@media only screen and (min-width: 481px) and (max-width: 766px), only screen and (max-width: 480px) {
+   h4 {
+    font-size: 2rem;
+  }
+}
+ h5 {
+  padding: 1rem 0;
+  margin: 0.5em 0;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: #000;
+  border-bottom: solid 3px rgba(203, 203, 203, 0.5);
+  position: relative;
+}
+@media only screen and (min-width: 481px) and (max-width: 766px), only screen and (max-width: 480px) {
+   h5 {
+    font-size: 2rem;
+  }
+}
+ h5:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: 3px solid #5DAC7D;
+  left: 0;
+  bottom: -3px;
+  width: 20%;
+}
+ h6 {
+  margin: 0.3em 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 481px) and (max-width: 766px), only screen and (max-width: 480px) {
+   h6 {
+    font-size: 1.8rem;
+  }
+}
+ h6::before {
+  margin-right: 0.5rem;
+  color: #5DAC7D;
+  content: "\f138";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+}
+ p {
+  padding-bottom: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+ img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  margin: 2.4rem 0;
+  vertical-align: middle;
+}
+ blockquote {
+  position: relative;
+  padding: 1.3rem 1.5rem 1.3rem 5rem;
+  background-color: #ddd;
+}
+ blockquote::before {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  display: inline-block;
+  color: #5DAC7D;
+  content: "\f10d";
+  font-family: FontAwesome;
+  font-size: 25px;
+  line-height: 1;
+  vertical-align: middle;
+}
+ blockquote p {
+  padding: 0;
+  margin-top: 10px;
+  line-height: 1.7;
+}
+ ul {
+  list-style: disc;
+}
+ ol {
+  list-style: decimal;
+}
+ ul,  ol {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border: solid 2px #ddd;
+}
+ ul li,  ol li {
+  margin-left: 1.6em;
+  font-size: 1.6rem;
+  list-style: inherit;
+}
+@media only screen and (max-width: 480px) {
+   ul li,  ol li {
+    font-size: 1.2rem;
+  }
+}
+ ul li::marker,  ol li::marker {
+  color: #5DAC7D;
+  marker-offset: 0;
+}
+ ul li ul,  ol li ul,  ul li ol,  ol li ol {
+  padding: 0;
+  margin-bottom: 0.5em;
+  border: none;
+}
+ a {
+  color: #5DAC7D;
+  text-decoration: underline;
+}

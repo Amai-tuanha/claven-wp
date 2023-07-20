@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.formTemplate {
+  position: relative;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+}
+.formTemplate .formTemplate__heading {
+  text-align: center;
+  display: inline-block;
+  padding: 2rem 3rem;
+  margin-bottom: 5rem;
+  color: #ffffff;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  background: #333333;
+}
+@media only screen and (max-width: 480px) {
+  .formTemplate .formTemplate__heading {
+    padding: 2rem 5%;
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .formTemplate .formTemplate__heading {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+}
+.formTemplate .formTemplate__inputBox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.formTemplate .formTemplate__inputBox.-center {
+  justify-content: center;
+}
+.formTemplate .formTemplate__inputBox .formTemplate__inputLable, .formTemplate .formTemplate__inputBox label {
+  width: 25%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px), only screen and (max-width: 480px) {
+  .formTemplate .formTemplate__inputBox .formTemplate__inputLable, .formTemplate .formTemplate__inputBox label {
+    width: 100%;
+  }
+}
+.formTemplate .formTemplate__inputBox .formTemplate__inputItem {
+  width: 75%;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px), only screen and (max-width: 480px) {
+  .formTemplate .formTemplate__inputBox .formTemplate__inputItem {
+    width: 100%;
+  }
+}
+.formTemplate .formTemplate__inputBox .formTemplate__inputItem textarea, .formTemplate .formTemplate__inputBox .formTemplate__inputItem .formTemplate__input {
+  width: 100%;
+  padding: 2rem 1rem;
+  letter-spacing: 0.1rem;
+  border: solid 5px #333333;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px), only screen and (max-width: 480px) {
+  .formTemplate .formTemplate__inputBox .formTemplate__inputItem textarea, .formTemplate .formTemplate__inputBox .formTemplate__inputItem .formTemplate__input {
+    padding: 1rem 1rem;
+  }
+}
+.formTemplate .formTemplate__cta {
+  margin: 0 auto;
+  text-align: center;
+}
+.formTemplate .cta__button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  background: #ffffff;
+  border: solid 6px #333333;
+  border-radius: 50px;
+  transition: 0.3s;
+  display:flex;
+  
+}
+.formTemplate .cta__button:hover {
+  color: #ffffff;
+  background: #333333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.formTemplate .formTemplate__send {
+  display: inline-block;
+  padding: 3rem 4rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  background: #ffffff;
+  border: solid 2px #333333;
+  border-radius: 10px;
+}

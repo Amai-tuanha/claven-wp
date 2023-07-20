@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.footerDefault {
+  padding: 0.8rem;
+  background-color: #000000;
+}
+.footerDefault .inner.-flex {
+  align-items: center;
+}
+.footerDefault .inner small {
+  color: #ffffff;
+}
+.footerDefault .inner .copyright_inner_policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  width: 40%;
+  justify-content: flex-end;
+}
+.footerDefault .inner .copyright_inner_policy .copyright_inner_policy_child {
+  margin-left: 3%;
+}
+.footerDefault .inner .copyright_inner_policy .copyright_inner_policy_child a {
+  font-size: 1.2rem;
+  color: #ffffff;
+}

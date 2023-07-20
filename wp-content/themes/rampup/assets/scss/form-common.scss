@@ -1,0 +1,471 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+@import "configuration";
+
+// @keyframes blink{
+//   0% {opacity:0.4;}
+//   100% {opacity:1;}
+// }
+// @keyframes border{
+//   0% {opacity:0.4;}
+//   100% {opacity:1;}
+// }
+
+//________________________________________________________
+//フォームのスタイル
+//________________________________________________________
+.body {
+  background-color: $green_f2f;
+}
+.formTemplate {
+  position: relative;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+  .formTemplate__formContentWrapper {
+    background-color: $white_fff;
+    padding: 10rem 12rem 6rem;
+    border-radius: 10px;
+    box-shadow: 0 0 6px $gray_c7c;
+    margin-top: 6rem;
+    
+    
+    @media #{$sp}{
+      padding: 5rem 4rem 4rem;
+     
+    }
+    &.-login {
+      margin-top: 0;
+    }
+    &.-mt0 {
+      margin-top: 0;
+    }
+    &.-plr8 {
+      padding-top: 6rem;
+      padding-bottom: 4rem;
+      padding-left: 8rem;
+      padding-right: 8rem;
+      
+      @media #{$sp}{
+        padding: 5rem 4rem 4rem;
+       
+      }
+    }
+  }
+
+  .formTemplate__heading {
+    text-align: center;
+
+    display: inline-block;
+    padding: 2rem 3rem;
+    margin-bottom: 5rem;
+    color: $primary;
+    font-size: 3.6rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    @media #{$maxsp} {
+      padding: 2rem 5%;
+      font-size: 1.8rem;
+    }
+
+    @media #{$minsp} {
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+    }
+
+    &.-login__logo{
+      img{
+        width: 100%
+      }
+    }
+  }
+  // ---------- inputボックス ----------
+  .formTemplate__inputBox {
+    @include flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    &.-aic {
+      background-color: $primary !important;
+      color: $white_fff;
+      font-size: 3rem;
+      width: 58%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .formTemplate__input {
+      // width: 100%;
+      // // padding: 2rem 1rem;
+      // padding: 11px 8px;
+      // letter-spacing: 0.1rem;
+      // // border: solid 5px $black_333;
+      // border: 2px solid $gray_c7c;
+      // border-radius: 10px;
+      // font-size: 1.6rem;
+      // line-height: normal;
+
+      &.-reserveDate {
+        font-size: 3rem;
+        color: $white_fff;
+        display: block;
+        // width: 616px;
+        // height: 74px;
+        line-height: 74px;
+        margin: 1.5rem auto 0;
+        border-radius: 10px;
+      }
+
+      @media #{$mintab},#{$maxsp} {
+        padding: 1rem 1rem;
+      }
+      &.-width25 {
+        width: 25%;
+        margin-left: 1rem;
+      }
+
+      &.-width20 {
+        width: 20%;
+      }
+    }
+    &.-center {
+      justify-content: center;
+    }
+
+    // ---------- inputラベル ----------
+    .formTemplate__inputLable,
+    label {
+      width: 25%;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      
+      
+      @media #{$sp}{
+        font-size: 1.6rem;
+       
+      }
+      @media #{$mintab},#{$maxsp} {
+        width: 100%;
+      }
+    }
+    .formTemplate__textareaLable{
+      width: 25%;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      align-self: flex-start;
+      padding-top: 2rem;
+      @media #{$sp}{
+        font-size: 1.6rem;
+       
+      }
+      
+      @media #{$mintab},#{$maxsp} {
+        width: 100%;
+      }
+    }
+
+    // ---------- input右側 ----------
+    .formTemplate__inputItem {
+      width: 75%;
+
+      @media #{$mintab},#{$maxsp} {
+        width: 100%;
+      }
+
+      // ---------- input ----------
+      textarea,
+      .formTemplate__input,
+      .formTemplate__selectItem
+       {
+        width: 100%;
+        // padding: 2rem 1rem;
+        padding: 11px 8px;
+        letter-spacing: 0.1rem;
+        // border: solid 5px $black_333;
+        border: 2px solid $gray_c7c;
+        border-radius: 10px;
+        font-size: 1.6rem;
+        line-height: normal;
+
+        &.-reserveDate {
+          font-size: 3rem;
+          color: $white_fff;
+          display: block;
+          // width: 616px;
+          // height: 74px;
+          line-height: 74px;
+          margin: 1.5rem auto 0;
+          border-radius: 10px;
+        }
+
+        @media #{$mintab},#{$maxsp} {
+          padding: 1rem 1rem;
+        }
+        &.-width25 {
+          width: 25%;
+          margin-left: 1rem;
+        }
+
+        &.-width20 {
+          width: 20%;
+        }
+      }
+    }
+    .formTemplate__textarea {
+      width: 100%;
+      height: 216px;
+      // padding: 2rem 1rem;
+      padding: 11px 8px;
+      letter-spacing: 0.1rem;
+      // border: solid 5px $black_333;
+      border: 2px solid $gray_c7c;
+      border-radius: 10px;
+      font-size: 1.6rem;
+      line-height: normal;
+    }
+    .formTemplate__selectItem {
+      width: 15%;
+      margin-right: 2%;
+      border: solid 4px $black_333;
+      // @media #{$mintab},#{$maxsp} {
+      //   width: 100%;
+      // }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    select:invalid {
+      color: $gray_707;
+    }
+  }
+
+  .formTemplate__cta {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .-center {
+      font-weight: 700;
+      &:hover {
+        color: $primary;
+        opacity: 0.8;
+      }
+    }
+    &.-first {
+      margin-top: 2.8rem;
+    }
+    &.-mt2 {
+      margin-top: 2rem;
+    }
+  }
+
+  // ---------- ボタン ----------
+  .cta__button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    // margin: 0 auto;
+    margin-bottom: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    // letter-spacing: 0.5rem;
+    color: $white_fff;
+    border-radius: 10px;
+    border: none;
+    background-color: $primary;
+    width: 19rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+    &.-backToLogin {
+      background-color: $gray_c6c;
+      color: $black_000;
+      margin-right: 2rem;
+      display: flex;
+      align-items: center;
+    }
+    &:hover {
+      color: $white_fff;
+      // background: $black_333;
+      opacity: 0.7;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  }
+  // ---------- 送信後テキスト ----------
+  .formTemplate__send {
+    display: inline-block;
+    // padding: 3rem 4rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    // letter-spacing: 0.5rem;
+    // background: $white_fff;
+    // border: solid 2px $black_333;
+    // border-radius: 10px;
+    letter-spacing: 0;
+    background-color: $white_fff;
+    padding: 6rem 12rem 6rem;
+    border-radius: 10px;
+    box-shadow: 0 0 6px $gray_c7c;
+    width: 100%;
+  }
+  .formTemplate__backToLogInButton {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $white_fff;
+    background-color: $primary;
+    width: 19rem;
+    height: 6rem;
+    border-radius: 10px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    transition: 0.3s;
+    &:hover {
+      color: $white_fff;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+  // ---------- ステップ ----------
+  .formTemplate__whitebox {
+    display: inline-block;
+    padding: 2rem 2rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    background: $black_333;
+    border: solid 6px $white_fff;
+    color: $white_fff;
+    // background: $white_fff;
+    // border: solid 6px $black_333;
+  }
+  .formTemplate__wrap {
+    flex-direction: column;
+  }
+  .-maxwidth__300 {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+// ---------- ステップ ----------
+
+.step {
+  list-style-type: none;
+  display: table;
+  width: 100%;
+  padding: 0;
+  margin: 12rem 0 0;
+  overflow: hidden;
+
+  &.-mb8 {
+    margin-bottom: 8rem;
+  }
+  &.-mt0 {
+    margin-top: 0;
+  }
+
+  li {
+    display: table-cell;
+    position: relative;
+    background: $black_333;
+    padding: 1em 0.5em 1em 2em;
+    color: $white_fff;
+    width: 33%;
+    text-align: center;
+    // &.settlement,
+    // &.userPolicy {
+    //   background-color: $gray_c6c ;
+    //   color: $black_000 ;
+    // }
+    &:last-child {
+      padding-right: 1em;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      margin: auto;
+    }
+
+    &:before {
+      top: -15px;
+      right: -1em;
+      border-style: solid;
+      border-color: transparent transparent transparent $white_fff;
+      border-width: 40px 0 40px 1em;
+      z-index: 10;
+    }
+
+    &:after {
+      top: -15px;
+      right: -0.8em;
+      border-style: solid;
+      border-color: transparent transparent transparent $black_333;
+      border-width: 40px 0 40px 1em;
+      z-index: 10;
+    }
+
+    &.is-current {
+      background: $primary;
+      font-weight: bold;
+      // animation:blink 1s ease-in-out infinite alternate;
+
+      &:after {
+        border-color: transparent transparent transparent $primary;
+        // animation:border 1s ease-in-out infinite alternate;
+      }
+    }
+  }
+}
+
+
+.contact-backlink {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+
+.linkText{
+  font-size: 1.6rem;
+  font-weight: 500;
+  @media #{$sp}{
+   font-size: 1.4rem;
+  }
+}
+
+.formTemplate__input.-aic {
+  background-color: $primary;
+  color: $white_fff;
+  font-size: 3rem;
+  width: inherit;
+}
+
+[href="javascript:history.back()"].cta__button {
+  margin-right: 2rem;
+  background-color: $gray_c6c;
+  color: $black_000;
+}

@@ -1,0 +1,474 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+@import "configuration";
+
+//____________________________
+//マイページ モーダル
+//____________________________
+.modalWrap {
+  position: fixed;
+  top: calc(50% + 66px);
+  left: 50%;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: none;
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50vw, -50vh);
+    background-color: rgba($black_000, 0.88);
+    display: inline-block;
+    content: "";
+  }
+
+  @media #{$tab}, #{$sp} {
+    top: calc(50% + 61px);
+  }
+
+  .modal__contentScroll {
+    position: relative;
+    width: 100%;
+    max-width: 780px;
+    padding: 2.4rem;
+    margin: auto;
+    overflow: hidden;
+    height: calc(100% - 66px);
+  }
+  .modal__contentWrap {
+    @include flex;
+    overflow: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+    &::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+      display:none;
+  }
+
+    max-width: calc(780px + 2.4rem * 2);
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 2.4rem;
+  }
+  .modal__contentInner {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    overflow: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+    &::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+      display:none;
+  }
+
+    .modal__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+      width: 8rem;
+      height: 8rem;
+      background-color: $primary;
+      transform: translate(50%, -50%);
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+
+    // ---------- モーダル コンテンツ ----------
+    .modal__content {
+      height: 100%;
+      max-height: 700px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+
+      // @media #{$tab}, #{$sp} {
+      //   top: auto;
+      //   transform: translateY(0%);
+      // }
+
+      .modal__contentChild {
+        display: none;
+        width: 100%;
+        position: relative;
+        background-color: $white_fff;
+        @media #{$tab}, #{$sp} {
+          top: auto;
+          transform: translateY(0%);
+        }
+
+        &.-js-mypage-animation {
+          border-radius: 10px;
+          border-top: solid 6px $primary;
+          padding-top: 4.3rem;
+          padding-bottom: 2.3rem;
+          position: relative;
+          @media #{$tab}, #{$sp} {
+            padding-left: 5%;
+            padding-right: 6%;
+
+            .modal__flex {
+              justify-content: center;
+            }
+          }
+        }
+
+        // ---------- モーダルテンプレート ----------
+        .modal__template {
+          overflow: hidden;
+          //
+          border-radius: 4px;
+
+          // ---------- タイトル ----------
+          .modal__title {
+            padding: 2.4rem 1.6rem;
+            background-color: $primary;
+
+            // ---------- タイトル　テキスト ----------
+            .modal__titleText {
+              color: $white_fff;
+              font-size: 2.2rem;
+              font-weight: 600;
+              letter-spacing: 0;
+              text-align: center;
+            }
+          }
+
+          // ---------- メイン部分 ----------
+          .modal__main.-setting {
+            padding: 4.2rem 6rem;
+            @media #{$tab}, #{$sp} {
+              padding: 2rem 3rem;
+            }
+          }
+          .modal__main {
+            padding: 4rem 2.4rem;
+
+            // ---------- メイン　テキスト ----------
+            .modal__mainText {
+              margin-bottom: 3.2rem;
+              font-size: 1.4rem;
+              font-weight: 500;
+            }
+          }
+
+          @at-root {
+            // ---------- 横並び ----------
+            .modal__flex {
+              @include flex;
+              max-width: 600px;
+              margin: 0 auto;
+              overflow: hidden;
+              border-radius: 4px;
+              @media #{$tab}, #{$sp} {
+                flex-wrap: wrap;
+              }
+
+              // ---------- 横並び 子要素 ----------
+              .modal__flexChild {
+                @include flex;
+                align-items: center;
+                width: 50%;
+                padding: 1.8rem 1.8rem 1.6rem;
+
+                @media #{$tab}, #{$sp} {
+                  justify-content: center;
+                  width: 100%;
+                }
+
+                &.-bgBlue {
+                  background-color: $blue_90D;
+                }
+                &.-bgLightgray {
+                  background-color: $gray_ebe;
+                }
+
+                // ---------- フォーム左側テキスト ----------
+                .modal__flexTime {
+                  color: $white_fff;
+                  font-size: 2rem;
+                  font-weight: 600;
+                }
+
+                // ---------- フォームinput ----------
+                .modal__flexInput {
+                  width: auto;
+                  max-width: 32px;
+                  padding: 0;
+                  text-align: center;
+                  background-color: transparent;
+                  border: none;
+                }
+              }
+
+              // ---------- ×ボタン ----------
+              .membership_finishedButton {
+                position: absolute;
+                bottom: 100%;
+                right: 0;
+                background-color: transparent;
+                border: none;
+                font-size: 6rem;
+                color: $gray_c6c;
+                pointer-events: none;
+              }
+
+              // ---------- アニメーション ----------
+              .modal__heade {
+                max-width: 130px;
+                text-align: center;
+                font-size: 2rem;
+                line-height: 2.2;
+                letter-spacing: 0.05em;
+                background-color: $primary;
+                padding: 0 2.4rem;
+                border-radius: 23px;
+                color: $white_fff;
+
+                @media only screen and (max-width: 1006px) {
+                  margin: 0 auto;
+                }
+              }
+              .modal__text {
+                text-align: left;
+                @media only screen and (max-width: 1006px) {
+                  text-align: center;
+                }
+                &.-type1 {
+                  font-weight: 700;
+                  font-size: 2.8rem;
+                  line-height: 1.5;
+                  letter-spacing: 0.05em;
+                  color: $primary;
+                  padding-bottom: 2.2rem;
+                  padding-top: 0.6rem;
+                }
+
+                &.-type2 {
+                  font-size: 2rem;
+                  line-height: 1.7;
+                  letter-spacing: 0.05em;
+                  color: $black_333;
+                }
+              }
+
+              .svgCircle__colored {
+                // 変更点
+                animation: load 2s;
+                // 変更点
+              }
+            }
+          }
+
+          // ---------- モーダル内 ボタン ----------
+          .modal__mainButtonWrap {
+            margin-top: 3rem;
+            text-align: center;
+            .modal__mainButton {
+              display: block;
+              width: 100%;
+              max-width: 300px;
+              padding: 1.2rem;
+              color: $white_fff;
+              font-size: 2rem;
+              font-weight: 600;
+              background-color: $primary;
+              border: none;
+              border-radius: 4px;
+
+              &.-center {
+                margin: 0 auto;
+              }
+            }
+
+            .modal__closeButton {
+              display: inline-block;
+              margin-top: 1rem;
+              color: $gray_707;
+              font-size: 1.2rem;
+              text-align: center;
+              text-decoration: underline;
+              transition: 0.3s;
+              &:hover {
+                transition: 0.3s;
+                cursor: pointer;
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+
+        // ---------- 長谷川くんここから描き始めて ----------
+        .modal__setting__titleBox {
+          align-items: center;
+          justify-content: space-between;
+          display: flex;
+          width: 100%;
+          padding: 1.8rem 0.6rem;
+          margin-bottom: 4rem;
+          border-bottom: 1px solid $gray_ebe;
+        }
+        .modal__setting__title {
+          font-size: 2.2rem;
+          font-weight: bold;
+
+          @media #{$tab}, #{$sp} {
+            font-size: 1.8rem;
+          }
+        }
+        .modal__setting__titleImage {
+          width: 19px;
+          height: 19px;
+          cursor: pointer;
+        }
+        .modal__setting__inputBox {
+          align-items: center;
+          justify-content: space-between;
+          display: flex;
+          width: 100%;
+          margin-bottom: 2.4rem;
+          @media #{$tab}, #{$sp} {
+            flex-wrap: wrap;
+          }
+        }
+
+        // ---------- タイトル ----------
+        .modal__setting__inputText {
+          min-width: 180px;
+          font-size: 1.4rem;
+          @media #{$tab}, #{$sp} {
+            width: 100%;
+            margin-bottom: 0.4rem;
+          }
+        }
+        .modal__setting__inputText.-required {
+          position: relative;
+          top: 0;
+          right: 0;
+          color: red;
+        }
+
+        // ---------- 入力 ----------
+        .modal__setting__input {
+          width: 100%;
+          padding: 1.6rem 2.2rem;
+          border: 1px solid $primary;
+          border-radius: 4px;
+          @media #{$tab}, #{$sp} {
+            width: 100%;
+          }
+        }
+        .modal__setting__inputPasswordWrap {
+          flex-direction: column;
+          display: flex;
+          width: 72.408%;
+          @media #{$tab}, #{$sp} {
+            width: 100%;
+          }
+          input {
+            width: 100%;
+          }
+          p {
+            margin-top: 0.4rem;
+            color: $gray_707;
+            font-size: 1.2rem;
+            font-weight: 550;
+          }
+        }
+        .modal__setting__input.-profile {
+          display: flex;
+          padding-left: 0;
+          border: none;
+          input[type="file"] {
+            display: none;
+          }
+          .modal__setting__inputProfileWrap {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            margin-left: 1.2rem;
+          }
+          .modal__setting__text {
+            margin-bottom: 0.4rem;
+            font-size: 1.2rem;
+          }
+          .modal__setting__Profilebutton {
+            width: 120px;
+            padding: 0.4rem 1.2rem;
+            color: $gray_707;
+            font-size: 1.2rem;
+            text-align: center;
+            background-color: $gray_EAE;
+            border: 1px solid $gray_d1d;
+            border-radius: 4px;
+            transition: 0.3s;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+
+          // ---------- ユーザーアバター ----------
+          .modal__setting__image {
+            width: 55px;
+            height: 55px;
+            // background-color: $gray_707;
+            overflow: hidden;
+
+            > img {
+              object-fit: cover;
+              border-radius: 4px;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .modal__setting__buttonBox {
+          margin-top: 4.2rem;
+          text-align: center;
+        }
+        .modal__setting__button {
+          width: 300px;
+          height: 54px;
+          color: $white_fff;
+          font-size: 2rem;
+          font-weight: bold;
+          background-color: $primary;
+          border-radius: 4px;
+          @media #{$tab}, #{$sp} {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.modal__trigger {
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+input[type="number"].modal__flexInput::-webkit-outer-spin-button,
+input[type="number"].modal__flexInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}

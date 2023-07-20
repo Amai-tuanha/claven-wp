@@ -1,0 +1,396 @@
+@charset "UTF-8";
+
+
+@import "configuration";
+
+//____________________________
+//rampup顧客情報（基本情報）
+//____________________________
+
+// ---------- タイトル ----------
+.projectDetail__title {
+  .projectDetail__box {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    .projectDetail__name {
+      font-size: 3rem;
+      font-weight: bold;
+      @media #{$sp} {
+        font-size: 2.4rem;
+      }
+    }
+    .projectDetail__edit {
+      cursor: pointer;
+      p {
+        font-size: 1.6rem;
+        &::after {
+          content: "\f044";
+          font-size: 1.6rem;
+          font-weight: 400;
+          font-family: "Font Awesome 5 Free";
+          padding-left: 0.5rem;
+          color: $green_388;
+        }
+      }
+    }
+  }
+}
+
+// ---------- ボタンで文章の切り替え ----------
+.switching {
+  margin-top: 4.6rem;
+  .switching__box {
+    .tabs {
+      input {
+        vertical-align: middle;
+        font-size: 16px;
+        font-size: 1.6rem;
+      }
+      input[name="tab_item"] {
+        display: none;
+      }
+      // input[checked="checked"] {
+      //   background: linear-gradient(180deg, #60ad78 0%, #3da1a5 100%);
+      //   color: #fff;
+      // }
+      input:checked + .tab_item:nth-of-type(1) {
+        background: $primary;
+        color: #fff;
+      }
+      // input:checked + .tab_item:nth-of-type(2) {
+      //   background: linear-gradient(180deg, #60ad78 0%, #3da1a5 100%);
+      //   color: #fff;
+      // }
+      // input:checked+.tab_item:nth-of-type(3) {
+      //   background: linear-gradient(180deg, #60ad78 0%, #3da1a5 100%);
+      //   color: #fff;
+      // }
+      // input:checked+.tab_item:nth-of-type(4) {
+      //   background: linear-gradient(180deg, #60ad78 0%, #3da1a5 100%);
+      //   color: #fff;
+      // }
+
+      .tab_item {
+        // width: 50%;
+        // width: calc(100%/4);
+        height: 73px;
+        line-height: 73px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        color: #333;
+        display: block;
+        text-align: center;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        background: $gray_f7f;
+        box-shadow: 0px 1px 2px $gray_d1d;
+        @media #{$sp} {
+          font-size: 1.6rem;
+        }
+      }
+      .tab_content {
+        display: none;
+        position: relative;
+      }
+      .tab_content.selected {
+        display: block;
+      }
+      // #tab1:checked~#tab1_content, #tab2:checked~#tab2_content, #tab3:checked~#tab3_content, #tab4:checked~#tab4_content {
+      //   display: block;
+      // }
+      // #tab1_content {
+      //   display: block;
+      // }
+    }
+  }
+}
+.tabs_flex {
+  @include flex;
+  flex-flow: wrap;
+  .tabs_flexItem {
+    width: 50%;
+    &:nth-child(n + 5) {
+      margin-top: 2rem;
+    }
+    &:not(:nth-child(2n)) {
+      @media #{$tab} {
+        margin-right: 4%;
+      }
+    }
+    &:nth-child(n + 3) {
+      @media #{$tab} {
+        margin-top: 4%;
+      }
+    }
+  }
+}
+
+// ---------- 基本情報 各セクション大枠 ----------
+.list__wrap2 {
+  margin-top: 2.8rem;
+  margin-bottom: 4rem;
+  .list__tableInformation {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: left;
+    word-break: break-all;
+    border-spacing: 0 1px;
+    border: 1px solid $green_388;
+    thead {
+      tr {
+        background: $primary;
+        color: $white_fff;
+
+        .table__title {
+          font-size: 2rem;
+          font-weight: bold;
+          padding-top: 1.6rem;
+          padding-bottom: 1.6rem;
+          padding-left: 2.3rem;
+          @media only screen and (max-width: 1450px) {
+            padding-left: 0rem;
+          }
+          @media #{$sp} {
+            font-size: 1.8rem;
+          }
+        }
+        .table__title.-padding {
+          @media only screen and (max-width: 1450px) {
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        @media #{$tab} {
+          display: flex;
+          flex-direction: column;
+        }
+        td {
+          padding: 1.6rem 2.3rem 1.6rem;
+          @media only screen and (max-width: 1450px) {
+            padding-left: 0rem;
+            padding-right: 1rem;
+          }
+          @media #{$tab} {
+            padding-left: 1rem;
+          }
+          span {
+            font-size: 1rem;
+            margin-right: 1rem;
+          }
+          a {
+            text-decoration: underline;
+          }
+          .list__link {
+            margin-right: 3rem;
+          }
+          .table__release {
+            background: $green_388;
+            border: 1px solid $green_388;
+            color: $white_fff;
+            padding: 0.5rem 1rem;
+          }
+          .table__private {
+            border: 1px solid $green_388;
+            color: $green_388;
+            padding: 0.5rem 1rem;
+          }
+        }
+        td:nth-of-type(1) {
+          width: 220px;
+          font-size: 1.6rem;
+          font-weight: bold;
+          @media #{$tab} {
+            width: 100%;
+          }
+        }
+        td:nth-of-type(2) {
+          font-size: 1.4rem;
+          vertical-align: middle;
+          @media #{$tab} {
+            padding-top: 0rem;
+          }
+          @media #{$sp} {
+            font-size: 1.2rem;
+          }
+        }
+        .table__padding2 {
+          padding-left: 2.3rem;
+          @media only screen and (max-width: 1450px) {
+            padding-left: 1rem;
+          }
+        }
+        .table__padding {
+          padding-right: 2.3rem;
+          text-align: right;
+          @media only screen and (max-width: 1450px) {
+            padding-right: 0.4rem;
+          }
+        }
+      }
+      // tr:nth-child(odd) {
+      // }
+      tr:nth-child(even) {
+        background-color: $gray_f4f;
+      }
+    }
+    .list__remarksTitle {
+      background: $primary;
+      color: $white_fff;
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+        padding-left: 2.3rem;
+        @media only screen and (max-width: 1450px) {
+          padding-left: 1rem;
+        }
+        @media #{$sp} {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .list__remarksText {
+      padding: 1.6rem 1rem;
+      padding-left: 2.3rem;
+      background: $gray_f4f;
+      @media only screen and (max-width: 1450px) {
+        padding-left: 1rem;
+      }
+      p {
+        font-size: 1.4rem;
+        line-height: 2.5;
+      }
+    }
+  }
+}
+
+// ---------- TODOのレイアウト ----------
+.list__wrap3 {
+  margin-top: 2.8rem;
+  margin-bottom: 4rem;
+  .list__tableInformation {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: left;
+    word-break: break-all;
+    border-spacing: 0 1px;
+    border: 1px solid $green_388;
+    thead {
+      tr {
+        background: $primary;
+        color: $white_fff;
+        .table__title {
+          font-size: 2rem;
+          font-weight: bold;
+          padding-top: 1.6rem;
+          padding-bottom: 1.6rem;
+          padding-left: 2.3rem;
+          @media only screen and (max-width: 1450px) {
+            padding-left: 0rem;
+          }
+        }
+        .table__title.-padding {
+          @media only screen and (max-width: 1450px) {
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+    tbody {
+      border: 1px solid $green_388;
+      border-top: none;
+      tr {
+        @media #{$tab} {
+          @include flex;
+          flex-direction: column;
+        }
+        td {
+          padding: 1.6rem 0 1.6rem;
+          padding-left: 2.3rem;
+          padding-right: 2.3rem;
+          @media only screen and (max-width: 1450px) {
+            padding-left: 0rem;
+            padding-right: 1rem;
+          }
+          span {
+            font-size: 1rem;
+            margin-right: 1rem;
+          }
+          a {
+            text-decoration: underline;
+          }
+          .list__link {
+            margin-right: 3rem;
+          }
+          .table__release {
+            background: $green_388;
+            border: 1px solid $green_388;
+            color: $white_fff;
+            padding: 0.5rem 1rem;
+          }
+          .table__private {
+            border: 1px solid $green_388;
+            color: $green_388;
+            padding: 0.5rem 1rem;
+          }
+        }
+        .table__task {
+          font-size: 2rem;
+          font-weight: bold;
+          padding-left: 2.3rem;
+          @media only screen and (max-width: 1450px) {
+            padding-left: 1rem;
+          }
+          @media #{$sp} {
+            font-size: 1.8rem;
+          }
+        }
+        td:nth-of-type(1) {
+          width: 220px;
+          padding-top: 2.1rem;
+          @media #{$tab} {
+            width: 100%;
+          }
+        }
+        td:nth-of-type(2) {
+          font-size: 1.4rem;
+          vertical-align: middle;
+          line-height: 2.5;
+          @media #{$tab} {
+            padding-top: 0rem;
+            padding-left: 1rem;
+          }
+          @media #{$sp} {
+            font-size: 1.2rem;
+          }
+        }
+        .table__padding2 {
+          font-size: 1.6rem;
+          font-weight: bold;
+          padding-left: 2.3rem;
+          @media only screen and (max-width: 1450px) {
+            padding-left: 1rem;
+          }
+        }
+        .table__padding {
+          padding-right: 2.3rem;
+          text-align: right;
+          @media only screen and (max-width: 1450px) {
+            padding-right: 0.4rem;
+          }
+        }
+      }
+      tr:nth-child(odd) {
+        background-color: $gray_f4f;
+      }
+      // tr:nth-child(even) {
+      // }
+    }
+  }
+}

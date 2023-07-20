@@ -1,0 +1,417 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+@import "configuration";
+
+// ---------- wpのデフォルトの表記を非表示 ----------
+#wpfooter {
+  opacity: 0;
+}
+
+* {
+  overflow: visible;
+}
+
+// ---------- 編集不可のスタイル ----------
+.-disabled {
+  background-color: $gray_ddd !important;
+  // pointer-events: none !important;
+}
+
+// ---------- トップへ戻る ----------
+.back_to_top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 8rem;
+  height: 8rem;
+  text-align: center;
+  background-color: $primary;
+  border-radius: 50%;
+  transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  > p {
+    @include flex;
+    align-items: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+  }
+}
+
+//____________________________
+//ダッシュボード内 インターン顧客テーブル
+//____________________________
+
+// ---------- テーブルの列と行を固定 ----------
+.-fixed01,
+.-fixed02,
+.-fixed03 {
+  position: sticky !important;
+  top: 0px;
+  left: 0px;
+  // top: 32px;
+  // left: 160px;
+
+  &:before {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border: 1px solid #cccccc;
+  }
+}
+
+.-fixed01 {
+  z-index: 20;
+}
+
+.-fixed02 {
+  z-index: 10;
+}
+
+.-fixed03 {
+  z-index: 30;
+}
+
+.-break {
+  background-color: $gray_ddd !important;
+}
+
+.dashboard {
+  margin: 1rem 2rem 0 0.2rem;
+
+  &.-progress {
+    .-fixed01,
+    .-fixed02,
+    .-fixed03 {
+      top: 32px;
+      left: 160px;
+    }
+
+    .dashboard__table {
+      overflow: visible;
+    }
+  }
+
+  // ---------- タイトル ----------
+  .dashboard__title {
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+
+  // ---------- インナー ----------
+  .dashboard__inner {
+    background-color: $white_fff;
+  }
+
+  // ---------- フォーム ----------
+  .dashboard__form {
+    @at-root {
+      // ---------- テーブル ----------
+      .dashboard__table {
+        display: block;
+        white-space: nowrap;
+        overflow: auto;
+        /*スクロールバー全体*/
+        &::-webkit-scrollbar {
+          width: 20px;
+        }
+
+        /*スクロールバーの軌道*/
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+          background-color: rgba($primary, 0.2);
+        }
+
+        /*スクロールバーの動く部分*/
+        &::-webkit-scrollbar-thumb {
+          background-color: $primary;
+          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+        }
+
+        // ---------- 横列 ----------
+        .dashboard__tableRow.-fixed {
+          // position: sticky;
+          // top: 0;
+        }
+
+        .dashboard__tableRow {
+          overflow: visible;
+          th,
+          td {
+            height: 42px;
+            padding: 0 15px;
+            vertical-align: middle;
+          }
+
+          th {
+            height: 42px;
+            line-height: 1.75;
+          }
+
+          // ---------- テーブルヘッド ----------
+          .dashboard__tableHead {
+            color: $white_fff;
+            background-color: $primary;
+
+            &:before {
+              position: absolute;
+              top: -1px;
+              left: -1px;
+              // width: 100%;
+              height: 100%;
+              content: "";
+              border: 1px solid #cccccc;
+            }
+
+            span {
+              white-space: pre-wrap;
+            }
+          }
+
+          // ---------- テーブル項目 ----------
+          .dashboard__tableDesc {
+            position: relative;
+            text-align: center;
+
+            &.-fixed02,
+            &.-fixed01 {
+              background-color: $white_fff;
+            }
+
+            // ---------- 課題進捗確認テーブル ----------
+            &.-done {
+              color: $white_fff;
+              text-align: center;
+              background-color: $primary;
+            }
+
+            .-id_radio {
+              position: absolute;
+              visibility: hidden;
+            }
+
+            .dashboard__tableIDlabel {
+              width: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 0;
+              // width: 100%;
+              height: 100%;
+
+              // ---------- 勉強会出席各セル ----------
+              &.-seminar {
+                @include flex;
+                align-items: center;
+                justify-content: center;
+
+                @at-root {
+                  .-id_radio:checked + .-seminar {
+                    background-color: $d_primary !important;
+                  }
+                }
+              }
+
+              // ---------- 勉強会出席各セル trueの時 ----------
+              &.-true {
+                color: $white_fff;
+                background-color: $primary;
+              }
+            }
+
+            .dashboard__select {
+              width: 180px;
+              max-width: 100%;
+              min-height: 0;
+              padding: 0 24px 0 8px;
+              font-size: 14px;
+              line-height: 2;
+              -webkit-appearance: none;
+              box-shadow: none;
+              border-radius: 3px;
+            }
+          }
+        }
+      }
+
+      // ---------- 送信ボタンラップ ----------
+      .dashboard__submitWrap {
+        position: relative;
+        z-index: 10;
+        display: inline-block;
+
+        // ---------- 送信ボタンカバー----------
+        .dashboard__submitCover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 11;
+          width: 100%;
+          height: 100%;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        // ---------- 送信ボタン ----------
+        .dashboard__submitButton {
+          background-color: $primary;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
+
+// ---------- メール編集ページ ----------
+.emailText {
+  // ---------- テキストエリア共通のスタイル ----------
+  textarea {
+    width: 100%;
+    min-height: 150px;
+    overflow: hidden;
+    resize: none;
+    // padding: 8px;
+    // line-height: 20px;
+  }
+
+  // ---------- メール文のリスト ----------
+  .emailText__list {
+    // ---------- メール文のリスト子要素 ----------
+    .emailText__listChild {
+      .js__accordionBody {
+        // display: none;
+      }
+
+      // ---------- メール文のリスト子要素 タイトル ----------
+      .emailText__listTitle {
+        margin-bottom: 1.6rem;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          transition: 0.3s;
+          cursor: pointer;
+          opacity: 0.7;
+        }
+      }
+
+      // ---------- メール文のショートコードリスト ----------
+      .emailText__shortCodes {
+        flex-wrap: wrap;
+        display: flex;
+        margin-bottom: 1.6rem;
+
+        // ---------- メール文のショートコードリスト子要素 ----------
+        .emailText__shortCodesChild {
+          position: relative;
+          padding: 0 4px;
+          margin-right: 8px;
+          background-color: $primary;
+          border-radius: 2px;
+          transition: 0.3s;
+          cursor: pointer;
+          margin-bottom: 0.4rem;
+
+          &:hover {
+            transition: 0.3s;
+            cursor: pointer;
+            opacity: 0.7;
+          }
+
+          // ---------- メール文のショートコード「copied!」のアラート ----------
+          .js__emailText__shortCodesAlert {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            display: none;
+            width: 50px;
+            padding: 2px;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            background-color: black;
+            border-radius: 4px;
+            transform: translate(-50%, 0%);
+          }
+        }
+      }
+
+      // ---------- メール文のフォーム ----------
+      .emailText__form {
+        @at-root {
+          .emailText__formRow {
+            @include flex;
+            align-items: flex-start;
+            margin-bottom: 1.6rem;
+
+            .emailText__formTitle {
+              min-width: 55px;
+              font-weight: bold;
+            }
+
+            .email_formContent {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      // ---------- メール文の表示のされ方 ----------
+      .emailText__displayWrap {
+        // ---------- メール文の表示のされ方 タイトル ----------
+        .emailText__displayText {
+          white-space: pre-wrap;
+        }
+
+        // ---------- メール文の表示のされ方 ディスプレイ ----------
+        .emailText__display {
+          width: 100%;
+          height: auto;
+          padding: 8px;
+          // white-space: pre-wrap;
+          background-color: lightgray;
+        }
+
+        .emailText__div {
+          white-space: normal;
+        }
+      }
+    }
+  }
+}
+
+// ---------- セミナー ----------
+
+// ---------- 研修課題 ----------
+
+.flex {
+  @include flex;
+}
+
+.emailText__div {
+  // display: none;
+}

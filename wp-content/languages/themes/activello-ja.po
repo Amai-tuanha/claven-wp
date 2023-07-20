@@ -1,0 +1,527 @@
+# Translation of Activello in Japanese
+# This file is distributed under the same license as the Activello package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-05-10 04:44:47+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
+"Project-Id-Version: Activello\n"
+
+#. Theme Name of the plugin/theme
+msgid "Activello"
+msgstr "Activello"
+
+#. Description of the plugin/theme
+msgid "Activello is a clean and minimal WordPress blog theme with premium look and feel well suited for food, fashion, travel, lifestyle, sports and any other awesome blogs. This theme features WooCommerce integration that allows you to create fully functional eCommerce website side by side with your blog. This theme has several customization options that are available WordPress Theme Customizer. Theme is also multilingual ready and translated in several languages. This awesome blog theme is also SEO friendly helping you to achieve the highest positions on Google. Activello is the only WordPress blog theme you will ever need."
+msgstr "Activello はクリーンでミニマルな WordPress ブログテーマです。プレミアムテーマ風のルック・アンド・フィールで、グルメ・ファッション・旅行・ライフスタイル・スポーツその他のブログにぴったりです。このテーマには WooCommerce 連携が含まれており、ブログと同時に完全に機能する EC サイトを作成することもできます。このテーマには多くのカスタマイズオプションがあり、WordPress テーマカスタマイザーから利用できます。さらにマルチリンガルにも対応しており、さまざまな言語に翻訳済みです。このブログテーマは SEO フレンドリーでもあり、Google の上位ランキングを狙う手助けをしてくれるでしょう。Activello があれば他の WordPress テーマは必要ないはずです !"
+
+#. Template Name of the plugin/theme
+msgid "Full-width(no sidebar)"
+msgstr "全幅 (サイドバーなし)"
+
+#: sidebar.php:38
+msgid "Meta"
+msgstr "メタ"
+
+#: searchform.php:14
+msgid "Search"
+msgstr "検索開始"
+
+#: searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "検索対象:"
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "検索…"
+
+#: searchform.php:11
+msgid "Search for:"
+msgstr "検索結果:"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "「%s」の検索結果"
+
+#: inc/widgets/widget-recent-posts.php:104
+msgid "Limit Posts Number"
+msgstr "表示数上限"
+
+#: inc/widgets/widget-social.php:11
+msgid "Activello theme widget to display social media icons"
+msgstr "ソーシャルメディアアイコンを表示するための Activello テーマウィジェット"
+
+#: inc/widgets/widget-social.php:12
+msgid "Activello Social Widget"
+msgstr "Activello ソーシャルウィジェット"
+
+#: inc/widgets/widget-social.php:17 inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "フォローする"
+
+#: inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "カテゴリーを制限"
+
+#: inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "投稿数を有効化"
+
+#: inc/widgets/widget-recent-posts.php:11
+msgid "Activello recent posts widget with thumbnails"
+msgstr "Activello 最近の投稿ウィジェット (サムネイル付き)"
+
+#: inc/widgets/widget-recent-posts.php:12
+msgid "Activello Recent Posts Widget"
+msgstr "Activello 最近の投稿ウィジェット"
+
+#: inc/widgets/widget-recent-posts.php:17
+#: inc/widgets/widget-recent-posts.php:91
+msgid "recent Posts"
+msgstr "最近の投稿"
+
+#: inc/widgets/widget-recent-posts.php:96
+msgid "Title"
+msgstr "Title"
+
+#: inc/widgets/widget-categories.php:83 inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "タイトル"
+
+#: inc/template-tags.php:86
+msgid "Posted on"
+msgstr "投稿日"
+
+#: inc/widgets/widget-categories.php:11
+msgid "Activello widget to display categories"
+msgstr "カテゴリーを表示するための Activello ウィジェット"
+
+#: inc/widgets/widget-categories.php:12
+msgid "Activello Categories"
+msgstr "Activello カテゴリー"
+
+#: inc/widgets/widget-categories.php:17 inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "カテゴリー別"
+
+#: inc/template-tags.php:59
+msgctxt "Previous post link"
+msgid "<i class=\"fa fa-chevron-left\"></i> %title"
+msgstr "<i class=\"fa fa-chevron-left\"></i> %title"
+
+#: inc/template-tags.php:60
+msgctxt "Next post link"
+msgid "%title <i class=\"fa fa-chevron-right\"></i>"
+msgstr "%title <i class=\"fa fa-chevron-right\"></i>"
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "投稿ナビゲーション"
+
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "前のページ"
+
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr "次のページ"
+
+#: inc/navwalker.php:196
+msgid "Add a menu"
+msgstr "メニューを追加"
+
+#: inc/socialnav.php:13
+msgctxt "nav menu location"
+msgid "Social Menu"
+msgstr "ソーシャルメニュー"
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "投稿ナビゲーション"
+
+#: inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr "この特定の製品のみのレイアウトを選択"
+
+#: inc/metaboxes.php:58
+msgid "Default"
+msgstr "初期"
+
+#: inc/metaboxes.php:16
+msgid "Select layout for this specific Page only ( Note: This setting only reflects if page Template is set as Default Template and Blog Type Templates.)"
+msgstr "この特定のページのみのレイアウトを選択 (注: この設定は、ページテンプレートがデフォルトテンプレートとブログタイプテンプレートになっている時のみ反映されます)"
+
+#: inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr "この特定の投稿のみのレイアウトを選択"
+
+#: inc/extras.php:259
+msgid "Your comment is awaiting moderation."
+msgstr "コメントは承認待ち。"
+
+#. translators: 1: date, 2: time
+#: inc/extras.php:252
+msgid "%1$s at %2$s"
+msgstr "%1$s at %2$s"
+
+#: inc/extras.php:158
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Theme by %1$s Powered by %2$s"
+
+#: inc/extras.php:246
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">より:</span>"
+
+#: inc/extras.php:75
+msgid "Submit"
+msgstr "投稿する"
+
+#: inc/extras.php:72
+msgid "Password:"
+msgstr "パスワード"
+
+#: inc/extras.php:71
+msgid "<p>This post is password protected. To view it please enter your password below:</p>"
+msgstr "<p>この投稿はパスワードで保護されています。下のパスワードを入力して表示するには：</p>"
+
+#: inc/customizer.php:205
+msgid "Additional CSS"
+msgstr "追加 CSS"
+
+#: inc/extras.php:54
+msgid "Untitled"
+msgstr "タイトルなし"
+
+#: inc/customizer.php:204
+msgid "Custom CSS"
+msgstr "カスタム CSS"
+
+#: inc/customizer.php:195
+msgid "Other"
+msgstr "他"
+
+#: inc/customizer.php:170
+msgid "Social Icon:hover Color"
+msgstr "ソーシャルアイコン :hover 色"
+
+#: inc/customizer.php:177
+msgid "Footer"
+msgstr "フッタ"
+
+#: inc/customizer.php:141
+msgid "Choose between different layout options to be used as default"
+msgstr "デフォルトとして使うレイアウトを複数のオプションの中から選択してください"
+
+#: inc/customizer.php:150
+msgid "Accent Color"
+msgstr "アクセント色"
+
+#: inc/customizer.php:151 inc/customizer.php:161 inc/customizer.php:171
+msgid "Default used if no color is selected"
+msgstr "色が選択されていない場合はデフォルト値が使われます"
+
+#: inc/customizer.php:160
+msgid "Social icon color"
+msgstr "ソーシャルアイコンの色"
+
+#: inc/customizer.php:53
+msgid "Activello Options"
+msgstr "Activello オプション"
+
+#: inc/customizer.php:54
+msgid "Panel to update activello theme options"
+msgstr "Activello テーマオプションを更新する画面"
+
+#: inc/customizer.php:60
+msgid "Content Options"
+msgstr "コンテンツオプション"
+
+#: inc/customizer.php:73
+msgid "Show post excerpts?"
+msgstr "投稿の抜粋を表示しますか ?"
+
+#: inc/customizer.php:85
+msgid "Display Comments on Static Pages?"
+msgstr "固定ページにコメントを表示しますか ?"
+
+#: inc/customizer.php:94
+msgid "Slider Option"
+msgstr "スライダーオプション"
+
+#: inc/customizer.php:127
+msgid "Layout options"
+msgstr "レイアウトオプション"
+
+#: inc/customizer.php:138
+msgid "Website Layout Options"
+msgstr "サイトレイアウトオプション"
+
+#: inc/customizer.php:44
+msgid "Show"
+msgstr "表示"
+
+#: image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "次 <i class=\"fa fa-chevron-right\"></i>"
+
+#: inc/customizer.php:30
+msgid "Logo"
+msgstr "ロゴ"
+
+#: header.php:40
+msgid "Toggle navigation"
+msgstr "ナビゲーションを切り替え"
+
+#: image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> 前"
+
+#: functions.php:228
+msgid "Logo Only"
+msgstr "ロゴのみ"
+
+#: functions.php:229
+msgid "Logo + Tagline"
+msgstr "ロゴ + キャッチコピー"
+
+#: functions.php:230
+msgid "Title Only"
+msgstr "タイトルのみ"
+
+#: functions.php:231
+msgid "Title + Tagline"
+msgstr "タイトル + キャッチコピー"
+
+#: functions.php:266 searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "検索"
+
+#: functions.php:226
+msgid "No Sidebar"
+msgstr "サイドバーなし"
+
+#: functions.php:226
+msgid "Full Width"
+msgstr "全幅"
+
+#: functions.php:226
+msgid "Right Sidebar"
+msgstr "右サイドバー"
+
+#: functions.php:226
+msgid "Left Sidebar"
+msgstr "左サイドバー"
+
+#: functions.php:112
+msgid "Sidebar"
+msgstr "サイドバー"
+
+#: functions.php:71
+msgid "Primary Menu"
+msgstr "メインメニュー"
+
+#: content.php:73
+msgid "% Comments"
+msgstr "%件のコメント"
+
+#: content-single.php:55
+msgid "Comment (1)"
+msgstr "コメント (1)"
+
+#: content-single.php:55
+msgid "Comments (%)"
+msgstr "コメント (%)"
+
+#: content.php:73
+msgid "1 Comment"
+msgstr "1件のコメント"
+
+#: content-single.php:55 content.php:73
+msgid "Leave a comment"
+msgstr "コメントを残す。"
+
+#. translators: %s: Name of current post
+#: content-single.php:21 content.php:22
+msgid "Edit %s"
+msgstr "編集 %s"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "お探しのものが見つからないようです。検索すると良いかもしれません。"
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "検索キーワードに一致するものが見つかりませんでした。 別のキーワードで試してみてください。"
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%1$s\">ここから始めましょう</a>。"
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "何も見つかりませんでした"
+
+#: content-grid.php:37 content-page.php:21 content-single.php:43 content.php:56
+#: image.php:79
+msgid "Pages:"
+msgstr "ページ："
+
+#: content-grid.php:28 content.php:41 content.php:67 inc/extras.php:137
+msgid "Read More"
+msgstr "もっと見る"
+
+#: comments.php:96
+msgctxt "comment form placeholder"
+msgid "Comment"
+msgstr "コメント"
+
+#: content-grid.php:16 content-page.php:32 inc/extras.php:252
+msgid "Edit"
+msgstr "編集する"
+
+#: comments.php:94
+msgid "Post Reply"
+msgstr "返信を投稿"
+
+#: comments.php:85
+msgid "Website"
+msgstr "ウェブサイトURL"
+
+#: comments.php:81
+msgid "Email"
+msgstr "Email フィールド"
+
+#: comments.php:77
+msgid "Name"
+msgstr "名称"
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr "ただいまコメントは受け付けていません。"
+
+#: comments.php:37 comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr "新しいコメント &rarr;"
+
+#: comments.php:36 comments.php:55
+msgid "&larr; Older Comments"
+msgstr "&larr; 過去のコメント"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comment"
+msgstr[0] "%1$s件のコメント"
+
+#: comments.php:35 comments.php:54
+msgid "Comment navigation"
+msgstr "コメントナビゲーション"
+
+#: archive.php:63
+msgid "Chats"
+msgstr "チャット"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "音声"
+
+#: archive.php:57
+msgid "Statuses"
+msgstr "近況"
+
+#: archive.php:54
+msgid "Links"
+msgstr "リンク先"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "引用"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "動画"
+
+#: archive.php:45
+msgid "Images"
+msgstr "画像"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "ギャラリー"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "アサイド"
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y年"
+
+#: archive.php:36
+msgid "Year: %s"
+msgstr "﻿年: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "Y年n月"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "月別: %s"
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr "﻿日: %s"
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "作成者: %s"
+
+#: 404.php:58
+msgid "Tags"
+msgstr "ｔａｇｕ"
+
+#: 404.php:53 archive.php:66 sidebar.php:31
+msgid "Archives"
+msgstr "アーカイブ別"
+
+#. translators: %1$s: smiley
+#: 404.php:52
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "月別アーカイブを探してみてください: %1$s"
+
+#: 404.php:31
+msgid "Most Used Categories"
+msgstr "よく使われているカテゴリー"
+
+#: 404.php:25
+msgid "Recent Posts"
+msgstr "最新の投稿"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "ここには何も見つかりませんでした。以下のリンクまたは検索をお試しください。"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "お探しのページが見つかりません。"
+
+#. Theme URI of the plugin/theme
+msgid "https://colorlib.com/wp/themes/activello/"
+msgstr "https://colorlib.com/wp/themes/activello/"
+
+#. Author of the plugin/theme
+msgid "Colorlib"
+msgstr "Colorlib"
+
+#. Author URI of the plugin/theme
+msgid "http://colorlib.com"
+msgstr "http://colorlib.com"

@@ -1,0 +1,347 @@
+@charset "UTF-8";
+.mypageTimer .mypageTimer__stopwatch {
+  margin-bottom: 3.5rem;
+  max-width: 570px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.mypageTimer .mypageTimer__stopwatch .mypageTimer__stopwatchTitle {
+  background-color: #5DAC7D;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.mypageTimer .mypageTimer__stopwatch .mypageTimer__stopwatchFlex {
+  padding: 2.4rem;
+  text-align: center;
+  background-color: #ffffff;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__stopwatch .mypageTimer__stopwatchFlex {
+    flex-wrap: wrap;
+  }
+}
+.mypageTimer .mypageTimer__stopwatch .mypageTimer__stopwatchFlex .mypageTimer__stopwatchNumberWrap {
+  width: 70%;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__stopwatch .mypageTimer__stopwatchFlex .mypageTimer__stopwatchNumberWrap {
+    width: 100%;
+    margin-bottom: 2.4rem;
+  }
+}
+.mypageTimer .mypageTimer__stopwatch .mypageTimer__stopwatchFlex .mypageTimer__stopwatchNumberWrap .mypageTimer__stopwatchNumber {
+  color: #90d2d8;
+  font-weight: 600;
+  font-size: 5.2rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__stopwatch .mypageTimer__stopwatchFlex .mypageTimer__stopwatchNumberWrap .mypageTimer__stopwatchNumber {
+    font-size: 4.8rem;
+  }
+}
+.mypage__timerButtons {
+  width: 30%;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypage__timerButtons {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mypage__timerButtons .mypage__button {
+    width: 49%;
+    margin-bottom: 0;
+  }
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarSwitch {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 570px;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarSwitch {
+    width: 100%;
+  }
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarSwitch .mypageTimer__calendarSwitchChild {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  margin-right: 1rem;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 32%;
+  margin-right: 2%;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarSwitch .mypageTimer__calendarSwitchChild:last-child {
+  margin-right: 0;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarSwitch .mypageTimer__calendarSwitchChild:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarSwitch .mypageTimer__calendarSwitchChild .mypageTimer__calendarSwitchForm {
+  display: block;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarSwitch .mypageTimer__calendarSwitchChild .mypageTimer__calendarSwitchForm .mypageTimer__calendarSwitchButton {
+  width: 100%;
+  height: 40px;
+  display: block;
+  background-color: #ffffff;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarSwitch .mypageTimer__calendarSwitchChild .mypageTimer__calendarSwitchForm .mypageTimer__calendarSwitchButton:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarSwitch .mypageTimer__calendarSwitchChild .mypageTimer__calendarSwitchForm .mypageTimer__calendarSwitchButton.-active {
+  background-color: #5DAC7D;
+  color: #ffffff;
+  height: 54px;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarSwitch .mypageTimer__calendarSwitchChild .mypageTimer__calendarSwitchForm .mypageTimer__calendarSwitchButton {
+    width: 100%;
+  }
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarPagination {
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  background-color: #5DAC7D;
+  padding: 1.1rem 1.6rem;
+  justify-content: space-between;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarPagination .mypageTimer__calendarPaginationLeft {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarPagination .mypageTimer__calendarPaginationLeft .mypageTimer__calendarPaginationDate {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-left: 1.8rem;
+}
+@media only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarPagination .mypageTimer__calendarPaginationLeft .mypageTimer__calendarPaginationDate {
+    font-size: 1.2rem;
+  }
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarPagination .mypageTimer__calendarPaginationForm .mypageTimer__calendarPaginationButton {
+  background-color: transparent;
+  display: block;
+  height: 100%;
+  border: none;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendarPagination .mypageTimer__calendarPaginationForm .mypageTimer__calendarPaginationButton img {
+  vertical-align: middle;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar {
+  background-color: #ffffff;
+  padding: 1.85rem 3.2rem 2.6rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar {
+    padding: 1.6rem 1rem;
+    padding-left: 0;
+  }
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap {
+  height: 260px;
+  margin-bottom: 3.6rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarUnits {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  min-width: 60px;
+  padding-right: 1.6rem;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarUnits {
+    min-width: 40px;
+    padding-right: 0.4rem;
+  }
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarUnits .mypageTimer__calendarUnitItem {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarUnits .mypageTimer__calendarUnitItem {
+    font-size: 1rem;
+  }
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarUnits .mypageTimer__calendarUnitItem.-middle {
+  transform: translateY(-50%);
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarUnits .mypageTimer__calendarUnitItem.-bottom {
+  transform: translateY(50%);
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  border: 1px solid #ebedf2;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+  background-color: #ebedf2;
+  display: inline-block;
+  content: "";
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure .mypageTimer__calendarDataWrap {
+  border-right: 1px solid #ebedf2;
+  padding-top: 0.5em;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure .mypageTimer__calendarDataWrap:last-child {
+  border-right: none;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure .mypageTimer__calendarDataWrap .mypageTimer__calendarData {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure .mypageTimer__calendarDataWrap .mypageTimer__calendarData .mypageTimer__calendarValue {
+  margin: auto;
+  margin-bottom: 0;
+  border: none;
+  width: 33%;
+  min-height: 1px;
+  transition: 0.3s;
+  position: relative;
+  background-color: #90d2d8;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure .mypageTimer__calendarDataWrap .mypageTimer__calendarData .mypageTimer__calendarValue:hover {
+  cursor: pointer;
+  background-color: rgba(144, 210, 216, 0.7);
+  transition: 0.3s;
+  z-index: 10;
+  opacity: 1;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure .mypageTimer__calendarDataWrap .mypageTimer__calendarData .mypageTimer__calendarValue:hover::before {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  color: #000000;
+  padding: 0.4rem 0.2rem;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #90d2d8;
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+  content: attr(time);
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure .mypageTimer__calendarDataWrap .mypageTimer__calendarData .mypageTimer__calendarValue:hover::after {
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  bottom: calc(100% + 4px);
+  transform: translateX(-50%) rotate(45deg);
+  border-bottom: 1px solid #90d2d8;
+  border-right: 1px solid #90d2d8;
+  content: "";
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure .mypageTimer__calendarDataWrap .mypageTimer__calendarData .mypageTimer__calendarDate {
+  position: absolute;
+  padding-top: 1rem;
+  line-height: 1.1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure .mypageTimer__calendarDataWrap .mypageTimer__calendarData .mypageTimer__calendarDate {
+    width: 40px;
+    font-size: 1rem;
+  }
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure .mypageTimer__calendarDataWrap .mypageTimer__calendarData .mypageTimer__calendarDate .-sp-only {
+  display: none;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure .mypageTimer__calendarDataWrap .mypageTimer__calendarData .mypageTimer__calendarDate .-sp-only {
+    display: inline-block;
+  }
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure.-month {
+  padding: 0 1.6rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure.-month {
+    padding: 0 0.4rem;
+  }
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure.-month .mypageTimer__calendarDataWrap {
+  border-right: none;
+}
+.mypageTimer .mypageTimer__calendarWrap .mypageTimer__calendar .mypageTimer__calendarFigureWrap .mypageTimer__calendarFigure.-month .mypageTimer__calendarDataWrap .mypageTimer__calendarValue {
+  width: 50%;
+}

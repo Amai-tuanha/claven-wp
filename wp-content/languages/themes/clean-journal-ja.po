@@ -1,0 +1,1077 @@
+# Translation of Themes - Clean Journal in Japanese
+# This file is distributed under the same license as the Themes - Clean Journal package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-06-16 02:21:01+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Themes - Clean Journal\n"
+
+#. Theme Name of the plugin/theme
+msgid "Clean Journal"
+msgstr "Clean Journal"
+
+#: inc/customizer-includes/clean-journal-customizer-custom-controls.php:29
+msgid "All Categories"
+msgstr "すべてのカテゴリー"
+
+#: inc/clean-journal-default-options.php:580
+msgid "Y"
+msgstr "Y"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:34
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo; への%1$s件の返信"
+
+#. translators: %s: post title
+#: comments.php:30
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr "&ldquo;%s&rdquo; への1件の返信"
+
+#: inc/customizer-includes/upgrade-button/class-customize.php:77
+msgid "Upgrade Now"
+msgstr "今すぐアップグレード"
+
+#: inc/customizer-includes/upgrade-button/class-customize.php:76
+msgid "Clean Journal Pro"
+msgstr "Clean Journal プロ"
+
+#: inc/customizer-includes/clean-journal-customizer.php:206
+msgid "Refresh the customizer page after saving to view reset effects"
+msgstr "保存した後にカスタマイザーページをリフレッシュして、リセットエフェクトを表示する"
+
+#: inc/clean-journal-core.php:725
+msgid "<span class=\"screen-reader-text\">Posted on</span>"
+msgstr "<span class=\"screen-reader-text\">投稿日</span>"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:386
+msgid "Check to disable Scroll Up"
+msgstr "チェックして上スクロールを無効化"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:376
+msgid "Scrollup Options"
+msgstr "上スクロール設定"
+
+#: inc/clean-journal-default-options.php:474
+msgid "Link"
+msgstr "リンク"
+
+#: inc/clean-journal-default-options.php:470
+msgid "Cloud"
+msgstr "クラウド"
+
+#: inc/clean-journal-default-options.php:466
+msgid "Cart"
+msgstr "カート"
+
+#: inc/clean-journal-default-options.php:462
+msgid "Handset"
+msgstr "ハンドセット"
+
+#: inc/clean-journal-default-options.php:458
+msgid "Phone"
+msgstr "電話番号"
+
+#: inc/clean-journal-default-options.php:454
+msgid "Website"
+msgstr "Web サイト"
+
+#: sidebar.php:41
+msgid "By default it will load Search and Archives widgets as shown below. You can add widget to this area by visiting your <a href=\"%s\">Widgets Panel</a> which will replace default widgets."
+msgstr "デフォルトでは、以下のように検索ウィジェットとアーカイブウィジェットがロードされます。このエリアにウィジェットを追加するには、デフォルトのウィジェットを置き換える<a href=\"%s\">ウィジェットパネル</a>を訪れてください。"
+
+#: sidebar.php:40
+msgid "This is the Primary Sidebar Widget Area if you are using a two or three column site layout option."
+msgstr "これは、2、3列サイトレイアウト設定を使用している場合、メインサイドバーウィジェットエリアです。"
+
+#: sidebar.php:37
+msgid "Primary Sidebar Widget Area"
+msgstr "メインサイドバーウィジェットエリア"
+
+#: searchform.php:17
+msgctxt "submit button"
+msgid "Search"
+msgstr "検索"
+
+#: searchform.php:14 searchform.php:15
+msgctxt "label"
+msgid "Search for:"
+msgstr "検索対象:"
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr "「%s」の検索結果"
+
+#: no-results.php:14
+msgid "Error 404-Page NOT Found"
+msgstr "エラー 404 - ページが見つかりません"
+
+#: inc/customizer-includes/clean-journal-customizer.php:161
+#: inc/customizer-includes/clean-journal-customizer.php:172
+msgid "Important Links"
+msgstr "重要なリンク"
+
+#: inc/customizer-includes/clean-journal-customizer.php:151
+msgid "Check to reset all settings to default"
+msgstr "チェックしてすべての設定をリセット"
+
+#: inc/customizer-includes/clean-journal-customizer.php:140
+msgid "Reset all settings"
+msgstr "すべての設定をリセット"
+
+#: inc/customizer-includes/clean-journal-customizer.php:138
+msgid "Caution: Reset all settings to default. Refresh the page after save to view full effects."
+msgstr "警告: すべての設定をデフォルトにリセットします。全効果を表示するには保存後ページを再読み込みしてください。"
+
+#: inc/customizer-includes/clean-journal-customizer.php:113
+msgid "Color Scheme"
+msgstr "配色 "
+
+#: inc/customizer-includes/clean-journal-customizer.php:95
+msgid "Check to move Site Title and Tagline before logo"
+msgstr "チェックしてサイトタイトルとキャッチフレーズをロゴの前に移動"
+
+#: inc/customizer-includes/clean-journal-customizer.php:80
+msgid "Logo Alt Text"
+msgstr "ロゴの alt テキスト"
+
+#: inc/customizer-includes/clean-journal-customizer.php:66
+msgid "Check to disable logo"
+msgstr "チェックしてロゴを無効化"
+
+#: inc/customizer-includes/clean-journal-customizer.php:53
+msgid "Logo"
+msgstr "ロゴ"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:408
+msgid "Default Display Text in Search"
+msgstr "検索フィールドのデフォルトテキスト"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:398
+msgid "Search Options"
+msgstr "検索設定"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:395
+msgid "Change default placeholder text in Search."
+msgstr "検索のデフォルト仮テキストを変更。"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:350
+msgid "Promotion Headline Link"
+msgstr "プロモーション見出しリンク"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:336
+msgid "Promotion Headline Button Text "
+msgstr "プロモーション見出しボタンテキスト "
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:335
+msgid "Appropriate Words: 3"
+msgstr "適切な文字数: 3"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:322
+msgid "Promotion Subheadline Text"
+msgstr "プロモーション小見出しテキスト"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:321
+msgid "Appropriate Words: 15"
+msgstr "適切な文字数: 15"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:308
+msgid "Promotion Headline Text"
+msgstr "プロモーション見出しテキスト"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:307
+msgid "Appropriate Words: 10"
+msgstr "適切な文字数: 10"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:293
+msgid "Enable Promotion Headline on"
+msgstr "プロモーション見出しを有効化:"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:282
+msgid "Promotion Headline Options"
+msgstr "プロモーション見出し設定"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:279
+msgid "To disable the fields, simply leave them empty."
+msgstr "フィールドを無効にするには、空のままにしておきます。"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:270
+msgid "Pagination type"
+msgstr "ページ送りのタイプ"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:259
+msgid "Pagination Options"
+msgstr "ページ送り設定"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:248
+msgid "Numeric Option requires <a target=\"_blank\" href=\"%s\">WP-PageNavi Plugin</a>."
+msgstr "数値オプションには、<a target=\"_blank\" href=\"%s\">WP-PageNavi プラグイン</a>が必要です。"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:237
+msgid "Infinite Scroll Options requires <a target=\"_blank\" href=\"%s\">JetPack Plugin</a> with Infinite Scroll module Enabled."
+msgstr "無限スクロールオプションを使うには <a target=\"_blank\" href=\"%s\">Jetpack プラグイン</a>の無限スクロールモジュールを有効化する必要があります。"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:206
+msgid "Archive Content Layout"
+msgstr "アーカイブコンテンツレイアウト"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:192
+msgid "Default Layout"
+msgstr "デフォルトレイアウト"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:166
+msgid "Select Categories"
+msgstr "カテゴリーを選択"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:156
+msgid "Homepage / Frontpage Options"
+msgstr "ホームページ / フロントページ設定"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:153
+msgid "Only posts that belong to the categories selected here will be displayed on the front page"
+msgstr "ここで選択したカテゴリーに投稿された記事のみがフロントページに表示されます"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:144
+msgid "Read More Text"
+msgstr "「続きを読む」テキスト"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:130
+msgid "Excerpt Length (words)"
+msgstr "抜粋の長さ (文字数)"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:123
+msgid "Excerpt length. Default is 55 words"
+msgstr "抜粋の長さ。デフォルトは55文字です。"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:113
+msgid "Excerpt Options"
+msgstr "抜粋設定"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:99
+msgid "Enter Custom CSS"
+msgstr "カスタム CSS を入力"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:89
+msgid "Custom CSS Options"
+msgstr "カスタム CSS 設定"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:86
+msgid "Custom/Inline CSS"
+msgstr "カスタム/インライン CSS"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:71
+msgid "Separator between Breadcrumbs"
+msgstr "パンくずリストの区切り記号"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:55
+msgid "Check to enable Breadcrumb on Homepage"
+msgstr "チェックしてホームページでパンくずリストを有効化"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:42
+msgid "Check to enable Breadcrumb"
+msgstr "チェックしてパンくずリストを有効化"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:31
+msgid "Breadcrumb Options"
+msgstr "パンくずリスト設定"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:29
+msgid "Breadcrumbs are a great way of letting your visitors find out where they are on your site with just a glance. You can enable/disable them on homepage and entire site."
+msgstr "パンくずリストは訪問者がサイトのどこにあるのかを一目で把握するのに最適な方法です。ホームページやサイト全体で有効/無効にすることができます。"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:23
+msgid "Theme Options"
+msgstr "テーマ設定"
+
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:20
+msgid "Basic theme Options"
+msgstr "基本テーマ設定"
+
+#: inc/customizer-includes/clean-journal-customizer-social-icons.php:21
+#: inc/customizer-includes/clean-journal-customizer-social-icons.php:28
+msgid "Social Links"
+msgstr "ソーシャルリンク"
+
+#: inc/customizer-includes/clean-journal-customizer-social-icons.php:19
+msgid "Note: Enter the url for correponding social networking website"
+msgstr "注: 対応するソーシャルネットワーキングウェブサイトの URL を入力してください"
+
+#: inc/customizer-includes/clean-journal-customizer-header-options.php:79
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:364
+msgid "Check to Open Link in New Window/Tab"
+msgstr "チェックしてリンクを新しいウィンドウまたはタブで開く"
+
+#: inc/customizer-includes/clean-journal-customizer-header-options.php:66
+msgid "Featured Header Image Link URL"
+msgstr "ヘッダーアイキャッチ画像リンク URL"
+
+#: inc/customizer-includes/clean-journal-customizer-header-options.php:53
+msgid "Featured Header Image Alt/Title Tag "
+msgstr "ヘッダーアイキャッチ画像 alt/title タグ "
+
+#: inc/customizer-includes/clean-journal-customizer-header-options.php:40
+msgid "Page/Post Featured Header Image Size"
+msgstr "ページ・投稿ヘッダーアイキャッチ画像サイズ"
+
+#: inc/customizer-includes/clean-journal-customizer-header-options.php:25
+msgid "Enable Featured Header Image on "
+msgstr "ヘッダーアイキャッチ画像設定を有効化: "
+
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:154
+msgid "No of Slides"
+msgstr "スライドの数"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:147
+msgid "Save and refresh the page if No. of Slides is changed (Max no of slides is 20)"
+msgstr "スライドの数が変更された場合、保存してページを再読み込みしてください (スライド数の上限は20枚)"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:132
+msgid "Select Slider Type"
+msgstr "スライダーの種類を選択"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:116
+msgid "Image Loader"
+msgstr "画像ローダー"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:100
+msgid "Transition Length"
+msgstr "遷移の長さ"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:81
+msgid "Transition Delay"
+msgstr "遷移遅延"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:77
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:96
+msgid "seconds(s)"
+msgstr "秒"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:61
+msgid "Transition Effect"
+msgstr "遷移効果"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:45
+msgid "Enable Slider on"
+msgstr "スライダーを有効化:"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:21
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:33
+msgid "Featured Slider"
+msgstr "おすすめスライダー"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:19
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:27
+msgid "Featured Slider Options"
+msgstr "おすすめスライダーオプション"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:184
+#: inc/customizer-includes/clean-journal-customizer-featured-slider.php:171
+msgid "Featured Page"
+msgstr "おすすめページ"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:166
+msgid "Display Content"
+msgstr "コンテンツを表示"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:149
+msgid "No of Featured Content"
+msgstr "おすすめコンテンツの数"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:142
+msgid "Save and refresh the page if No. of Featured Content is changed (Max no of Featured Content is 20)"
+msgstr "おすすめコンテンツの数が変更された場合、ページを保存して更新します（おすすめコンテンツの最大数は20）"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:126
+msgid "Sub-headline for Featured Content"
+msgstr "おすすめコンテンツの小見出し"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:125
+msgid "Leave field empty if you want to remove Sub-headline"
+msgstr "小見出しを削除したい場合は、フィールドを空のままにしてください"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:109
+msgid "Headline for Featured Content"
+msgstr "おすすめコンテンツの見出し"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:108
+msgid "Leave field empty if you want to remove Headline"
+msgstr "見出しを削除したい場合は、フィールドを空のままにしてください"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:93
+msgid "Select Content Type"
+msgstr "コンテンツタイプの選択"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:77
+msgid "Check to Move above Footer"
+msgstr "チェックしてフッターの上に移動"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:62
+msgid "Select Featured Content Layout"
+msgstr "おすすめコンテンツのレイアウトを選択"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:46
+msgid "Enable Featured Content on"
+msgstr "おすすめコンテンツを有効化"
+
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:19
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:28
+msgid "Featured Content Options"
+msgstr "おすすめコンテンツ設定"
+
+#: inc/customizer-includes/clean-journal-customizer-custom-controls.php:70
+msgid "Review"
+msgstr "レビュー"
+
+#: inc/customizer-includes/clean-journal-customizer-custom-controls.php:66
+msgid "Donate Now"
+msgstr "今すぐ寄付"
+
+#: inc/customizer-includes/clean-journal-customizer-custom-controls.php:62
+msgid "Changelog"
+msgstr "変更履歴"
+
+#: inc/customizer-includes/clean-journal-customizer-custom-controls.php:58
+msgid "Support"
+msgstr "サポート"
+
+#: inc/customizer-includes/clean-journal-customizer-custom-controls.php:54
+msgid "Theme Instructions"
+msgstr "テーマの説明"
+
+#: inc/customizer-includes/clean-journal-customizer-custom-controls.php:41
+msgid "Hold down the Ctrl (windows) / Command (Mac) button to select multiple options."
+msgstr "複数のオプションを選択するには Ctrl (Windows) / Command (Mac) キーを押しながら選択してください。"
+
+#: inc/clean-journal-widgets.php:111
+msgid "Title (optional):"
+msgstr "タイトル (オプション): "
+
+#: inc/clean-journal-widgets.php:70
+msgid "Use this widget to add Social Icons as a widget. "
+msgstr "このウィジェットを使用して、ソーシャルアイコンをウィジェットとして追加する"
+
+#: inc/clean-journal-widgets.php:69
+msgid "CT: Social Icons"
+msgstr "CT: ソーシャルアイコン"
+
+#: inc/clean-journal-widgets.php:49
+msgid "Footer %d widget area."
+msgstr "フッター %d ウィジェットエリア。"
+
+#: inc/clean-journal-widgets.php:43
+msgid "Footer Area %d"
+msgstr "フッターエリア %d"
+
+#: inc/clean-journal-widgets.php:36
+msgid "This is the primary sidebar if you are using a two or three column site layout option."
+msgstr "2、3列のサイトレイアウト設定を使用している場合、メインサイドバーです。"
+
+#: inc/clean-journal-widgets.php:30
+msgid "Primary Sidebar"
+msgstr "メインサイドバー"
+
+#: inc/clean-journal-structure.php:86
+msgid "This is Header Top Area. Assign Header Top Menu and Social Icons from Theme Customizer"
+msgstr "ヘッダートップエリアです。テーマカスタマイザーからヘッダートップメニューとソーシャルアイコンを割り当てます"
+
+#: inc/clean-journal-metabox.php:221
+msgid "Clean Journal Options"
+msgstr "Clean Journal オプション"
+
+#: inc/clean-journal-metabox.php:95
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:219
+msgid "Single Page/Post Image Layout "
+msgstr "個別ページ・投稿の画像レイアウト "
+
+#: inc/clean-journal-metabox.php:94
+msgid "Header Featured Image Options"
+msgstr "ヘッダーアイキャッチ画像設定"
+
+#: inc/clean-journal-metabox.php:93
+#: inc/customizer-includes/clean-journal-customizer-theme-options.php:181
+msgid "Layout Options"
+msgstr "レイアウト設定"
+
+#: inc/clean-journal-menus.php:159 inc/clean-journal-menus.php:178
+msgid "Menu"
+msgstr "メニュー"
+
+#: inc/clean-journal-menus.php:44
+msgid "Search"
+msgstr "検索開始"
+
+#: inc/clean-journal-menus.php:28 inc/clean-journal-menus.php:70
+#: inc/clean-journal-menus.php:207
+msgid "Skip to content"
+msgstr "コンテンツへスキップ"
+
+#: inc/clean-journal-featured-content.php:256
+#: inc/clean-journal-featured-slider.php:180
+msgid "Permalink to: "
+msgstr "パーマリンク先: "
+
+#: inc/clean-journal-default-options.php:582
+msgid "by"
+msgstr "by"
+
+#: inc/clean-journal-default-options.php:580
+msgctxt "1: Year, 2: Site Title with home URL"
+msgid "Copyright &copy; %1$s %2$s. All Rights Reserved."
+msgstr "Copyright &copy; %1$s %2$s. All Rights Reserved."
+
+#: inc/clean-journal-default-options.php:565
+msgid "Disable Image"
+msgstr "画像を無効化"
+
+#: inc/clean-journal-default-options.php:555
+msgid "Featured Image"
+msgstr "アイキャッチ画像"
+
+#: inc/clean-journal-default-options.php:533
+msgid "Disable"
+msgstr "無効化"
+
+#: inc/clean-journal-default-options.php:528
+msgid "Enable"
+msgstr "有効化"
+
+#: inc/clean-journal-default-options.php:492
+#: inc/clean-journal-default-options.php:523
+#: inc/clean-journal-default-options.php:550
+msgid "Default"
+msgstr "デフォルト"
+
+#: inc/clean-journal-default-options.php:450
+msgid "Twitch"
+msgstr "Twitch"
+
+#: inc/clean-journal-default-options.php:442
+msgid "Spotify"
+msgstr "Spotify"
+
+#: inc/clean-journal-default-options.php:446
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: inc/clean-journal-default-options.php:438
+msgid "DropBox"
+msgstr "DropBox"
+
+#: inc/clean-journal-default-options.php:434
+msgid "Pocket"
+msgstr "Pocket"
+
+#: inc/clean-journal-default-options.php:430
+msgid "Stumbleupon"
+msgstr "StumbleUpon"
+
+#: inc/clean-journal-default-options.php:426
+msgid "Reddit"
+msgstr "Reddit"
+
+#: inc/clean-journal-default-options.php:422
+msgid "Digg"
+msgstr "Digg"
+
+#: inc/clean-journal-default-options.php:418
+msgid "Skype"
+msgstr "Skype"
+
+#: inc/clean-journal-default-options.php:414
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: inc/clean-journal-default-options.php:410
+msgid "Path"
+msgstr "Path"
+
+#: inc/clean-journal-default-options.php:406
+msgid "CodePen"
+msgstr "CodePen"
+
+#: inc/clean-journal-default-options.php:402
+msgid "PollDaddy"
+msgstr "PollDaddy"
+
+#: inc/clean-journal-default-options.php:398
+msgid "Instagram"
+msgstr "Instagram"
+
+#: inc/clean-journal-default-options.php:394
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: inc/clean-journal-default-options.php:390
+msgid "YouTube"
+msgstr "YouTube"
+
+#: inc/clean-journal-default-options.php:386
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: inc/clean-journal-default-options.php:382
+msgid "Flickr"
+msgstr "Flickr"
+
+#: inc/clean-journal-default-options.php:378
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: inc/clean-journal-default-options.php:374
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: inc/clean-journal-default-options.php:370
+msgid "GitHub"
+msgstr "GitHub"
+
+#: inc/clean-journal-default-options.php:366
+msgid "WordPress"
+msgstr "WordPress"
+
+#: inc/clean-journal-default-options.php:362
+msgid "Feed"
+msgstr "フィード"
+
+#: inc/clean-journal-default-options.php:358
+#: inc/clean-journal-social-icons.php:36
+msgid "Email"
+msgstr "メール"
+
+#: inc/clean-journal-default-options.php:354
+msgid "Googleplus"
+msgstr "Google+"
+
+#: inc/clean-journal-default-options.php:350
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/clean-journal-default-options.php:346
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/clean-journal-default-options.php:330
+msgid "Full Size"
+msgstr "フルサイズ"
+
+#: inc/clean-journal-default-options.php:329
+msgid "Featured"
+msgstr "おすすめ"
+
+#: inc/clean-journal-default-options.php:315
+msgid "Infinite Scroll (Scroll)"
+msgstr "無限スクロール (スクロール)"
+
+#: inc/clean-journal-default-options.php:314
+msgid "Infinite Scroll (Click)"
+msgstr "無限スクロール (クリック)"
+
+#: inc/clean-journal-default-options.php:313
+msgid "Numeric"
+msgstr "数字"
+
+#: inc/clean-journal-default-options.php:312
+msgid "Default(Older Posts/Newer Posts)"
+msgstr "デフォルト (過去の投稿/新しい投稿)"
+
+#: inc/clean-journal-default-options.php:298
+msgid "False"
+msgstr "偽"
+
+#: inc/clean-journal-default-options.php:297
+msgid "Wait"
+msgstr "待機"
+
+#: inc/clean-journal-default-options.php:296
+msgid "True"
+msgstr "真"
+
+#: inc/clean-journal-default-options.php:282
+msgid "Shuffle"
+msgstr "シャッフル"
+
+#: inc/clean-journal-default-options.php:281
+msgid "Tile Blind"
+msgstr "タイルブラインド"
+
+#: inc/clean-journal-default-options.php:280
+msgid "Tile Slide"
+msgstr "タイルスライド"
+
+#: inc/clean-journal-default-options.php:279
+msgid "Flip Vertical"
+msgstr "垂直に反転"
+
+#: inc/clean-journal-default-options.php:278
+msgid "Flip Horizontal"
+msgstr "水平に反転"
+
+#: inc/clean-journal-default-options.php:277
+msgid "Scroll Vertical"
+msgstr "縦方向にスクロール"
+
+#: inc/clean-journal-default-options.php:276
+msgid "Scroll Horizontal"
+msgstr "横方向にスクロール"
+
+#: inc/clean-journal-default-options.php:275
+msgid "None"
+msgstr "なし"
+
+#: inc/clean-journal-default-options.php:274
+msgid "Fade Out"
+msgstr "フェードアウト"
+
+#: inc/clean-journal-default-options.php:273
+msgid "Fade"
+msgstr "フェード"
+
+#: inc/clean-journal-default-options.php:259
+msgid "Featured Page Slider"
+msgstr "おすすめページスライダー"
+
+#: inc/clean-journal-default-options.php:258
+msgid "Demo Featured Slider"
+msgstr "おすすめスライダーのデモ"
+
+#: inc/clean-journal-default-options.php:244
+msgid "Hide Content"
+msgstr "コンテンツを非表示"
+
+#: inc/clean-journal-default-options.php:243
+msgid "Show Full Content"
+msgstr "全文を表示"
+
+#: inc/clean-journal-default-options.php:228
+msgid "4 columns"
+msgstr "4カラム"
+
+#: inc/clean-journal-default-options.php:227
+msgid "3 columns"
+msgstr "3カラム"
+
+#: inc/clean-journal-default-options.php:213
+msgid "Featured Page Content"
+msgstr "おすすめページコンテンツ"
+
+#: inc/clean-journal-default-options.php:212
+msgid "Demo Featured Content"
+msgstr "おすすめコンテンツのデモ"
+
+#: inc/clean-journal-default-options.php:182
+msgid "Slider Image"
+msgstr "スライダー画像"
+
+#: inc/clean-journal-default-options.php:181
+msgid "Large Image"
+msgstr "大サイズ画像"
+
+#: inc/clean-journal-default-options.php:180
+#: inc/clean-journal-default-options.php:560
+msgid "Full Image"
+msgstr "フルサイズ画像"
+
+#: inc/clean-journal-default-options.php:166
+#: inc/clean-journal-default-options.php:198
+#: inc/clean-journal-default-options.php:331
+msgid "Disabled"
+msgstr "無効化"
+
+#: inc/clean-journal-default-options.php:165
+msgid "Pages and Posts"
+msgstr "ページと投稿"
+
+#: inc/clean-journal-default-options.php:164
+msgid "Entire Site, Page/Post Featured Image"
+msgstr "サイト全体、ページ・投稿アイキャッチ画像"
+
+#: inc/clean-journal-default-options.php:163
+#: inc/clean-journal-default-options.php:197
+msgid "Entire Site"
+msgstr "サイト全体"
+
+#: inc/clean-journal-default-options.php:162
+msgid "Excluding Homepage, Page/Post Featured Image"
+msgstr "ホームページ、ページ・投稿アイキャッチ画像を覗く"
+
+#: inc/clean-journal-default-options.php:161
+msgid "Excluding Homepage"
+msgstr "ホームページを除く"
+
+#: inc/clean-journal-default-options.php:160
+#: inc/clean-journal-default-options.php:196
+msgid "Homepage / Frontpage"
+msgstr "ホームページ / フロントページ"
+
+#: inc/clean-journal-default-options.php:146
+msgid "Show Full Content (No Featured Image)"
+msgstr "全文を表示 (アイキャッチ画像なし)"
+
+#: inc/clean-journal-default-options.php:145
+#: inc/clean-journal-default-options.php:242
+msgid "Show Excerpt"
+msgstr "抜粋を表示"
+
+#: inc/clean-journal-default-options.php:132
+#: inc/clean-journal-default-options.php:507
+msgid "No Sidebar ( Content Width )"
+msgstr "サイドバーなし (コンテンツ幅)"
+
+#: inc/clean-journal-default-options.php:131
+#: inc/clean-journal-default-options.php:502
+msgid "Content, Primary Sidebar"
+msgstr "コンテンツ、メインサイドバー"
+
+#: inc/clean-journal-default-options.php:497
+msgid "Primary Sidebar, Content"
+msgstr "メインサイドバー、コンテンツ"
+
+#: inc/clean-journal-default-options.php:116
+#: inc/clean-journal-default-options.php:130
+msgid "Dark"
+msgstr "ダーク"
+
+#: inc/clean-journal-default-options.php:115
+msgid "Light"
+msgstr "ライト"
+
+#: inc/clean-journal-default-options.php:85
+#: inc/clean-journal-featured-content.php:56
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:21
+#: inc/customizer-includes/clean-journal-customizer-featured-content-setting.php:34
+msgid "Featured Content"
+msgstr "おすすめコンテンツ"
+
+#: inc/clean-journal-default-options.php:74
+msgid "Search..."
+msgstr "検索…"
+
+#: inc/clean-journal-default-options.php:69
+msgid "Reviews"
+msgstr "レビュー"
+
+#: inc/clean-journal-default-options.php:67
+msgid "Clean Journal is a Premium Responsive WordPress Theme"
+msgstr "Clean Journal はプレミアム・レスポンシブ WordPress テーマ"
+
+#: inc/clean-journal-default-options.php:56
+msgid "Read More ..."
+msgstr "続きを読む…"
+
+#: inc/clean-journal-core.php:1447
+msgid "Previous post:"
+msgstr "前の記事:"
+
+#: inc/clean-journal-core.php:1446
+msgid "&larr; Previous"
+msgstr "&larr; 前へ"
+
+#: inc/clean-journal-core.php:1444
+msgid "Next post:"
+msgstr "次の記事:"
+
+#: inc/clean-journal-core.php:1443
+msgid "Next &rarr;"
+msgstr "次へ &rarr;"
+
+#: inc/clean-journal-core.php:1401
+msgid "By"
+msgstr "から"
+
+#: inc/clean-journal-core.php:1400
+msgid "Posted on"
+msgstr "投稿日"
+
+#: inc/clean-journal-core.php:1382
+msgid "Scroll Up"
+msgstr "上にスクロール"
+
+#: inc/clean-journal-core.php:772
+msgctxt "Used before tag names."
+msgid "<span class=\"screen-reader-text\">Tags</span>"
+msgstr "<span class=\"screen-reader-text\">タグ</span>"
+
+#: inc/clean-journal-core.php:764
+msgctxt "Used before category names."
+msgid "<span class=\"screen-reader-text\">Categories</span>"
+msgstr "<span class=\"screen-reader-text\">カテゴリー</span>"
+
+#: inc/clean-journal-core.php:761 inc/clean-journal-core.php:769
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr "、"
+
+#: inc/clean-journal-core.php:740
+msgid "% Comments"
+msgstr "%件のコメント"
+
+#: inc/clean-journal-core.php:740
+msgid "1 Comment"
+msgstr "1件のコメント"
+
+#: inc/clean-journal-core.php:740
+msgid "Leave a comment"
+msgstr "コメントする"
+
+#: inc/clean-journal-core.php:732
+msgctxt "Used before post author name."
+msgid "<span class=\"screen-reader-text\">Author</span>"
+msgstr "<span class=\"screen-reader-text\">投稿者</span>"
+
+#: inc/clean-journal-core.php:622
+msgid "Your comment is awaiting moderation."
+msgstr "あなたのコメントは承認待ちです。"
+
+#: inc/clean-journal-core.php:615
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s %2$s"
+
+#: inc/clean-journal-core.php:609
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">のコメント:</span>"
+
+#: inc/clean-journal-core.php:599
+msgid "Pingback:"
+msgstr "ピンバック: "
+
+#: inc/clean-journal-core.php:577
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "新しい記事 <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/clean-journal-core.php:576
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> 以前の記事"
+
+#: inc/clean-journal-core.php:567 inc/clean-journal-core.php:1461
+msgid "Post navigation"
+msgstr "投稿ナビゲーション"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Droid Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: inc/clean-journal-core.php:187
+msgctxt "Droid Sans font: on or off"
+msgid "on"
+msgstr "on"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Open Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: inc/clean-journal-core.php:181
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "on"
+
+#: inc/clean-journal-core.php:90 inc/clean-journal-menus.php:206
+msgid "Header Top Menu"
+msgstr "ヘッダートップメニュー"
+
+#: inc/clean-journal-core.php:89 inc/clean-journal-menus.php:69
+msgid "Secondary Menu"
+msgstr "サブメニュー"
+
+#: inc/clean-journal-core.php:88 inc/clean-journal-menus.php:27
+msgid "Primary Menu"
+msgstr "メインメニュー"
+
+#: inc/clean-journal-breadcrumb.php:222
+msgid "Page %s"
+msgstr "ページ %s"
+
+#: inc/clean-journal-breadcrumb.php:62
+msgid "Error 404"
+msgstr "404 エラー"
+
+#: inc/clean-journal-breadcrumb.php:61
+msgid "%1$sView all posts by %2$s"
+msgstr "%1$sユーザーの投稿をすべて表示: %2$s"
+
+#: inc/clean-journal-breadcrumb.php:60
+msgid "%1$sPosts tagged %2$s"
+msgstr "%1$s以下のタグがついた投稿: %2$s"
+
+#: inc/clean-journal-breadcrumb.php:59
+msgid "%1$sSearch results for: %2$s"
+msgstr "%1$s検索結果: %2$s"
+
+#: inc/clean-journal-breadcrumb.php:58
+msgid "%1$s Archive for %2$s"
+msgstr "%2$s の %1$s アーカイブ"
+
+#: inc/clean-journal-breadcrumb.php:57
+msgid "Home"
+msgstr "ホーム"
+
+#: content-page.php:35 inc/clean-journal-core.php:599
+#: inc/clean-journal-core.php:618 inc/clean-journal-core.php:744
+msgid "Edit"
+msgstr "編集"
+
+#: content-page.php:28 content-single.php:31 content.php:46
+msgid "Pages:"
+msgstr "ページ: "
+
+#: content-none.php:30 no-results.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "お探しのコンテンツを見つけられませんでした。検索をお試しください。"
+
+#: content-none.php:25 no-results.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "検索キーワードに一致するものが見つかりませんでした。 別のキーワードで試してみてください。"
+
+#: content-none.php:21 no-results.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%1$s\">ここから始めましょう</a>。"
+
+#: content-none.php:15
+msgid "Nothing Found"
+msgstr "見つかりません"
+
+#: comments.php:87
+msgid "Comments are closed."
+msgstr "コメントは受け付けていません。"
+
+#: comments.php:52 comments.php:77
+msgid "Newer Comments &rarr;"
+msgstr "新しいコメント &rarr;"
+
+#: comments.php:51 comments.php:76
+msgid "&larr; Older Comments"
+msgstr "&larr; 過去のコメント"
+
+#: comments.php:50 comments.php:75
+msgid "Comment navigation"
+msgstr "コメントナビゲーション"
+
+#: sidebar.php:54
+msgid "Archives"
+msgstr "アーカイブ"
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "何も見つかりませんでした。以下のリンクまたは検索をお試しください。"
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "このページは見つかりません。"
+
+#. Author URI of the plugin/theme
+msgid "https://catchthemes.com/"
+msgstr "https://catchthemes.com/"
+
+#. Author of the plugin/theme
+msgid "Catch Themes"
+msgstr "Catch Themes"
+
+#. Theme URI of the plugin/theme
+msgid "https://catchthemes.com/themes/clean-journal"
+msgstr "https://catchthemes.com/themes/clean-journal"

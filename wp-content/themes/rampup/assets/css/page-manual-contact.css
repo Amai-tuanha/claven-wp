@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.manual {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.manual .inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.manual .manualTitle {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #337662;
+}
+@media only screen and (max-width: 766px) {
+  .manual .manualTitle {
+    font-size: 2rem;
+  }
+}
+.manual .manualContent {
+  padding: 0 4rem;
+  text-align: center;
+}
+.manual .manualSubTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding-top: 4rem;
+  padding-bottom: 2.4rem;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 766px) {
+  .manual .manualSubTitle {
+    font-size: 1.8rem;
+  }
+}
+.manual .manualVideo {
+  background-color: #707070;
+  width: 100%;
+  max-width: 700px;
+  height: 424px;
+}
+.manual .manualIndex {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 766px) {
+  .manual .manualIndex {
+    font-size: 1.6rem;
+  }
+}
+.manual .manualText {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-bottom: 2.4rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+@media only screen and (max-width: 766px) {
+  .manual .manualText {
+    font-size: 1.4rem;
+  }
+}

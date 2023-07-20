@@ -1,0 +1,9 @@
+{
+    "require": {
+        "nesbot/carbon": "^2.42",
+        "google/apiclient": "^2.0",
+        "vlucas/phpdotenv": "^5.3",
+        "phpmailer/phpmailer": "^6.5",
+        "league/oauth2-google": "^4.0"
+    }
+}

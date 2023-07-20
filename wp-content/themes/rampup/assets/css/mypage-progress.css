@@ -1,0 +1,396 @@
+@charset "UTF-8";
+.mypageProgress__bar {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 4px;
+  padding-right: 2.4rem;
+  background-color: #ffffff;
+  width: 100%;
+  height: 78px;
+  margin-bottom: 11rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageProgress__bar {
+    margin-bottom: 7rem;
+  }
+}
+.mypageProgress__bar .mypageProgress__barDotLines {
+  width: 10%;
+  z-index: 40;
+  background-color: transparent;
+  position: relative;
+}
+.mypageProgress__bar .mypageProgress__barDotLines::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: inline-block;
+  content: "";
+  transform: translateY(-50%);
+  background: linear-gradient(to bottom, #ebedf2, #ebedf2 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%) 0% 0%;
+  background-size: 1px 5px;
+  width: 1px;
+  height: 100%;
+}
+.mypageProgress__bar .mypageProgress__barDotLines:last-of-type::after {
+  height: calc(100% + 5px);
+  width: 3px;
+  background: #5DAC7D;
+  border-radius: 4px;
+}
+.mypageProgress__bar .mypageProgress__barDotLines:last-of-type::before {
+  position: absolute;
+  bottom: calc(100% + 5.5px);
+  right: 0%;
+  width: 40px;
+  transform: translateX(50%);
+  display: inline-block;
+  content: "100%";
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  color: #5DAC7D;
+}
+.mypageProgress__bar .mypageProgress__stroke {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  height: 100%;
+  width: 10px;
+  border-radius: 4px;
+  background-color: #90d2d8;
+  max-width: calc(100% - 24px);
+}
+.mypageProgress__bar .mypageProgress__stroke .mypageProgress__strokePercentage {
+  position: absolute;
+  top: calc(100% + 4px);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 0;
+  transform: translateX(50%);
+}
+.mypageProgress__bar .mypageProgress__stroke .mypageProgress__strokePercentage > img {
+  width: 26px;
+  vertical-align: middle;
+}
+.mypageProgress__bar .mypageProgress__stroke.-allDone .mypageProgress__strokePercentage {
+  display: none;
+}
+.mypageProgress__bar .mypageProgress__messageWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: 100;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.mypageProgress__bar .mypageProgress__messageWrap .mypageProgress__message {
+  font-size: 2.4rem;
+  color: #ffffff;
+  padding: 0 0.8rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageProgress__bar .mypageProgress__messageWrap .mypageProgress__message {
+    padding: 0 0.4rem;
+    font-size: 1.8rem;
+  }
+}
+.mypageProgress__bar .mypageProgress__Percentage {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  position: absolute;
+  top: calc(50% + 1rem);
+  left: 50%;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+  padding: 0.2rem 0.8rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 2px 2px 4px rgba(198, 198, 198, 0.8);
+  transform: translate(-50%, -50%);
+}
+.mypageProgress__bar .mypageProgress__Percentage .mypage__percentageText {
+  text-align: center;
+}
+.mypageProgress__bar .mypageProgress__Percentage .mypage__percentage {
+  color: #5DAC7D;
+  font-size: 200%;
+  line-height: 1.2;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild {
+  display: none;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post {
+  box-shadow: 0 0 6px, rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post:last-child {
+  margin-bottom: 0;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postTitle {
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 1.3rem 2rem 1.2rem;
+  padding-right: 5rem;
+  transition: 0.3s;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postTitle:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postTitle {
+    padding: 1rem 1.6rem;
+    padding-right: 4rem;
+  }
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postTitle .mypageProgress__postContentChapter {
+  color: #90d2d8;
+  min-width: 110px;
+  width: 110px;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postTitle .mypageProgress__postContentLine {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #d1d1d1;
+  margin-right: 1.4rem;
+  margin-top: 0.3rem;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postTitle .mypageProgress__postContentCheck {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 26px;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postTitle .mypageProgress__postContentCheck {
+    right: 10px;
+    width: 20px;
+  }
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent {
+  padding: 1.3rem 2rem 1.2rem;
+  margin-top: 1.8rem;
+  display: none;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText {
+  margin-bottom: 1.6rem;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText > *:first-child {
+  margin-top: 0 !important;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost {
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost {
+    font-size: 1.2rem;
+  }
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost * {
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost * {
+    font-size: 1.2rem;
+  }
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h2, .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h3, .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h4, .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h5, .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h6 {
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h2, .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h3, .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h4, .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h5, .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h6 {
+    font-size: 1.4rem;
+  }
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h2 {
+  background-color: transparent;
+  position: static;
+  color: #333333;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h2::before, .mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypageProgress__postContentText.singlePost h2::after {
+  display: none;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypage__button {
+  max-width: 300px;
+  width: 100%;
+}
+.mypageProgress__postsWrap .mypageProgress__postsChild .mypageProgress__post .mypageProgress__postContent .mypage__button.-disabled {
+  background-color: #d1d1d1;
+  color: #ffffff;
+}
+.mypageSeminar__stampsWrap {
+  margin-bottom: 5.8rem;
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp {
+  width: 16%;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 1.6rem 2rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+@media screen and (max-width: 1080px) {
+  .mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp {
+    width: 24%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp {
+    width: 49%;
+  }
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp::before {
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 2.6rem;
+  color: #eaedf2;
+  content: attr(index);
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp:not(:nth-child(6n)) {
+  margin-right: 0.8%;
+}
+@media screen and (max-width: 1080px) {
+  .mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp:not(:nth-child(6n)) {
+    margin-right: 0%;
+  }
+  .mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp:not(:nth-child(4n)) {
+    margin-right: 1.3%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp:not(:nth-child(4n)) {
+    margin-right: 0%;
+  }
+  .mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp:not(:nth-child(2n)) {
+    margin-right: 2%;
+  }
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp:hover .mypageSeminar__stampTitle {
+  transition: 0.3s;
+  opacity: 1 !important;
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampTitle {
+  transition: 0.3s;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  z-index: 20;
+  opacity: 0;
+}
+@media only screen and (max-width: 766px), only screen and (max-width: 480px) {
+  .mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampTitle {
+    font-size: 1.2rem;
+  }
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampImg {
+  position: relative;
+  width: 100%;
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampImg > svg {
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 0.6rem;
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampImg > svg g {
+  stroke: transparent;
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampImg > svg path {
+  fill: transparent;
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampImg.-show > svg g {
+  stroke: #90d2d8;
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampImg.-show > svg path {
+  fill: #90d2d8;
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampDate {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  opacity: 0;
+  color: #707070;
+}
+.mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampDate.-show {
+  opacity: 1;
+}
+@media only screen and (max-width: 766px) {
+  .mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampDate {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mypageSeminar__stampsWrap .mypageSeminar__stamps .mypageSeminar__stamp .mypageSeminar__stampDate {
+    font-size: 1.2rem;
+  }
+}

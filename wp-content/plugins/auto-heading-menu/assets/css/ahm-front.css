@@ -1,0 +1,89 @@
+/* auto header menu全体 */
+#js__ahm {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translate(calc(100% - 40px), -50%);
+  background-color: #ddd;
+  border-radius: 16px 0 0 16px;
+  padding: 16px;
+  padding-right: 32px;
+  z-index: 10;
+  max-height: 50vh;
+  overflow: scroll;
+  transition: all .3s;
+  max-width: calc(100vw - 16px);
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+#js__ahm::-webkit-scrollbar {
+    display:none;
+}
+
+/* スマホ非表示 */
+@media screen and (max-width: 768px) {
+  #js__ahm {
+    display: none;
+  }
+}
+
+/* ホバーの時のスタイル  */
+#js__ahm:hover {
+  transform: translate(0, -50%);
+  transition: all .3s;
+}
+/* ホバーの時のスタイル  */
+#js__ahm:hover .ahm__child .ahm__childDot.-dotOutside {
+  transition: .3s;
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+/* 各headingメニュー  */
+#js__ahm .ahm__child {
+  margin-bottom: 8px;
+  display: flex;
+}
+.ahm__child:last-child {
+  margin-bottom: 0px;
+
+}
+
+/* heading　メニュー子要素ないのdiv */
+.ahm__child .ahm__childInner {
+  display: flex;
+  width: 100%;
+}
+
+/* heading　メニュー子要素　リンク */
+.ahm__child .ahm__childLink {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.ahm__child .ahm__childLinkText {
+  display: block;
+  width: 100%;
+
+}
+.ahm__child .ahm__childDot {
+  overflow: 1;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+.ahm__child .ahm__childDot.-dotOutside {
+  transition: all .3s;
+
+  margin-right: 16px;
+}
+
+.ahm__child .ahm__childDot.-ahmActive {
+  background-color: #333;
+
+}

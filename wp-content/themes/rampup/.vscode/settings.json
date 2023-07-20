@@ -1,0 +1,20 @@
+{
+  // "editor.formatOnSave": true,
+  // "editor.tabSize": 2,
+  // "html.format.wrapAttributes": "force-aligned",
+  // "files.trimTrailingWhitespace": true,
+  // "workbench.tree.renderIndentGuides": "always",
+  // "remote.SSH.useLocalServer": false,
+  // "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  // "liveSassCompile.settings.formats": [
+  //   {
+  //     "format": "compressed",
+  //     "extensionName": ".min.css",
+  //     "savePath": "/assets/css/"
+  //   }
+  // ],
+  // "liveSassCompile.settings.generateMap": false,
+  // "git.ignoreLimitWarning": true,
+  // "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+  // "intelephense.completion.insertUseDeclaration": false
+}

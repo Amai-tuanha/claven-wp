@@ -1,0 +1,192 @@
+@charset "UTF-8";
+.projectDetail__title .projectDetail__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projectDetail__title .projectDetail__box .projectDetail__name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 480px) {
+  .projectDetail__title .projectDetail__box .projectDetail__name {
+    font-size: 2.2rem;
+  }
+}
+.projectDetail__title .projectDetail__box .projectDetail__edit {
+  cursor: pointer;
+}
+.projectDetail__title .projectDetail__box .projectDetail__edit a {
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 480px) {
+  .projectDetail__title .projectDetail__box .projectDetail__edit a {
+    font-size: 1rem;
+  }
+}
+.projectDetail__title .projectDetail__box .projectDetail__edit a::after {
+  content: "";
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Font Awesome 5 Free";
+  padding-left: 0.5rem;
+  color: #38803d;
+}
+.list__wrap2 {
+  margin-top: 2.8rem;
+  margin-bottom: 4rem;
+}
+.list__wrap2 .list__tableInformation {
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: left;
+  word-break: break-all;
+  border-spacing: 0 1px;
+  border: 1px solid #38803d;
+}
+.list__wrap2 .list__tableInformation .list__titleBox {
+  background: #5DAC7D;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  padding-left: 2.3rem;
+}
+@media only screen and (max-width: 1450px) {
+  .list__wrap2 .list__tableInformation .list__titleBox {
+    padding-left: 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .list__wrap2 .list__tableInformation .list__titleBox {
+    font-size: 1.8rem;
+  }
+}
+.list__wrap2 .list__tableInformation .list__textBox {
+  padding: 2.2rem 2.4rem;
+}
+.list__wrap2 .list__tableInformation .list__textBox .list__textItem {
+  background: #f5f5f5;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .list__wrap2 .list__tableInformation .list__textBox .list__textItem {
+    font-size: 1.4rem;
+  }
+}
+.list__wrap2 .list__tableInformation .list__textBox2 {
+  padding: 2.2rem 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+.list__wrap2 .list__tableInformation .list__textBox2 .list__textItem2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.list__wrap2 .list__tableInformation .list__textBox2 input[type="text"] {
+  background: #f5f5f5;
+  height: 30px;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+}
+@media only screen and (max-width: 480px) {
+  .list__wrap2 .list__tableInformation .list__textBox2 input[type="text"] {
+    font-size: 1.4rem;
+  }
+}
+.list__wrap2 .list__tableInformation .list__textBox2 textarea {
+  background: #f5f5f5;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+}
+@media only screen and (max-width: 480px) {
+  .list__wrap2 .list__tableInformation .list__textBox2 textarea {
+    font-size: 1.4rem;
+  }
+}
+.list__wrap2 .list__tableInformation .list__textBox2 .shortCode {
+  margin-bottom: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 766px) {
+  .list__wrap2 .list__tableInformation .list__textBox2 .shortCode {
+    display: block;
+  }
+}
+.list__wrap2 .list__tableInformation .list__textBox2 .shortCode .shortCode__title {
+  margin-right: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100px;
+  margin-top: 0.5rem;
+}
+.list__wrap2 .list__tableInformation .list__textBox2 .shortCode .shortCode__box {
+  flex: 1;
+}
+.list__wrap2 .list__tableInformation .list__textBox2 .shortCode .shortCode__box .shortCode__item {
+  background: #f5f5f5;
+  display: inline-block;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.list__wrap2 .list__tableInformation .send {
+  padding: 15px 70px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #5DAC7D;
+  border: none;
+  display: block;
+  margin: 4rem auto;
+  text-align: center;
+  width: 253px;
+  justify-content: center;
+}
+@media only screen and (max-width: 480px) {
+  .list__wrap2 .list__tableInformation .send {
+    font-size: 1.6rem;
+  }
+}
+.list__wrap2 .list__tableInformation .send:hover {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0.7;
+}
+.choice2 select {
+  width: 100%;
+  font-size: 1.1rem;
+  padding-left: 2rem;
+  cursor: pointer;
+  background: #f5f5f5;
+  height: 37px;
+}
+.choice2 {
+  position: relative;
+}
+.choice2::before {
+  pointer-events: none;
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  content: "";
+  width: 10px;
+  border-top: 10px solid #707070;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.mt {
+  margin-top: 2rem;
+}

@@ -1,0 +1,499 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+@import "configuration";
+
+//____________________________
+//トップページ
+//____________________________
+
+html {
+  color: $black_333;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  counter-reset: number 0;
+  background-color: $white_f6f;
+
+  &.-mypage {
+    background-color: $gray_ebe;
+  }
+}
+
+#top {
+  overflow: hidden;
+}
+
+.inner {
+  width: 100%;
+  max-width: calc(1080px + 1.6rem * 2);
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+
+  &.-mypageInner {
+    max-width: calc(1280px + 1.6rem * 2);
+  }
+}
+
+.inner2 {
+  width: 100%;
+  max-width: calc(1090px + 1.6rem * 2);
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+
+  @media #{$sp} {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+
+.max_inner {
+  width: 100%;
+  max-width: calc(1200px + 1.6rem * 2);
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+
+  @media #{$sp} {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+
+//____________________________
+//タグのスタイルのパターン
+//____________________________
+.tag_type1 {
+  // MVのタグのスタイル
+  padding: 0 2.1rem 0 1.8rem;
+  margin-right: 8px;
+  color: $white_fff;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 1px solid $white_fff;
+  border-radius: 5px;
+
+  &:last-child {
+    margin-right: 1.2rem;
+  }
+}
+
+.tag_type2 {
+  //各投稿のカードのタグのスタイル
+  display: inline-block;
+  padding: 0 0.4rem;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  color: $white_fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: $primary;
+  border: 1px solid $primary;
+  border-radius: 3px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.tag_type3 {
+  // サイドバーのタグのスタイル
+  display: inline-block;
+  padding: 0 0.9rem 0 1.1rem;
+  margin-right: 4px;
+  margin-bottom: 8px;
+  color: $primary;
+  font-size: 1.2rem !important;
+  text-align: center;
+  border: 1px solid $primary;
+  border-radius: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $white_fff;
+    background-color: $primary;
+    opacity: 1;
+  }
+}
+
+.tag-cloud-link {
+  // サイドバーのタグのスタイル
+  display: inline-block;
+  padding: 0 0.9rem 0 1.1rem;
+  margin-right: 4px;
+  margin-bottom: 8px;
+  color: $white_fff;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  text-align: center;
+  background-color: $primary;
+  border: 1px solid $primary;
+  border-radius: 3px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $white_fff;
+    background-color: $primary;
+    opacity: 1;
+  }
+}
+
+.tag_type4 {
+  //single.phpのタグのスタイル
+  display: inline-block;
+  padding: 0rem 0.5rem 0rem 0.7rem;
+  margin-right: 1rem;
+  margin-bottom: 1.1rem;
+  color: $white_fff;
+  font-size: 1rem;
+  text-align: center;
+  background-color: $primary;
+  border: 1px solid $primary;
+  border-radius: 3px;
+
+  a {
+    color: $white_fff;
+  }
+
+  &:last-child {
+    margin-right: 1.2rem;
+  }
+}
+
+//____________________________
+//サイドバーの設定
+//____________________________
+
+.sidebar {
+  .widget {
+    margin-bottom: 4rem;
+  }
+}
+
+//____________________________
+//見出し
+//____________________________
+.heading_type1,
+.widgettitle {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.widgettitle {
+  padding: 0.8rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: rgba($gray_c6c, 0.2);
+  border-top: solid 3px $primary;
+}
+
+.postlist-title {
+  padding: 0.8rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-top: solid 3px $primary;
+  background-color: $white_fff;
+
+  span {
+    color: $primary;
+  }
+}
+
+// ____________________________
+// ページネーション
+// ____________________________
+
+.pagenation {
+  margin-top: 8rem;
+  text-align: center;
+
+  @media #{$tab},#{$sp} {
+    margin-top: 4rem;
+  }
+
+  .page-numbers {
+    display: inline-block;
+    display: block;
+    margin-right: 0rem;
+    font-size: 1.2rem;
+    text-align: center;
+    list-style-type: disc;
+    // min-width: 3rem;
+    // padding: .4rem;
+    background: none;
+    border: none;
+    border-radius: 0;
+
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 0rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      border: none;
+
+      a {
+        color: $primary;
+        border: solid 2px;
+      }
+    }
+  }
+
+  .current {
+    color: $white_fff;
+    background-color: $primary;
+    border: solid 2px $primary;
+  }
+}
+
+// ---------- 投稿スタイル ----------
+.entry-content {
+  h2 {
+    position: relative;
+    padding: 0.5em;
+    margin: 2.5em 0 0.7em;
+    margin-bottom: 40px !important;
+    color: white;
+    font-size: 1.4em;
+    line-height: 1.6;
+    background: #a6d3c8;
+
+    &::before {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      content: "";
+      border: none;
+      border-right: solid 20px rgb(149, 158, 155);
+      border-bottom: solid 15px transparent;
+    }
+  }
+}
+
+// ---------- single.phpの最後の課題完了ボタン ----------
+a.button__type1,
+button.button__type1 {
+  width: 220px;
+  height: 40px;
+  margin: 0 auto;
+  color: $white_fff;
+  line-height: 40px !important;
+  text-align: center;
+  background-color: $primary;
+  border: 1px solid $primary;
+  border-radius: 10rem;
+}
+
+p.button__type1,
+button.button__type1 {
+  display: block;
+  transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+p.button__type1.-complete,
+button.button__type1.-complete {
+  position: relative;
+  // background-color: $white_fff;
+  // color: $red_ff0;
+  // border-color: $red_ff0;
+  &::after {
+    $rem: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    display: inline-block;
+    // font-size: 6.7rem;
+    font-size: 3.3rem;
+    // line-height: 6.6rem;
+    line-height: 2;
+    width: $rem;
+    height: $rem;
+    color: $red_ff0;
+    border-radius: 50%;
+    background-color: rgba($white_fff, 0.8);
+    // font-family: serif;
+    border: 7px solid $red_ff0;
+    content: "完了";
+  }
+}
+
+// ---------- 課題終了のステッカー ----------
+.-finished {
+  position: relative;
+
+  &::before {
+    font-family: serif;
+    position: absolute;
+    top: 0;
+    right: calc(100% + 2px);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: red;
+    content: "済";
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 50%;
+    transform: translate();
+  }
+}
+
+// ---------- サンクスページのスタイル 全ページ共通 ----------
+.thanks {
+  padding: 16rem 0;
+  height: 70vh;
+
+  &.-pd0{
+    padding: 0;
+    height: 100%;
+  }
+
+  // ---------- インナー ----------
+  .inner.-thanksInner {
+    max-width: 860px;
+  }
+  // ---------- タイトル ----------
+  .thanks__title {
+    text-align: center;
+    font-size: 3.6rem;
+    color: $primary;
+  }
+
+  // ---------- テキスト ----------
+  .thanks__text {
+    display: block;
+    text-align: center;
+  }
+}
+
+// ---------- エラーメッセージ ----------
+.contact .contact-wrap_box label span {
+  color: red;
+}
+.error_msg {
+  font-size: 1.2rem;
+  color: red;
+  margin-top: 0.8rem;
+}
+
+.-primary {
+  color: $primary;
+}
+.-error {
+  color: red;
+}
+
+.-noScrollBar {
+  -ms-overflow-style: none; /* IE, Edge 対応 */
+  scrollbar-width: none; /* Firefox 対応 */
+  &::-webkit-scrollbar {
+    /* Chrome, Safari 対応 */
+    display: none;
+  }
+}
+
+// ---------- 中央揃え ----------
+.-tac {
+  text-align: center;
+}
+// ---------- 中央揃え ----------
+.-m0a {
+  margin: 0 auto;
+}
+
+// ---------- 隠す ----------
+.-hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+// ---------- フォーム送信後のメッセージ ----------
+.-form-message {
+  display: none;
+  width: 100%;
+  border: 3px solid $primary;
+  padding: 1.6rem;
+  margin-top: 4rem;
+}
+
+// ---------- ボタンのデフォのスタイル ----------
+.-button {
+  display: inline-block;
+  background-color: #d1d1d1;
+  padding: 0.2rem 0.4rem;
+  color: $black_333;
+  text-decoration: none;
+  border: 1px solid $black_333;
+  transition: 0.3s;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.-flex{
+  @include flex;
+}
+.-mb8{
+  margin-bottom: 8rem;
+}
+.-pdlr12{
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+.-zipsec{
+  margin: 0.6rem 0.6rem 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.-zip{
+  margin: 2.5rem 0.6rem 0 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+
+.-url {
+  color: $primary;
+  // opacity: 0.8;
+  transition: 0.3s;
+  text-decoration: underline;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+}

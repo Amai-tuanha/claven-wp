@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+@import "configuration";
+
+//________________________________________________________
+//Calendar
+//________________________________________________________
+.active {
+  background-color: #c9ffdc;
+}
+
+.calendar {
+  .calendar__top {
+    @include flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    .calendar__boxWrap {
+      display: inline-block;
+
+      .calendar__inputLabel {
+        margin-right: 0.8rem;
+      }
+
+      .calendar__input {
+      }
+    }
+  }
+
+  .calendar__nextPrev {
+    .calendar__nextPrevForm {
+      @include flex;
+      flex-flow: wrap;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-pack: justify;
+
+      .calendar__prevButton,
+      .calendar__nextButton {
+        @include flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        display: block;
+        width: 20%;
+        padding: 0.9rem 0;
+        color: $black_333;
+        font-size: 1.4rem;
+        text-align: center;
+        background-color: $white_fff;
+        border: 2px black solid;
+        transition: 0.3s;
+
+        text-decoration-line: none;
+        @media #{$maxsp} {
+          width: 38%;
+        }
+        img {
+          position: relative;
+          top: 2px;
+          margin-right: 0.8rem;
+          transform: rotate(180deg);
+        }
+      }
+      .calendar__nextButton {
+      }
+    }
+  }
+
+  .calendar__table {
+    overflow: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+    &::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+      display:none;
+  }
+
+    .calendar__tableWrap {
+      @media #{$sp} {
+        width: 600px;
+      }
+    }
+
+    .calendar__tableFooter {
+    }
+
+    .calendar__tableWrap {
+      padding-top: 1.2rem;
+      padding-bottom: 2rem;
+      font-size: 1.4rem;
+      @media #{$maxsp} {
+        font-size: 1.2rem;
+      }
+      @media #{$minsp} {
+        font-size: 1.1rem;
+      }
+    }
+    .tbody {
+      height: 463px;
+      overflow: auto;
+      border-bottom: 4px $black_333 solid;
+    }
+    table {
+      width: 100%;
+      word-wrap: break-all;
+      word-break: break-all;
+      background-color: white;
+      border: 4px $black_333 solid;
+      border-bottom: none;
+      border-radius: 5px;
+      table-layout: fixed;
+      tr {
+        &:first-of-type {
+          th {
+            font-size: 1.4rem;
+            background-color: rgba($green_008, 0.2);
+            border: 2px $black_333 solid;
+            border-bottom: none;
+            border-bottom: none;
+            text-align: center;
+            @media #{$minsp} {
+              font-size: 1.2rem;
+            }
+          }
+          .Saturday {
+            color: #0f6ebf;
+          }
+          .Sunday {
+            color: #bf0f0f;
+          }
+        }
+        &:last-of-type {
+          td {
+            border-bottom: none;
+          }
+        }
+        th,
+        td {
+          width: 11.5%;
+          padding: 1.5rem 0.8rem;
+          background-color: $white_fff;
+          border: 1px #dddddd solid;
+          @media #{$mintab} {
+            padding: 1rem 0.25rem;
+          }
+          @media #{$maxsp} {
+            padding: 0.5rem 0.1rem;
+          }
+          @media #{$minsp} {
+            padding-top: 0.1rem;
+          }
+          &:first-of-type {
+            width: 12.5%;
+          }
+        }
+
+        td {
+          position: relative;
+          border: 2px $black_333 solid;
+          &:first-of-type {
+            color: white;
+            font-size: 1.4rem;
+            background-color: $blue_12b;
+            @media #{$minsp} {
+              font-size: 1.2rem;
+            }
+          }
+
+          input[type="checkbox"]:checked + label {
+            background-color: #d0d0d0;
+          }
+
+          .table-text_o {
+            //yamamoto丸の色✕はstylleで入ってる
+            // padding-top: 1.5rem;
+            @include flex;
+            align-items: center;
+            justify-content: center;
+            color: $blue_12b;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.3s;
+            &:hover {
+              background-color: #999999;
+            }
+
+            @media #{$mintab} {
+              padding-top: 1rem;
+            }
+            @media #{$maxsp} {
+              padding-top: 0.5rem;
+            }
+            @media #{$minsp} {
+              padding-top: 0.1rem;
+              font-size: 1.2rem;
+            }
+          }
+          .table-text {
+            padding-top: 1.5rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: center;
+            @media #{$mintab} {
+              padding-top: 1rem;
+            }
+            @media #{$maxsp} {
+              padding-top: 0.5rem;
+            }
+            @media #{$minsp} {
+              padding-top: 0.1rem;
+              font-size: 1.2rem;
+            }
+          }
+
+          input {
+            display: none;
+          }
+          .label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            cursor: pointer;
+          }
+        }
+        .maru {
+          position: relative;
+          border-top: none;
+          &:after {
+            position: absolute;
+            left: 35%;
+            color: #ff9d00;
+            content: "〇";
+            font-size: 1.4rem;
+            font-weight: bold;
+            @media #{$minsp} {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .batsu {
+          position: relative;
+          border-top: none;
+          &:after {
+            position: absolute;
+            left: 35%;
+            color: #707070;
+            content: "×";
+            font-size: 1.4rem;
+            font-weight: bold;
+            @media #{$minsp} {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .time {
+          text-align: center;
+          @media #{$minsp} {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .calendar-table {
+      width: 100%;
+    }
+  }
+
+  &.-changeDisabled {
+    .calendar-table {
+      pointer-events: none;
+    }
+    // * {
+    //   pointer-events: none;
+    // }
+  }
+  .calendar__note {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .fa-arrow-circle-left{
+    color: $black_333;
+  }
+  .fa-arrow-circle-right{
+    color: $black_333;
+  }
+}
+
+.content-shadow {
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.content-shadow::-webkit-scrollbar {
+  /* Chrome, Safari 対応 */
+  display: none;
+}

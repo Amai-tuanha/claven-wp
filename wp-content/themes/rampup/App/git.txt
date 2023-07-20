@@ -1,0 +1,27 @@
+gitで使うコマンド
+
+// プッシュする時
+$ git push origin [ブランチ名]
+
+// プルする時
+$ git pull origin [ブランチ名]
+
+//ファイル全体のキャッシュ削除
+$ git rm -r --cached .
+
+//ファイルを指定してキャッシュ削除
+$ git rm -r --cached [ファイル名]
+
+// git 管理をやめる（該当のディレクトリにcdで移動してから下記を実行）
+$ rm -rf .git/
+
+
+テーマインポート後のgit
+1 vs code 拡張機能 remote explorerで一度ディレクトリに入り直す
+2 /wp-content/themes/rampup を開く
+3 ターミナルで cd App
+4 ターミナルで　git init
+5 ターミナルで　git remote add origin git@github.com:CLANEinc/rampup.git
+6 ターミナルで　git pull origin master
+7 これでgitと接続完了
+8 ここからブランチを切って作業する

@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+
+@import "configuration";
+
+//____________________________
+//rampupメール一覧
+//____________________________
+
+.project__wrap {
+  .project__contents {
+    @media #{$tab} {
+      padding: 20px 10px 90px;
+    }
+  }
+}
+
+.page__title {
+  h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+}
+
+.stepMail {
+  margin-top: 3rem;
+  .stepMail__box {
+    padding-bottom: 4rem;
+    position: relative;
+
+    .stepMail__step {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: url(../img/common/icon_circle_1.svg) no-repeat;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: -3px;
+        margin-right: 1.4rem;
+        z-index: 100;
+        position: relative;
+      }
+    }
+    .step__line {
+      display: inline-block;
+      position: absolute;
+      top: 13px;
+      // top: -321px;
+      left: 7.5px;
+      background: $gray_f5f;
+      width: 4px;
+      height: 100%;
+      z-index: 10;
+    }
+    .step__line2 {
+      display: inline-block;
+      position: absolute;
+      top: 13px;
+      top: 0px;
+      left: 7.5px;
+      background: $gray_f5f;
+      width: 4px;
+      height: 120%;
+      z-index: 10;
+      @media #{$tab} {
+        height: 130%;
+      }
+      @media #{$sp} {
+        height: 100%;
+      }
+    }
+    .stepMail__step.-circle {
+      &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        // background: url(../../img/common/icon_circle_2.svg) no-repeat;
+        background: url(../img/common/icon_circle_2.svg) no-repeat;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: -3px;
+        margin-right: 1.4rem;
+      }
+    }
+    .stepMail__list {
+      background: $gray_f4f;
+      margin-bottom: 2rem;
+      padding: 1rem 2rem;
+      @include flex;
+      justify-content: space-between;
+      // margin-left: 3.5rem;
+      @media #{$tab} {
+        padding: 1rem 1rem;
+        // margin-left: 2.5rem;
+      }
+      .stepMail__listBox {
+        flex: 1;
+        .stepMail__listText1 {
+          font-size: 1.2rem;
+        }
+        .stepMail__listText2 {
+          font-size: 1.8rem;
+          @media #{$tab} {
+            font-size: 1.4rem;
+            padding-right: 1rem;
+          }
+        }
+      }
+      .stepMail__listBox2 {
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$tab} {
+          width: 59px;
+        }
+        .projectDetail__edit {
+          cursor: pointer;
+          p {
+            font-size: 1.6rem;
+            &::after {
+              content: "\f044";
+              font-size: 1.6rem;
+              font-weight: 400;
+              font-family: "Font Awesome 5 Free";
+              padding-left: 0.5rem;
+              color: $green_388;
+            }
+          }
+        }
+      }
+    }
+  }
+  .stepMail__box.-circle2 {
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   width: 20px;
+    //   height: 20px;
+    //   background: url(../img/common/icon_circle_1.svg) no-repeat;
+    //   background-size: contain;
+    //   display: inline-block;
+    //   top: 100%;
+    //   left: 0px;
+    //   z-index: 50;
+    // }
+  }
+}
+
+.page__title.-margin {
+  margin-top: 10rem;
+}
+.stepMail2 {
+  margin-top: 3rem;
+  .stepMail__box {
+    padding-bottom: 4rem;
+    position: relative;
+
+    .stepMail__step {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+
+      // &::before {
+      // 	content: "";
+      // 	width: 20px;
+      // 	height: 20px;
+      // 	background: url(../../img/common/icon_circle_1.svg) no-repeat;
+      // 	background-size: contain;
+      // 	display: inline-block;
+      // 	vertical-align: -3px;
+      // 	margin-right: 1.4rem;
+      // 	z-index: 100;
+      // 	position: relative;
+      // }
+    }
+    // .step__line {
+    // 	display: inline-block;
+    // 	position: absolute;
+    // 	top: 13px;
+    // 	left: 8px;
+    // 	background: $gray_f5f;
+    // 	width: 4px;
+    // 	height: 120%;
+    // 	z-index: 10;
+    // }
+    // .stepMail__step.-circle {
+    // 	&::before {
+    // 		content: "";
+    // 		width: 20px;
+    // 		height: 20px;
+    // 		background: url(../../img/common/icon_circle_2.svg) no-repeat;
+    // 		background-size: contain;
+    // 		display: inline-block;
+    // 		vertical-align: -3px;
+    // 		margin-right: 1.4rem;
+    // 	}
+    // }
+    .stepMail__list {
+      background: $gray_f4f;
+      margin-bottom: 2rem;
+      padding: 1rem 2rem;
+      @include flex;
+      justify-content: space-between;
+      margin-left: 3.5rem;
+      @media #{$tab} {
+        padding: 1rem 1rem;
+        margin-left: 2.5rem;
+      }
+      .stepMail__listBox {
+        flex: 1;
+        .stepMail__listText1 {
+          font-size: 1.2rem;
+        }
+        .stepMail__listText2 {
+          font-size: 1.8rem;
+          @media #{$tab} {
+            font-size: 1.4rem;
+            padding-right: 1rem;
+          }
+        }
+      }
+      .stepMail__listBox2 {
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$tab} {
+          width: 59px;
+        }
+        .projectDetail__edit {
+          cursor: pointer;
+          p {
+            font-size: 1.6rem;
+            &::after {
+              content: "\f044";
+              font-size: 1.6rem;
+              font-weight: 400;
+              font-family: "Font Awesome 5 Free";
+              padding-left: 0.5rem;
+              color: $green_388;
+            }
+          }
+        }
+      }
+    }
+  }
+  // .stepMail__box.-circle2 {
+  // &::before {
+  // 	position: absolute;
+  // 	content: "";
+  // 	width: 20px;
+  // 	height: 20px;
+  // 	background: url(../../img/common/icon_circle_1.svg) no-repeat;
+  // 	background-size: contain;
+  // 	display: inline-block;
+  // 	top: 334px;
+  // 	left: 0px;
+  // 	z-index: 50;
+  // }
+  // }
+}

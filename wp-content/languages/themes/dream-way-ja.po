@@ -1,0 +1,80 @@
+# Translation of Themes - Dream Way in Japanese
+# This file is distributed under the same license as the Themes - Dream Way package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-06-27 08:03:07+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Themes - Dream Way\n"
+
+#. Description of the plugin/theme
+msgid "Responsive theme with parallax header and different layouts and options in the customizer. See the demo at http://wpblogs.info/demo/dreamway/."
+msgstr ""
+"パララックスヘッダーと、レイアウトとカスタマイザーでカスタマイズ可能なオプションを備えたレスポンシブテーマ。\n"
+"http://wpblogs.info/demo/dreamway/ のデモをご覧ください。"
+
+#. Theme Name of the plugin/theme
+msgid "Dream Way"
+msgstr "Dream Way"
+
+#. #-#-#-#-#  dream-way.pot (Dream Way 1.1)  #-#-#-#-#
+#. Theme URI of the plugin/theme
+#: functions.php:181
+msgid "http://wpblogs.ru/themes/blog/theme/dream-way/"
+msgstr "http://wpblogs.ru/themes/blog/theme/dream-way/"
+
+#: functions.php:235
+msgid "Recent Posts"
+msgstr "最近の投稿"
+
+#: functions.php:214
+msgid "Recent Projects"
+msgstr "最近のプロジェクト"
+
+#: functions.php:181
+msgid "theme "
+msgstr "テーマ名"
+
+#: functions.php:181
+msgid "Powered by WordPress"
+msgstr "Powered by WordPress"
+
+#: functions.php:181
+msgid "http://wordpress.org/"
+msgstr "http://ja.wordpress.org/"
+
+#: functions.php:174
+msgid "Home"
+msgstr "ホーム"
+
+#: functions.php:87
+msgid "Link Hover"
+msgstr "リンクのホバー"
+
+#: functions.php:66
+msgid "H1-H6 heading"
+msgstr "H1-H6 見出し"
+
+#: functions.php:80
+msgid "Description"
+msgstr "説明"
+
+#: functions.php:73
+msgid "H1-H6 Link"
+msgstr "H1-H6 リンク"
+
+#: functions.php:59
+msgid "Link"
+msgstr "リンク"
+
+#. Author URI of the plugin/theme
+msgid "http://wpblogs.ru/themes/"
+msgstr "http://wpblogs.ru/themes/"
+
+#. Author of the plugin/theme
+msgid "Cats_456"
+msgstr "Cats_456"
